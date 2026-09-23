@@ -6,7 +6,7 @@ on:
     paths:
       - '.github/workflows/build-study-data.yml'
       - 'source/**'
-      - 'scripts/fetch_book.py'
+      - 'assets/book/taintstva-i-obryady-pravoslavnoy-tserkvi.epub'
       - 'scripts/extract_book_index.py'
       - 'scripts/build_question_registry.py'
       - 'scripts/build_answers.py'
@@ -31,8 +31,8 @@ jobs:
       - name: Install parser
         run: python -m pip install beautifulsoup4
 
-      - name: Fetch textbook EPUB
-        run: python scripts/fetch_book.py
+      - name: Verify canonical textbook EPUB exists
+        run: test -f assets/book/taintstva-i-obryady-pravoslavnoy-tserkvi.epub
 
       - name: Build textbook index
         run: python scripts/extract_book_index.py
@@ -46,16 +46,11 @@ jobs:
       - name: Validate generated data
         run: python scripts/validate_data.py
 
-      - name: Remove obsolete transport fragments
-        run: |
-          rm -f data/*.json.gz.b64 data/manifest.json
-          rm -rf assets/book/chunks
-
-      - name: Commit generated study data and textbook
+      - name: Commit generated study data
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add -A assets/book data docs
+          git add -A data docs
           if git diff --cached --quiet; then
             echo "No generated changes"
           else
