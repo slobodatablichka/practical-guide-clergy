@@ -1,0 +1,4992 @@
+[
+  {
+    "id": "T01Q1",
+    "ticket": 1,
+    "ticket_position": 1,
+    "original_question": "Периоды в истории богослужений Русской Церкви",
+    "normalized_question": "Периоды в истории богослужений Русской Церкви",
+    "topic_id": "topic-f57cadd220",
+    "book_order": 3,
+    "chapter": "Глава I. Богослужение общественное и частное",
+    "book_section_title": "1. Периоды в истории богослужений Русской Церкви",
+    "epub_href": "index_split_003.xhtml",
+    "reader_href": "reader.html?href=index_split_003.xhtml",
+    "book_refs": [
+      {
+        "book_order": 3,
+        "section_title": "1. Периоды в истории богослужений Русской Церкви",
+        "chapter": "Глава I. Богослужение общественное и частное",
+        "epub_href": "index_split_003.xhtml",
+        "reader_href": "reader.html?href=index_split_003.xhtml"
+      }
+    ],
+    "mapping_confidence": "high",
+    "mapping_note": "",
+    "study_order": 1
+  },
+  {
+    "id": "T01Q2",
+    "ticket": 1,
+    "ticket_position": 2,
+    "original_question": "Освящение елея и помазание им воды и крещаемого",
+    "normalized_question": "Освящение елея и помазание им воды и крещаемого",
+    "topic_id": "topic-eb0bf54884",
+    "book_order": 33,
+    "chapter": "Глава II. Богослужение Таинств Крещения и Миропомазания",
+    "book_section_title": "Освящение елея и помазание им воды и крещаемого",
+    "epub_href": "index_split_033.xhtml",
+    "reader_href": "reader.html?href=index_split_033.xhtml",
+    "book_refs": [
+      {
+        "book_order": 33,
+        "section_title": "Освящение елея и помазание им воды и крещаемого",
+        "chapter": "Глава II. Богослужение Таинств Крещения и Миропомазания",
+        "epub_href": "index_split_033.xhtml",
+        "reader_href": "reader.html?href=index_split_033.xhtml"
+      }
+    ],
+    "mapping_confidence": "high",
+    "mapping_note": "",
+    "study_order": 30
+  },
+  {
+    "id": "T01Q3",
+    "ticket": 1,
+    "ticket_position": 3,
+    "original_question": "О епитимиях",
+    "normalized_question": "О епитимиях",
+    "topic_id": "topic-a4a4f467d6",
+    "book_order": 83,
+    "chapter": "Глава III. Таинство Покаяния",
+    "book_section_title": "О епитимиях",
+    "epub_href": "index_split_083.xhtml",
+    "reader_href": "reader.html?href=index_split_083.xhtml",
+    "book_refs": [
+      {
+        "book_order": 83,
+        "section_title": "О епитимиях",
+        "chapter": "Глава III. Таинство Покаяния",
+        "epub_href": "index_split_083.xhtml",
+        "reader_href": "reader.html?href=index_split_083.xhtml"
+      }
+    ],
+    "mapping_confidence": "high",
+    "mapping_note": "",
+    "study_order": 64
+  },
+  {
+    "id": "T01Q4",
+    "ticket": 1,
+    "ticket_position": 4,
+    "original_question": "Идейный смысл молитвословий проследования второбрачных",
+    "normalized_question": "Идейный смысл молитвословий последования второбрачных",
+    "topic_id": "topic-eba2002fd4",
+    "book_order": 121,
+    "chapter": "Глава V. Богослужение Таинства Брака",
+    "book_section_title": "3. Идейный смысл молитвословий чина венчания второбрачных",
+    "epub_href": "index_split_121.xhtml",
+    "reader_href": "reader.html?href=index_split_121.xhtml",
+    "book_refs": [
+      {
+        "book_order": 121,
+        "section_title": "3. Идейный смысл молитвословий чина венчания второбрачных",
+        "chapter": "Глава V. Богослужение Таинства Брака",
+        "epub_href": "index_split_121.xhtml",
+        "reader_href": "reader.html?href=index_split_121.xhtml"
+      }
+    ],
+    "mapping_confidence": "high",
+    "mapping_note": "",
+    "study_order": 89
+  },
+  {
+    "id": "T01Q5",
+    "ticket": 1,
+    "ticket_position": 5,
+    "original_question": "Возведение в чины протодиакона, протоиерея, игумена и архимандрита",
+    "normalized_question": "Возведение в чины протодиакона, протоиерея, игумена и архимандрита",
+    "topic_id": "topic-2d6e75ad2b",
+    "book_order": 170,
+    "chapter": "Глава VII. Таинство Священства",
+    "book_section_title": "Возведение в чины протодиакона, протоиерея, игумена и архимандрита",
+    "epub_href": "index_split_170.xhtml",
+    "reader_href": "reader.html?href=index_split_170.xhtml",
+    "book_refs": [
+      {
+        "book_order": 170,
+        "section_title": "Возведение в чины протодиакона, протоиерея, игумена и архимандрита",
+        "chapter": "Глава VII. Таинство Священства",
+        "epub_href": "index_split_170.xhtml",
+        "reader_href": "reader.html?href=index_split_170.xhtml"
+      },
+      {
+        "book_order": 171,
+        "section_title": "1. Возникновение хиротесий в священные чины (протодиакона, протоиерея, игумена и архимандрита)",
+        "chapter": "Глава VII. Таинство Священства",
+        "epub_href": "index_split_171.xhtml",
+        "reader_href": "reader.html?href=index_split_171.xhtml"
+      },
+      {
+        "book_order": 172,
+        "section_title": "2. Схема хиротесий в чины протодиакона и протоиерея",
+        "chapter": "Глава VII. Таинство Священства",
+        "epub_href": "index_split_172.xhtml",
+        "reader_href": "reader.html?href=index_split_172.xhtml"
+      },
+      {
+        "book_order": 173,
+        "section_title": "3. Схема хиротесий в чины игумена и архимандрита",
+        "chapter": "Глава VII. Таинство Священства",
+        "epub_href": "index_split_173.xhtml",
+        "reader_href": "reader.html?href=index_split_173.xhtml"
+      },
+      {
+        "book_order": 174,
+        "section_title": "4. Идейный смысл священнодействий чинов возведения в протодиакона, протоиерея, игумена и архимандрита",
+        "chapter": "Глава VII. Таинство Священства",
+        "epub_href": "index_split_174.xhtml",
+        "reader_href": "reader.html?href=index_split_174.xhtml"
+      }
+    ],
+    "mapping_confidence": "high",
+    "mapping_note": "",
+    "study_order": 120
+  },
+  {
+    "id": "T01Q6",
+    "ticket": 1,
+    "ticket_position": 6,
+    "original_question": "Обоснование молитвенного поминовения усопших",
+    "normalized_question": "Обоснование молитвенного поминовения усопших",
+    "topic_id": "topic-a241a8dd5b",
+    "book_order": 212,
+    "chapter": "Глава VIII. Богослужение погребений и поминовения усопших",
+    "book_section_title": "1. Молитва за усопших",
+    "epub_href": "index_split_212.xhtml",
+    "reader_href": "reader.html?href=index_split_212.xhtml",
+    "book_refs": [
+      {
+        "book_order": 212,
+        "section_title": "1. Молитва за усопших",
+        "chapter": "Глава VIII. Богослужение погребений и поминовения усопших",
+        "epub_href": "index_split_212.xhtml",
+        "reader_href": "reader.html?href=index_split_212.xhtml"
+      }
+    ],
+    "mapping_confidence": "high",
+    "mapping_note": "",
+    "study_order": 150
+  },
+  {
+    "id": "T02Q1",
+    "ticket": 2,
+    "ticket_position": 1,
+    "original_question": "Поминовение новопреставленных",
+    "normalized_question": "Поминовение новопреставленных",
+    "topic_id": "topic-4dfca235df",
+    "book_order": 213,
+    "chapter": "Глава VIII. Богослужение погребений и поминовения усопших",
+    "book_section_title": "2. Церковный устав о поминовении",
+    "epub_href": "index_split_213.xhtml",
+    "reader_href": "reader.html?href=index_split_213.xhtml",
+    "book_refs": [
+      {
+        "book_order": 213,
+        "section_title": "2. Церковный устав о поминовении",
+        "chapter": "Глава VIII. Богослужение погребений и поминовения усопших",
+        "epub_href": "index_split_213.xhtml",
+        "reader_href": "reader.html?href=index_split_213.xhtml"
+      }
+    ],
+    "mapping_confidence": "high",
+    "mapping_note": "",
+    "study_order": 152
+  },
+  {
+    "id": "T02Q2",
+    "ticket": 2,
+    "ticket_position": 2,
+    "original_question": "Совершение чина браковенчания второбрачных в Русской Церкви",
+    "normalized_question": "Совершение чина браковенчания второбрачных в Русской Церкви",
+    "topic_id": "topic-012e2f859d",
+    "book_order": 122,
+    "chapter": "Глава V. Богослужение Таинства Брака",
+    "book_section_title": "4. Совершение чина браковенчания второбрачных в Русской Церкви",
+    "epub_href": "index_split_122.xhtml",
+    "reader_href": "reader.html?href=index_split_122.xhtml",
+    "book_refs": [
+      {
+        "book_order": 122,
+        "section_title": "4. Совершение чина браковенчания второбрачных в Русской Церкви",
+        "chapter": "Глава V. Богослужение Таинства Брака",
+        "epub_href": "index_split_122.xhtml",
+        "reader_href": "reader.html?href=index_split_122.xhtml"
+      }
+    ],
+    "mapping_confidence": "high",
+    "mapping_note": "",
+    "study_order": 91
+  },
+  {
+    "id": "T02Q3",
+    "ticket": 2,
+    "ticket_position": 3,
+    "original_question": "Возникновения хиротесии в священные чины (протодиакона, протоиерея, игумена и архимандрита)",
+    "normalized_question": "Возникновения хиротесии в священные чины (протодиакона, протоиерея, игумена и архимандрита)",
+    "topic_id": "topic-349ac4ee1c",
+    "book_order": 171,
+    "chapter": "Глава VII. Таинство Священства",
+    "book_section_title": "1. Возникновение хиротесий в священные чины (протодиакона, протоиерея, игумена и архимандрита)",
+    "epub_href": "index_split_171.xhtml",
+    "reader_href": "reader.html?href=index_split_171.xhtml",
+    "book_refs": [
+      {
+        "book_order": 171,
+        "section_title": "1. Возникновение хиротесий в священные чины (протодиакона, протоиерея, игумена и архимандрита)",
+        "chapter": "Глава VII. Таинство Священства",
+        "epub_href": "index_split_171.xhtml",
+        "reader_href": "reader.html?href=index_split_171.xhtml"
+      }
+    ],
+    "mapping_confidence": "high",
+    "mapping_note": "",
+    "study_order": 121
+  },
+  {
+    "id": "T02Q4",
+    "ticket": 2,
+    "ticket_position": 4,
+    "original_question": "История происхождения Требника",
+    "normalized_question": "История происхождения Требника",
+    "topic_id": "topic-4aa35bb27c",
+    "book_order": 5,
+    "chapter": "Глава I. Богослужение общественное и частное",
+    "book_section_title": "История происхождения Требника",
+    "epub_href": "index_split_005.xhtml",
+    "reader_href": "reader.html?href=index_split_005.xhtml",
+    "book_refs": [
+      {
+        "book_order": 5,
+        "section_title": "История происхождения Требника",
+        "chapter": "Глава I. Богослужение общественное и частное",
+        "epub_href": "index_split_005.xhtml",
+        "reader_href": "reader.html?href=index_split_005.xhtml"
+      }
+    ],
+    "mapping_confidence": "high",
+    "mapping_note": "",
+    "study_order": 2
+  },
+  {
+    "id": "T02Q5",
+    "ticket": 2,
+    "ticket_position": 5,
+    "original_question": "Тайносовершительный момент Крещения",
+    "normalized_question": "Тайносовершительный момент Крещения",
+    "topic_id": "topic-101fd3891c",
+    "book_order": 47,
+    "chapter": "Глава II. Богослужение Таинств Крещения и Миропомазания",
+    "book_section_title": "Погружение крещаемого в воду и облачение в белые одежды",
+    "epub_href": "index_split_047.xhtml",
+    "reader_href": "reader.html?href=index_split_047.xhtml",
+    "book_refs": [
+      {
+        "book_order": 47,
+        "section_title": "Погружение крещаемого в воду и облачение в белые одежды",
+        "chapter": "Глава II. Богослужение Таинств Крещения и Миропомазания",
+        "epub_href": "index_split_047.xhtml",
+        "reader_href": "reader.html?href=index_split_047.xhtml"
+      },
+      {
+        "book_order": 20,
+        "section_title": "Чин крещения",
+        "chapter": "Глава II. Богослужение Таинств Крещения и Миропомазания",
+        "epub_href": "index_split_020.xhtml",
+        "reader_href": "reader.html?href=index_split_020.xhtml"
+      }
+    ],
+    "mapping_confidence": "high",
+    "mapping_note": "",
+    "study_order": 39
+  },
+  {
+    "id": "T02Q6",
+    "ticket": 2,
+    "ticket_position": 6,
+    "original_question": "История совершения исповеди в Русской Церкви",
+    "normalized_question": "История совершения исповеди в Русской Церкви",
+    "topic_id": "topic-1b721a3d5f",
+    "book_order": 84,
+    "chapter": "Глава III. Таинство Покаяния",
+    "book_section_title": "5. История совершения исповеди в Русской Церкви",
+    "epub_href": "index_split_084.xhtml",
+    "reader_href": "reader.html?href=index_split_084.xhtml",
+    "book_refs": [
+      {
+        "book_order": 84,
+        "section_title": "5. История совершения исповеди в Русской Церкви",
+        "chapter": "Глава III. Таинство Покаяния",
+        "epub_href": "index_split_084.xhtml",
+        "reader_href": "reader.html?href=index_split_084.xhtml"
+      }
+    ],
+    "mapping_confidence": "high",
+    "mapping_note": "",
+    "study_order": 65
+  },
+  {
+    "id": "T03Q1",
+    "ticket": 3,
+    "ticket_position": 1,
+    "original_question": "Виды Требников и их содержание",
+    "normalized_question": "Виды Требников и их содержание",
+    "topic_id": "topic-77890fe51a",
+    "book_order": 6,
+    "chapter": "Глава I. Богослужение общественное и частное",
+    "book_section_title": "Виды Требников и их содержание",
+    "epub_href": "index_split_006.xhtml",
+    "reader_href": "reader.html?href=index_split_006.xhtml",
+    "book_refs": [
+      {
+        "book_order": 6,
+        "section_title": "Виды Требников и их содержание",
+        "chapter": "Глава I. Богослужение общественное и частное",
+        "epub_href": "index_split_006.xhtml",
+        "reader_href": "reader.html?href=index_split_006.xhtml"
+      }
+    ],
+    "mapping_confidence": "high",
+    "mapping_note": "",
+    "study_order": 3
+  },
+  {
+    "id": "T03Q2",
+    "ticket": 3,
+    "ticket_position": 2,
+    "original_question": "Облачение в белые одежды",
+    "normalized_question": "Облачение в белые одежды",
+    "topic_id": "topic-b09af0d026",
+    "book_order": 47,
+    "chapter": "Глава II. Богослужение Таинств Крещения и Миропомазания",
+    "book_section_title": "Погружение крещаемого в воду и облачение в белые одежды",
+    "epub_href": "index_split_047.xhtml",
+    "reader_href": "reader.html?href=index_split_047.xhtml",
+    "book_refs": [
+      {
+        "book_order": 47,
+        "section_title": "Погружение крещаемого в воду и облачение в белые одежды",
+        "chapter": "Глава II. Богослужение Таинств Крещения и Миропомазания",
+        "epub_href": "index_split_047.xhtml",
+        "reader_href": "reader.html?href=index_split_047.xhtml"
+      },
+      {
+        "book_order": 34,
+        "section_title": "Погружение крещаемого в воду и облачение в белые одежды",
+        "chapter": "Глава II. Богослужение Таинств Крещения и Миропомазания",
+        "epub_href": "index_split_034.xhtml",
+        "reader_href": "reader.html?href=index_split_034.xhtml"
+      }
+    ],
+    "mapping_confidence": "high",
+    "mapping_note": "",
+    "study_order": 38
+  },
+  {
+    "id": "T03Q3",
+    "ticket": 3,
+    "ticket_position": 3,
+    "original_question": "Символика Таинства Елеосвящения",
+    "normalized_question": "Символика Таинства Елеосвящения",
+    "topic_id": "topic-0aacc9ab62",
+    "book_order": 124,
+    "chapter": "Глава VI. Богослужение Таинства Елеосвящения",
+    "book_section_title": "1. Символика Таинства",
+    "epub_href": "index_split_124.xhtml",
+    "reader_href": "reader.html?href=index_split_124.xhtml",
+    "book_refs": [
+      {
+        "book_order": 124,
+        "section_title": "1. Символика Таинства",
+        "chapter": "Глава VI. Богослужение Таинства Елеосвящения",
+        "epub_href": "index_split_124.xhtml",
+        "reader_href": "reader.html?href=index_split_124.xhtml"
+      }
+    ],
+    "mapping_confidence": "high",
+    "mapping_note": "",
+    "study_order": 92
+  },
+  {
+    "id": "T03Q4",
+    "ticket": 3,
+    "ticket_position": 4,
+    "original_question": "Схема хиротесии в чины протодиакона и протоиерея",
+    "normalized_question": "Схема хиротесии в чины протодиакона и протоиерея",
+    "topic_id": "topic-23895b4c28",
+    "book_order": 172,
+    "chapter": "Глава VII. Таинство Священства",
+    "book_section_title": "2. Схема хиротесий в чины протодиакона и протоиерея",
+    "epub_href": "index_split_172.xhtml",
+    "reader_href": "reader.html?href=index_split_172.xhtml",
+    "book_refs": [
+      {
+        "book_order": 172,
+        "section_title": "2. Схема хиротесий в чины протодиакона и протоиерея",
+        "chapter": "Глава VII. Таинство Священства",
+        "epub_href": "index_split_172.xhtml",
+        "reader_href": "reader.html?href=index_split_172.xhtml"
+      }
+    ],
+    "mapping_confidence": "high",
+    "mapping_note": "",
+    "study_order": 122
+  },
+  {
+    "id": "T03Q5",
+    "ticket": 3,
+    "ticket_position": 5,
+    "original_question": "Вселенские панихиды или вселенские родительские субботы",
+    "normalized_question": "Вселенские панихиды или вселенские родительские субботы",
+    "topic_id": "topic-69908cb500",
+    "book_order": 213,
+    "chapter": "Глава VIII. Богослужение погребений и поминовения усопших",
+    "book_section_title": "2. Церковный устав о поминовении",
+    "epub_href": "index_split_213.xhtml",
+    "reader_href": "reader.html?href=index_split_213.xhtml",
+    "book_refs": [
+      {
+        "book_order": 213,
+        "section_title": "2. Церковный устав о поминовении",
+        "chapter": "Глава VIII. Богослужение погребений и поминовения усопших",
+        "epub_href": "index_split_213.xhtml",
+        "reader_href": "reader.html?href=index_split_213.xhtml"
+      }
+    ],
+    "mapping_confidence": "high",
+    "mapping_note": "",
+    "study_order": 151
+  },
+  {
+    "id": "T03Q6",
+    "ticket": 3,
+    "ticket_position": 6,
+    "original_question": "История принятия в Церковь иноверных",
+    "normalized_question": "История принятия в Церковь иноверных",
+    "topic_id": "topic-0152c59eff",
+    "book_order": 86,
+    "chapter": "Глава IV. Богослужение присоединения к Православию",
+    "book_section_title": "1. История принятия в Церковь иноверных",
+    "epub_href": "index_split_086.xhtml",
+    "reader_href": "reader.html?href=index_split_086.xhtml",
+    "book_refs": [
+      {
+        "book_order": 86,
+        "section_title": "1. История принятия в Церковь иноверных",
+        "chapter": "Глава IV. Богослужение присоединения к Православию",
+        "epub_href": "index_split_086.xhtml",
+        "reader_href": "reader.html?href=index_split_086.xhtml"
+      }
+    ],
+    "mapping_confidence": "high",
+    "mapping_note": "",
+    "study_order": 66
+  },
+  {
+    "id": "T04Q1",
+    "ticket": 4,
+    "ticket_position": 1,
+    "original_question": "Требник в трех частях (в виде трех книг)",
+    "normalized_question": "Требник в трех частях (в виде трех книг)",
+    "topic_id": "topic-54cdc7b269",
+    "book_order": 6,
+    "chapter": "Глава I. Богослужение общественное и частное",
+    "book_section_title": "Виды Требников и их содержание",
+    "epub_href": "index_split_006.xhtml",
+    "reader_href": "reader.html?href=index_split_006.xhtml",
+    "book_refs": [
+      {
+        "book_order": 6,
+        "section_title": "Виды Требников и их содержание",
+        "chapter": "Глава I. Богослужение общественное и частное",
+        "epub_href": "index_split_006.xhtml",
+        "reader_href": "reader.html?href=index_split_006.xhtml"
+      }
+    ],
+    "mapping_confidence": "high",
+    "mapping_note": "",
+    "study_order": 4
+  },
+  {
+    "id": "T04Q2",
+    "ticket": 4,
+    "ticket_position": 2,
+    "original_question": "История совершения чина Крещения в Русской Церкви",
+    "normalized_question": "История совершения чина Крещения в Русской Церкви",
+    "topic_id": "topic-5d450e8b53",
+    "book_order": 31,
+    "chapter": "Глава II. Богослужение Таинств Крещения и Миропомазания",
+    "book_section_title": "Чин Крещения",
+    "epub_href": "index_split_031.xhtml",
+    "reader_href": "reader.html?href=index_split_031.xhtml",
+    "book_refs": [
+      {
+        "book_order": 31,
+        "section_title": "Чин Крещения",
+        "chapter": "Глава II. Богослужение Таинств Крещения и Миропомазания",
+        "epub_href": "index_split_031.xhtml",
+        "reader_href": "reader.html?href=index_split_031.xhtml"
+      }
+    ],
+    "mapping_confidence": "high",
+    "mapping_note": "",
+    "study_order": 29
+  },
+  {
+    "id": "T04Q3",
+    "ticket": 4,
+    "ticket_position": 3,
+    "original_question": "Чины присоединения к Православию через Таинства Крещения",
+    "normalized_question": "Чины присоединения к Православию через Таинства Крещения",
+    "topic_id": "topic-80abb662f0",
+    "book_order": 87,
+    "chapter": "Глава IV. Богослужение присоединения к Православию",
+    "book_section_title": "2. Чины присоединения к Православию через Таинство Крещения",
+    "epub_href": "index_split_087.xhtml",
+    "reader_href": "reader.html?href=index_split_087.xhtml",
+    "book_refs": [
+      {
+        "book_order": 87,
+        "section_title": "2. Чины присоединения к Православию через Таинство Крещения",
+        "chapter": "Глава IV. Богослужение присоединения к Православию",
+        "epub_href": "index_split_087.xhtml",
+        "reader_href": "reader.html?href=index_split_087.xhtml"
+      },
+      {
+        "book_order": 88,
+        "section_title": "Схема чинопоследования",
+        "chapter": "Глава IV. Богослужение присоединения к Православию",
+        "epub_href": "index_split_088.xhtml",
+        "reader_href": "reader.html?href=index_split_088.xhtml"
+      },
+      {
+        "book_order": 89,
+        "section_title": "Происхождение и содержание чина",
+        "chapter": "Глава IV. Богослужение присоединения к Православию",
+        "epub_href": "index_split_089.xhtml",
+        "reader_href": "reader.html?href=index_split_089.xhtml"
+      }
+    ],
+    "mapping_confidence": "high",
+    "mapping_note": "",
+    "study_order": 67
+  },
+  {
+    "id": "T04Q4",
+    "ticket": 4,
+    "ticket_position": 4,
+    "original_question": "История формированиичинопоследования",
+    "normalized_question": "История формирования чинопоследования",
+    "topic_id": "topic-7cc8f4a450",
+    "book_order": 125,
+    "chapter": "Глава VI. Богослужение Таинства Елеосвящения",
+    "book_section_title": "2. История формирования чина Елеосвящения",
+    "epub_href": "index_split_125.xhtml",
+    "reader_href": "reader.html?href=index_split_125.xhtml",
+    "book_refs": [
+      {
+        "book_order": 125,
+        "section_title": "2. История формирования чина Елеосвящения",
+        "chapter": "Глава VI. Богослужение Таинства Елеосвящения",
+        "epub_href": "index_split_125.xhtml",
+        "reader_href": "reader.html?href=index_split_125.xhtml"
+      }
+    ],
+    "mapping_confidence": "medium",
+    "mapping_note": "В исходнике отсутствует название конкретного чинопоследования; по структуре билета и ближайшему разделу учебника привязано к истории чина Елеосвящения.",
+    "study_order": 93
+  },
+  {
+    "id": "T04Q5",
+    "ticket": 4,
+    "ticket_position": 5,
+    "original_question": "Схема хиротесии в чины игумена и архимандрита",
+    "normalized_question": "Схема хиротесии в чины игумена и архимандрита",
+    "topic_id": "topic-9db0b2802c",
+    "book_order": 173,
+    "chapter": "Глава VII. Таинство Священства",
+    "book_section_title": "3. Схема хиротесий в чины игумена и архимандрита",
+    "epub_href": "index_split_173.xhtml",
+    "reader_href": "reader.html?href=index_split_173.xhtml",
+    "book_refs": [
+      {
+        "book_order": 173,
+        "section_title": "3. Схема хиротесий в чины игумена и архимандрита",
+        "chapter": "Глава VII. Таинство Священства",
+        "epub_href": "index_split_173.xhtml",
+        "reader_href": "reader.html?href=index_split_173.xhtml"
+      }
+    ],
+    "mapping_confidence": "high",
+    "mapping_note": "",
+    "study_order": 123
+  },
+  {
+    "id": "T04Q6",
+    "ticket": 4,
+    "ticket_position": 6,
+    "original_question": "Суббота Мясопустная",
+    "normalized_question": "Суббота Мясопустная",
+    "topic_id": "topic-f1f99e6e01",
+    "book_order": 213,
+    "chapter": "Глава VIII. Богослужение погребений и поминовения усопших",
+    "book_section_title": "2. Церковный устав о поминовении",
+    "epub_href": "index_split_213.xhtml",
+    "reader_href": "reader.html?href=index_split_213.xhtml",
+    "book_refs": [
+      {
+        "book_order": 213,
+        "section_title": "2. Церковный устав о поминовении",
+        "chapter": "Глава VIII. Богослужение погребений и поминовения усопших",
+        "epub_href": "index_split_213.xhtml",
+        "reader_href": "reader.html?href=index_split_213.xhtml"
+      }
+    ],
+    "mapping_confidence": "high",
+    "mapping_note": "",
+    "study_order": 157
+  },
+  {
+    "id": "T05Q1",
+    "ticket": 5,
+    "ticket_position": 1,
+    "original_question": "Чинопоследование соединяемым из иноверных к Православной Кафолической Восточной Церкви»",
+    "normalized_question": "Чинопоследование соединяемым из иноверных к Православной Кафолической Восточной Церкви",
+    "topic_id": "topic-0eb8a5bae8",
+    "book_order": 7,
+    "chapter": "Глава I. Богослужение общественное и частное",
+    "book_section_title": "Чинопоследование соединяемым из иноверных к Православной Кафолической Восточной Церкви",
+    "epub_href": "index_split_007.xhtml",
+    "reader_href": "reader.html?href=index_split_007.xhtml",
+    "book_refs": [
+      {
+        "book_order": 7,
+        "section_title": "Чинопоследование соединяемым из иноверных к Православной Кафолической Восточной Церкви",
+        "chapter": "Глава I. Богослужение общественное и частное",
+        "epub_href": "index_split_007.xhtml",
+        "reader_href": "reader.html?href=index_split_007.xhtml"
+      }
+    ],
+    "mapping_confidence": "high",
+    "mapping_note": "",
+    "study_order": 5
+  },
+  {
+    "id": "T05Q2",
+    "ticket": 5,
+    "ticket_position": 2,
+    "original_question": "Богослужение Миропомазания",
+    "normalized_question": "Богослужение Миропомазания",
+    "topic_id": "topic-5da3051f77",
+    "book_order": 21,
+    "chapter": "Глава II. Богослужение Таинств Крещения и Миропомазания",
+    "book_section_title": "Чин миропомазания",
+    "epub_href": "index_split_021.xhtml",
+    "reader_href": "reader.html?href=index_split_021.xhtml",
+    "book_refs": [
+      {
+        "book_order": 21,
+        "section_title": "Чин миропомазания",
+        "chapter": "Глава II. Богослужение Таинств Крещения и Миропомазания",
+        "epub_href": "index_split_021.xhtml",
+        "reader_href": "reader.html?href=index_split_021.xhtml"
+      }
+    ],
+    "mapping_confidence": "high",
+    "mapping_note": "",
+    "study_order": 18
+  },
+  {
+    "id": "T05Q3",
+    "ticket": 5,
+    "ticket_position": 3,
+    "original_question": "Схема чинопоследования исповеди",
+    "normalized_question": "Схема чинопоследования исповеди",
+    "topic_id": "topic-6045675ac0",
+    "book_order": 71,
+    "chapter": "Глава III. Таинство Покаяния",
+    "book_section_title": "3. Схема чинопоследования исповеди",
+    "epub_href": "index_split_071.xhtml",
+    "reader_href": "reader.html?href=index_split_071.xhtml",
+    "book_refs": [
+      {
+        "book_order": 71,
+        "section_title": "3. Схема чинопоследования исповеди",
+        "chapter": "Глава III. Таинство Покаяния",
+        "epub_href": "index_split_071.xhtml",
+        "reader_href": "reader.html?href=index_split_071.xhtml"
+      }
+    ],
+    "mapping_confidence": "high",
+    "mapping_note": "",
+    "study_order": 55
+  },
+  {
+    "id": "T05Q4",
+    "ticket": 5,
+    "ticket_position": 4,
+    "original_question": "Схема чинопоследования Елеосвящения",
+    "normalized_question": "Схема чинопоследования Елеосвящения",
+    "topic_id": "topic-403be11734",
+    "book_order": 135,
+    "chapter": "Глава VI. Богослужение Таинства Елеосвящения",
+    "book_section_title": "Схема чинопоследования Елеосвящения",
+    "epub_href": "index_split_135.xhtml",
+    "reader_href": "reader.html?href=index_split_135.xhtml",
+    "book_refs": [
+      {
+        "book_order": 135,
+        "section_title": "Схема чинопоследования Елеосвящения",
+        "chapter": "Глава VI. Богослужение Таинства Елеосвящения",
+        "epub_href": "index_split_135.xhtml",
+        "reader_href": "reader.html?href=index_split_135.xhtml"
+      }
+    ],
+    "mapping_confidence": "high",
+    "mapping_note": "",
+    "study_order": 94
+  },
+  {
+    "id": "T05Q5",
+    "ticket": 5,
+    "ticket_position": 5,
+    "original_question": "Родительские субботы 2-й, 3-й и 4-й седмиц Святой Четыредесятницы",
+    "normalized_question": "Родительские субботы 2-й, 3-й и 4-й седмиц Святой Четыредесятницы",
+    "topic_id": "topic-d4ce39b7f1",
+    "book_order": 213,
+    "chapter": "Глава VIII. Богослужение погребений и поминовения усопших",
+    "book_section_title": "2. Церковный устав о поминовении",
+    "epub_href": "index_split_213.xhtml",
+    "reader_href": "reader.html?href=index_split_213.xhtml",
+    "book_refs": [
+      {
+        "book_order": 213,
+        "section_title": "2. Церковный устав о поминовении",
+        "chapter": "Глава VIII. Богослужение погребений и поминовения усопших",
+        "epub_href": "index_split_213.xhtml",
+        "reader_href": "reader.html?href=index_split_213.xhtml"
+      }
+    ],
+    "mapping_confidence": "high",
+    "mapping_note": "",
+    "study_order": 155
+  },
+  {
+    "id": "T05Q6",
+    "ticket": 5,
+    "ticket_position": 6,
+    "original_question": "Понятие о смерти и молитвенном последовании о умершем",
+    "normalized_question": "Понятие о смерти и молитвенном последовании об умершем",
+    "topic_id": "topic-d642146cba",
+    "book_order": 177,
+    "chapter": "Глава VIII. Богослужение погребений и поминовения усопших",
+    "book_section_title": "1. Понятие о смерти и молитвенном последовании об умершем",
+    "epub_href": "index_split_177.xhtml",
+    "reader_href": "reader.html?href=index_split_177.xhtml",
+    "book_refs": [
+      {
+        "book_order": 177,
+        "section_title": "1. Понятие о смерти и молитвенном последовании об умершем",
+        "chapter": "Глава VIII. Богослужение погребений и поминовения усопших",
+        "epub_href": "index_split_177.xhtml",
+        "reader_href": "reader.html?href=index_split_177.xhtml"
+      }
+    ],
+    "mapping_confidence": "high",
+    "mapping_note": "",
+    "study_order": 125
+  },
+  {
+    "id": "T06Q1",
+    "ticket": 6,
+    "ticket_position": 1,
+    "original_question": "История формирования чина Освящение воды",
+    "normalized_question": "История формирования чина Освящение воды",
+    "topic_id": "topic-dd0f69e902",
+    "book_order": 219,
+    "chapter": "Глава IX. Богослужение молебных пений.",
+    "book_section_title": "История формирования чина",
+    "epub_href": "index_split_219.xhtml",
+    "reader_href": "reader.html?href=index_split_219.xhtml",
+    "book_refs": [
+      {
+        "book_order": 219,
+        "section_title": "История формирования чина",
+        "chapter": "Глава IX. Богослужение молебных пений.",
+        "epub_href": "index_split_219.xhtml",
+        "reader_href": "reader.html?href=index_split_219.xhtml"
+      }
+    ],
+    "mapping_confidence": "high",
+    "mapping_note": "",
+    "study_order": 164
+  },
+  {
+    "id": "T06Q2",
+    "ticket": 6,
+    "ticket_position": 2,
+    "original_question": "Идейный смысл священнодействий чинов возведения в протодиакона, протоиерея, игумена и архимандрита",
+    "normalized_question": "Идейный смысл священнодействий чинов возведения в протодиакона, протоиерея, игумена и архимандрита",
+    "topic_id": "topic-4bdf6f9824",
+    "book_order": 174,
+    "chapter": "Глава VII. Таинство Священства",
+    "book_section_title": "4. Идейный смысл священнодействий чинов возведения в протодиакона, протоиерея, игумена и архимандрита",
+    "epub_href": "index_split_174.xhtml",
+    "reader_href": "reader.html?href=index_split_174.xhtml",
+    "book_refs": [
+      {
+        "book_order": 174,
+        "section_title": "4. Идейный смысл священнодействий чинов возведения в протодиакона, протоиерея, игумена и архимандрита",
+        "chapter": "Глава VII. Таинство Священства",
+        "epub_href": "index_split_174.xhtml",
+        "reader_href": "reader.html?href=index_split_174.xhtml"
+      }
+    ],
+    "mapping_confidence": "high",
+    "mapping_note": "",
+    "study_order": 124
+  },
+  {
+    "id": "T06Q3",
+    "ticket": 6,
+    "ticket_position": 3,
+    "original_question": "Родительские субботы 2-й, 3-й и 4-й седмиц Святой Четыредесятницы",
+    "normalized_question": "Родительские субботы 2-й, 3-й и 4-й седмиц Святой Четыредесятницы",
+    "topic_id": "topic-d4ce39b7f1",
+    "book_order": 213,
+    "chapter": "Глава VIII. Богослужение погребений и поминовения усопших",
+    "book_section_title": "2. Церковный устав о поминовении",
+    "epub_href": "index_split_213.xhtml",
+    "reader_href": "reader.html?href=index_split_213.xhtml",
+    "book_refs": [
+      {
+        "book_order": 213,
+        "section_title": "2. Церковный устав о поминовении",
+        "chapter": "Глава VIII. Богослужение погребений и поминовения усопших",
+        "epub_href": "index_split_213.xhtml",
+        "reader_href": "reader.html?href=index_split_213.xhtml"
+      }
+    ],
+    "mapping_confidence": "high",
+    "mapping_note": "",
+    "study_order": 156
+  },
+  {
+    "id": "T06Q4",
+    "ticket": 6,
+    "ticket_position": 4,
+    "original_question": "Идейный смысл священнодействий рукоположения во епископа",
+    "normalized_question": "Идейный смысл священнодействий рукоположения во епископа",
+    "topic_id": "topic-488c582205",
+    "book_order": 169,
+    "chapter": "Глава VII. Таинство Священства",
+    "book_section_title": "3. Идейный смысл священнодействий рукоположения во епископа",
+    "epub_href": "index_split_169.xhtml",
+    "reader_href": "reader.html?href=index_split_169.xhtml",
+    "book_refs": [
+      {
+        "book_order": 169,
+        "section_title": "3. Идейный смысл священнодействий рукоположения во епископа",
+        "chapter": "Глава VII. Таинство Священства",
+        "epub_href": "index_split_169.xhtml",
+        "reader_href": "reader.html?href=index_split_169.xhtml"
+      }
+    ],
+    "mapping_confidence": "high",
+    "mapping_note": "",
+    "study_order": 119
+  },
+  {
+    "id": "T06Q5",
+    "ticket": 6,
+    "ticket_position": 5,
+    "original_question": "Схема чипа венчания второбрачных",
+    "normalized_question": "Схема чина венчания второбрачных",
+    "topic_id": "topic-b8a1a05d5f",
+    "book_order": 120,
+    "chapter": "Глава V. Богослужение Таинства Брака",
+    "book_section_title": "2. Схема чина венчания второбрачных",
+    "epub_href": "index_split_120.xhtml",
+    "reader_href": "reader.html?href=index_split_120.xhtml",
+    "book_refs": [
+      {
+        "book_order": 120,
+        "section_title": "2. Схема чина венчания второбрачных",
+        "chapter": "Глава V. Богослужение Таинства Брака",
+        "epub_href": "index_split_120.xhtml",
+        "reader_href": "reader.html?href=index_split_120.xhtml"
+      }
+    ],
+    "mapping_confidence": "high",
+    "mapping_note": "",
+    "study_order": 88
+  },
+  {
+    "id": "T06Q6",
+    "ticket": 6,
+    "ticket_position": 6,
+    "original_question": "Завершение исповеди",
+    "normalized_question": "Завершение исповеди",
+    "topic_id": "topic-f109c1f1f9",
+    "book_order": 71,
+    "chapter": "Глава III. Таинство Покаяния",
+    "book_section_title": "3. Схема чинопоследования исповеди",
+    "epub_href": "index_split_071.xhtml",
+    "reader_href": "reader.html?href=index_split_071.xhtml",
+    "book_refs": [
+      {
+        "book_order": 71,
+        "section_title": "3. Схема чинопоследования исповеди",
+        "chapter": "Глава III. Таинство Покаяния",
+        "epub_href": "index_split_071.xhtml",
+        "reader_href": "reader.html?href=index_split_071.xhtml"
+      }
+    ],
+    "mapping_confidence": "high",
+    "mapping_note": "",
+    "study_order": 54
+  },
+  {
+    "id": "T07Q1",
+    "ticket": 7,
+    "ticket_position": 1,
+    "original_question": "«Последованиемолебных пений»",
+    "normalized_question": "«Последование молебных пений»",
+    "topic_id": "topic-cb093370c5",
+    "book_order": 8,
+    "chapter": "Глава I. Богослужение общественное и частное",
+    "book_section_title": "Последование молебных пений",
+    "epub_href": "index_split_008.xhtml",
+    "reader_href": "reader.html?href=index_split_008.xhtml",
+    "book_refs": [
+      {
+        "book_order": 8,
+        "section_title": "Последование молебных пений",
+        "chapter": "Глава I. Богослужение общественное и частное",
+        "epub_href": "index_split_008.xhtml",
+        "reader_href": "reader.html?href=index_split_008.xhtml"
+      }
+    ],
+    "mapping_confidence": "high",
+    "mapping_note": "",
+    "study_order": 6
+  },
+  {
+    "id": "T07Q2",
+    "ticket": 7,
+    "ticket_position": 2,
+    "original_question": "Символика Таинства Миропомазания",
+    "normalized_question": "Символика Таинства Миропомазания",
+    "topic_id": "topic-dd67918b20",
+    "book_order": 48,
+    "chapter": "Глава II. Богослужение Таинств Крещения и Миропомазания",
+    "book_section_title": "6. Символика Таинства Миропомазания",
+    "epub_href": "index_split_048.xhtml",
+    "reader_href": "reader.html?href=index_split_048.xhtml",
+    "book_refs": [
+      {
+        "book_order": 48,
+        "section_title": "6. Символика Таинства Миропомазания",
+        "chapter": "Глава II. Богослужение Таинств Крещения и Миропомазания",
+        "epub_href": "index_split_048.xhtml",
+        "reader_href": "reader.html?href=index_split_048.xhtml"
+      }
+    ],
+    "mapping_confidence": "high",
+    "mapping_note": "",
+    "study_order": 40
+  },
+  {
+    "id": "T07Q3",
+    "ticket": 7,
+    "ticket_position": 3,
+    "original_question": "Происхождение и содержание чина исповеди",
+    "normalized_question": "Происхождение и содержание чина исповеди",
+    "topic_id": "topic-77cab081b7",
+    "book_order": 67,
+    "chapter": "Глава III. Таинство Покаяния",
+    "book_section_title": "2. История формирования Чина Покаяния",
+    "epub_href": "index_split_067.xhtml",
+    "reader_href": "reader.html?href=index_split_067.xhtml",
+    "book_refs": [
+      {
+        "book_order": 67,
+        "section_title": "2. История формирования Чина Покаяния",
+        "chapter": "Глава III. Таинство Покаяния",
+        "epub_href": "index_split_067.xhtml",
+        "reader_href": "reader.html?href=index_split_067.xhtml"
+      },
+      {
+        "book_order": 72,
+        "section_title": "4. Богословский смысл Таинства и содержание молитвословий",
+        "chapter": "Глава III. Таинство Покаяния",
+        "epub_href": "index_split_072.xhtml",
+        "reader_href": "reader.html?href=index_split_072.xhtml"
+      },
+      {
+        "book_order": 84,
+        "section_title": "5. История совершения исповеди в Русской Церкви",
+        "chapter": "Глава III. Таинство Покаяния",
+        "epub_href": "index_split_084.xhtml",
+        "reader_href": "reader.html?href=index_split_084.xhtml"
+      },
+      {
+        "book_order": 68,
+        "section_title": "Установление Таинства Покаяния",
+        "chapter": "Глава III. Таинство Покаяния",
+        "epub_href": "index_split_068.xhtml",
+        "reader_href": "reader.html?href=index_split_068.xhtml"
+      },
+      {
+        "book_order": 69,
+        "section_title": "Публичное Покаяние",
+        "chapter": "Глава III. Таинство Покаяния",
+        "epub_href": "index_split_069.xhtml",
+        "reader_href": "reader.html?href=index_split_069.xhtml"
+      },
+      {
+        "book_order": 70,
+        "section_title": "Тайная исповедь",
+        "chapter": "Глава III. Таинство Покаяния",
+        "epub_href": "index_split_070.xhtml",
+        "reader_href": "reader.html?href=index_split_070.xhtml"
+      }
+    ],
+    "mapping_confidence": "medium",
+    "mapping_note": "Формулировка объединяет происхождение и содержание исповеди; основной раздел — история формирования Покаяния, дополнительно указаны богословский смысл и история русской практики.",
+    "study_order": 50
+  },
+  {
+    "id": "T07Q4",
+    "ticket": 7,
+    "ticket_position": 4,
+    "original_question": "Содержание богослужебных текстов чина Венчания втробрачных",
+    "normalized_question": "Содержание богослужебных текстов чина Венчания второбрачных",
+    "topic_id": "topic-e453222097",
+    "book_order": 121,
+    "chapter": "Глава V. Богослужение Таинства Брака",
+    "book_section_title": "3. Идейный смысл молитвословий чина венчания второбрачных",
+    "epub_href": "index_split_121.xhtml",
+    "reader_href": "reader.html?href=index_split_121.xhtml",
+    "book_refs": [
+      {
+        "book_order": 121,
+        "section_title": "3. Идейный смысл молитвословий чина венчания второбрачных",
+        "chapter": "Глава V. Богослужение Таинства Брака",
+        "epub_href": "index_split_121.xhtml",
+        "reader_href": "reader.html?href=index_split_121.xhtml"
+      }
+    ],
+    "mapping_confidence": "high",
+    "mapping_note": "",
+    "study_order": 90
+  },
+  {
+    "id": "T07Q5",
+    "ticket": 7,
+    "ticket_position": 5,
+    "original_question": "Схема чина по Требнику отпевания мирских человек",
+    "normalized_question": "Схема чина по Требнику отпевания мирских человек",
+    "topic_id": "topic-32c4caad70",
+    "book_order": 183,
+    "chapter": "Глава VIII. Богослужение погребений и поминовения усопших",
+    "book_section_title": "2. Схема современного чинопоследования отпевания мирских человек",
+    "epub_href": "index_split_183.xhtml",
+    "reader_href": "reader.html?href=index_split_183.xhtml",
+    "book_refs": [
+      {
+        "book_order": 183,
+        "section_title": "2. Схема современного чинопоследования отпевания мирских человек",
+        "chapter": "Глава VIII. Богослужение погребений и поминовения усопших",
+        "epub_href": "index_split_183.xhtml",
+        "reader_href": "reader.html?href=index_split_183.xhtml"
+      },
+      {
+        "book_order": 178,
+        "section_title": "2. Схема чина по Требнику",
+        "chapter": "Глава VIII. Богослужение погребений и поминовения усопших",
+        "epub_href": "index_split_178.xhtml",
+        "reader_href": "reader.html?href=index_split_178.xhtml"
+      }
+    ],
+    "mapping_confidence": "medium",
+    "mapping_note": "Исходная формулировка смешивает выражение «схема чина по Требнику» с темой отпевания мирских человек; основная привязка дана к современной схеме отпевания мирян, дополнительная — к схеме «последования по исходе души».",
+    "study_order": 129
+  },
+  {
+    "id": "T07Q6",
+    "ticket": 7,
+    "ticket_position": 6,
+    "original_question": "Суббота Троицкая",
+    "normalized_question": "Суббота Троицкая",
+    "topic_id": "topic-33f48816fa",
+    "book_order": 213,
+    "chapter": "Глава VIII. Богослужение погребений и поминовения усопших",
+    "book_section_title": "2. Церковный устав о поминовении",
+    "epub_href": "index_split_213.xhtml",
+    "reader_href": "reader.html?href=index_split_213.xhtml",
+    "book_refs": [
+      {
+        "book_order": 213,
+        "section_title": "2. Церковный устав о поминовении",
+        "chapter": "Глава VIII. Богослужение погребений и поминовения усопших",
+        "epub_href": "index_split_213.xhtml",
+        "reader_href": "reader.html?href=index_split_213.xhtml"
+      }
+    ],
+    "mapping_confidence": "high",
+    "mapping_note": "",
+    "study_order": 158
+  },
+  {
+    "id": "T08Q1",
+    "ticket": 8,
+    "ticket_position": 1,
+    "original_question": "Таинства и их назначение",
+    "normalized_question": "Таинства и их назначение",
+    "topic_id": "topic-bbddc95d98",
+    "book_order": 9,
+    "chapter": "Глава I. Богослужение общественное и частное",
+    "book_section_title": "3. Таинства и их назначения",
+    "epub_href": "index_split_009.xhtml",
+    "reader_href": "reader.html?href=index_split_009.xhtml",
+    "book_refs": [
+      {
+        "book_order": 9,
+        "section_title": "3. Таинства и их назначения",
+        "chapter": "Глава I. Богослужение общественное и частное",
+        "epub_href": "index_split_009.xhtml",
+        "reader_href": "reader.html?href=index_split_009.xhtml"
+      }
+    ],
+    "mapping_confidence": "high",
+    "mapping_note": "",
+    "study_order": 7
+  },
+  {
+    "id": "T08Q2",
+    "ticket": 8,
+    "ticket_position": 2,
+    "original_question": "История формирования чинопоследования Таинства Крещения",
+    "normalized_question": "История формирования чинопоследования Таинства Крещения",
+    "topic_id": "topic-d04d820e9a",
+    "book_order": 24,
+    "chapter": "Глава II. Богослужение Таинств Крещения и Миропомазания",
+    "book_section_title": "4. История формирования чинопоследования Крещения",
+    "epub_href": "index_split_024.xhtml",
+    "reader_href": "reader.html?href=index_split_024.xhtml",
+    "book_refs": [
+      {
+        "book_order": 24,
+        "section_title": "4. История формирования чинопоследования Крещения",
+        "chapter": "Глава II. Богослужение Таинств Крещения и Миропомазания",
+        "epub_href": "index_split_024.xhtml",
+        "reader_href": "reader.html?href=index_split_024.xhtml"
+      }
+    ],
+    "mapping_confidence": "high",
+    "mapping_note": "",
+    "study_order": 25
+  },
+  {
+    "id": "T08Q3",
+    "ticket": 8,
+    "ticket_position": 3,
+    "original_question": "Чины присоединения к Православиючерез Таинство Миропомазания",
+    "normalized_question": "Чины присоединения к Православию через Таинство Миропомазания",
+    "topic_id": "topic-946cc9510b",
+    "book_order": 90,
+    "chapter": "Глава IV. Богослужение присоединения к Православию",
+    "book_section_title": "3. Чины присоединения к Православию через Таинство Миропомазания",
+    "epub_href": "index_split_090.xhtml",
+    "reader_href": "reader.html?href=index_split_090.xhtml",
+    "book_refs": [
+      {
+        "book_order": 90,
+        "section_title": "3. Чины присоединения к Православию через Таинство Миропомазания",
+        "chapter": "Глава IV. Богослужение присоединения к Православию",
+        "epub_href": "index_split_090.xhtml",
+        "reader_href": "reader.html?href=index_split_090.xhtml"
+      },
+      {
+        "book_order": 91,
+        "section_title": "Схема чинопоследования",
+        "chapter": "Глава IV. Богослужение присоединения к Православию",
+        "epub_href": "index_split_091.xhtml",
+        "reader_href": "reader.html?href=index_split_091.xhtml"
+      },
+      {
+        "book_order": 92,
+        "section_title": "Происхождение и содержание чинопоследования",
+        "chapter": "Глава IV. Богослужение присоединения к Православию",
+        "epub_href": "index_split_092.xhtml",
+        "reader_href": "reader.html?href=index_split_092.xhtml"
+      }
+    ],
+    "mapping_confidence": "high",
+    "mapping_note": "",
+    "study_order": 68
+  },
+  {
+    "id": "T08Q4",
+    "ticket": 8,
+    "ticket_position": 4,
+    "original_question": "Совершение Таинства Елеосвященияв Русской Церкви",
+    "normalized_question": "Совершение Таинства Елеосвящения в Русской Церкви",
+    "topic_id": "topic-f0bab9fa59",
+    "book_order": 137,
+    "chapter": "Глава VI. Богослужение Таинства Елеосвящения",
+    "book_section_title": "5. Совершение Таинства Елеосвящения в Русской Церкви",
+    "epub_href": "index_split_137.xhtml",
+    "reader_href": "reader.html?href=index_split_137.xhtml",
+    "book_refs": [
+      {
+        "book_order": 137,
+        "section_title": "5. Совершение Таинства Елеосвящения в Русской Церкви",
+        "chapter": "Глава VI. Богослужение Таинства Елеосвящения",
+        "epub_href": "index_split_137.xhtml",
+        "reader_href": "reader.html?href=index_split_137.xhtml"
+      }
+    ],
+    "mapping_confidence": "high",
+    "mapping_note": "",
+    "study_order": 95
+  },
+  {
+    "id": "T08Q5",
+    "ticket": 8,
+    "ticket_position": 5,
+    "original_question": "Понятие о чинах отпевания и назначение",
+    "normalized_question": "Понятие о чинах отпевания и назначение",
+    "topic_id": "topic-7564dd1c36",
+    "book_order": 180,
+    "chapter": "Глава VIII. Богослужение погребений и поминовения усопших",
+    "book_section_title": "1. Понятие о них и назначение",
+    "epub_href": "index_split_180.xhtml",
+    "reader_href": "reader.html?href=index_split_180.xhtml",
+    "book_refs": [
+      {
+        "book_order": 180,
+        "section_title": "1. Понятие о них и назначение",
+        "chapter": "Глава VIII. Богослужение погребений и поминовения усопших",
+        "epub_href": "index_split_180.xhtml",
+        "reader_href": "reader.html?href=index_split_180.xhtml"
+      }
+    ],
+    "mapping_confidence": "high",
+    "mapping_note": "",
+    "study_order": 126
+  },
+  {
+    "id": "T08Q6",
+    "ticket": 8,
+    "ticket_position": 6,
+    "original_question": "Родительские поминальные дни в Русской Православной Церкви",
+    "normalized_question": "Родительские поминальные дни в Русской Православной Церкви",
+    "topic_id": "topic-64ca8099e9",
+    "book_order": 213,
+    "chapter": "Глава VIII. Богослужение погребений и поминовения усопших",
+    "book_section_title": "2. Церковный устав о поминовении",
+    "epub_href": "index_split_213.xhtml",
+    "reader_href": "reader.html?href=index_split_213.xhtml",
+    "book_refs": [
+      {
+        "book_order": 213,
+        "section_title": "2. Церковный устав о поминовении",
+        "chapter": "Глава VIII. Богослужение погребений и поминовения усопших",
+        "epub_href": "index_split_213.xhtml",
+        "reader_href": "reader.html?href=index_split_213.xhtml"
+      }
+    ],
+    "mapping_confidence": "high",
+    "mapping_note": "",
+    "study_order": 153
+  },
+  {
+    "id": "T09Q1",
+    "ticket": 9,
+    "ticket_position": 1,
+    "original_question": "История формирования чина водоосвящения",
+    "normalized_question": "История формирования чина водоосвящения",
+    "topic_id": "topic-2ff41387bc",
+    "book_order": 219,
+    "chapter": "Глава IX. Богослужение молебных пений.",
+    "book_section_title": "История формирования чина",
+    "epub_href": "index_split_219.xhtml",
+    "reader_href": "reader.html?href=index_split_219.xhtml",
+    "book_refs": [
+      {
+        "book_order": 219,
+        "section_title": "История формирования чина",
+        "chapter": "Глава IX. Богослужение молебных пений.",
+        "epub_href": "index_split_219.xhtml",
+        "reader_href": "reader.html?href=index_split_219.xhtml"
+      }
+    ],
+    "mapping_confidence": "high",
+    "mapping_note": "",
+    "study_order": 163
+  },
+  {
+    "id": "T09Q2",
+    "ticket": 9,
+    "ticket_position": 2,
+    "original_question": "Лития об усопших",
+    "normalized_question": "Лития об усопших",
+    "topic_id": "topic-c0f49d0e4b",
+    "book_order": 210,
+    "chapter": "Глава VIII. Богослужение погребений и поминовения усопших",
+    "book_section_title": "3. Лития об усопших",
+    "epub_href": "index_split_210.xhtml",
+    "reader_href": "reader.html?href=index_split_210.xhtml",
+    "book_refs": [
+      {
+        "book_order": 210,
+        "section_title": "3. Лития об усопших",
+        "chapter": "Глава VIII. Богослужение погребений и поминовения усопших",
+        "epub_href": "index_split_210.xhtml",
+        "reader_href": "reader.html?href=index_split_210.xhtml"
+      }
+    ],
+    "mapping_confidence": "high",
+    "mapping_note": "",
+    "study_order": 149
+  },
+  {
+    "id": "T09Q3",
+    "ticket": 9,
+    "ticket_position": 3,
+    "original_question": "Схема чина хиротонии во епископа",
+    "normalized_question": "Схема чина хиротонии во епископа",
+    "topic_id": "topic-6b2b56f096",
+    "book_order": 168,
+    "chapter": "Глава VII. Таинство Священства",
+    "book_section_title": "2. Схема чина хиротонии во епископа",
+    "epub_href": "index_split_168.xhtml",
+    "reader_href": "reader.html?href=index_split_168.xhtml",
+    "book_refs": [
+      {
+        "book_order": 168,
+        "section_title": "2. Схема чина хиротонии во епископа",
+        "chapter": "Глава VII. Таинство Священства",
+        "epub_href": "index_split_168.xhtml",
+        "reader_href": "reader.html?href=index_split_168.xhtml"
+      }
+    ],
+    "mapping_confidence": "high",
+    "mapping_note": "",
+    "study_order": 118
+  },
+  {
+    "id": "T09Q4",
+    "ticket": 9,
+    "ticket_position": 4,
+    "original_question": "Историческое формирование чина Венчания второбрачных",
+    "normalized_question": "Историческое формирование чина Венчания второбрачных",
+    "topic_id": "topic-f974ae6ae3",
+    "book_order": 119,
+    "chapter": "Глава V. Богослужение Таинства Брака",
+    "book_section_title": "1. Историческое формирование чина венчания второбрачных",
+    "epub_href": "index_split_119.xhtml",
+    "reader_href": "reader.html?href=index_split_119.xhtml",
+    "book_refs": [
+      {
+        "book_order": 119,
+        "section_title": "1. Историческое формирование чина венчания второбрачных",
+        "chapter": "Глава V. Богослужение Таинства Брака",
+        "epub_href": "index_split_119.xhtml",
+        "reader_href": "reader.html?href=index_split_119.xhtml"
+      }
+    ],
+    "mapping_confidence": "high",
+    "mapping_note": "",
+    "study_order": 87
+  },
+  {
+    "id": "T09Q5",
+    "ticket": 9,
+    "ticket_position": 5,
+    "original_question": "Чтение Символа веры и исповедь",
+    "normalized_question": "Чтение Символа веры и исповедь",
+    "topic_id": "topic-a6837674ab",
+    "book_order": 81,
+    "chapter": "Глава III. Таинство Покаяния",
+    "book_section_title": "Чтение Символа веры",
+    "epub_href": "index_split_081.xhtml",
+    "reader_href": "reader.html?href=index_split_081.xhtml",
+    "book_refs": [
+      {
+        "book_order": 81,
+        "section_title": "Чтение Символа веры",
+        "chapter": "Глава III. Таинство Покаяния",
+        "epub_href": "index_split_081.xhtml",
+        "reader_href": "reader.html?href=index_split_081.xhtml"
+      },
+      {
+        "book_order": 82,
+        "section_title": "Исповедание кающимся своих грехов",
+        "chapter": "Глава III. Таинство Покаяния",
+        "epub_href": "index_split_082.xhtml",
+        "reader_href": "reader.html?href=index_split_082.xhtml"
+      }
+    ],
+    "mapping_confidence": "high",
+    "mapping_note": "",
+    "study_order": 63
+  },
+  {
+    "id": "T09Q6",
+    "ticket": 9,
+    "ticket_position": 6,
+    "original_question": "Чинопоследование Крещения",
+    "normalized_question": "Чинопоследование Крещения",
+    "topic_id": "topic-cb3960c2d0",
+    "book_order": 20,
+    "chapter": "Глава II. Богослужение Таинств Крещения и Миропомазания",
+    "book_section_title": "Чин крещения",
+    "epub_href": "index_split_020.xhtml",
+    "reader_href": "reader.html?href=index_split_020.xhtml",
+    "book_refs": [
+      {
+        "book_order": 20,
+        "section_title": "Чин крещения",
+        "chapter": "Глава II. Богослужение Таинств Крещения и Миропомазания",
+        "epub_href": "index_split_020.xhtml",
+        "reader_href": "reader.html?href=index_split_020.xhtml"
+      }
+    ],
+    "mapping_confidence": "high",
+    "mapping_note": "",
+    "study_order": 17
+  },
+  {
+    "id": "T10Q1",
+    "ticket": 10,
+    "ticket_position": 1,
+    "original_question": "Виды священнодействий (обрядов) Таинства Крещения, и их значение",
+    "normalized_question": "Виды священнодействий (обрядов) Таинства Крещения, и их значение",
+    "topic_id": "topic-cd697be7e7",
+    "book_order": 10,
+    "chapter": "Глава I. Богослужение общественное и частное",
+    "book_section_title": "4. Виды священнодействий (обрядов) и их значение",
+    "epub_href": "index_split_010.xhtml",
+    "reader_href": "reader.html?href=index_split_010.xhtml",
+    "book_refs": [
+      {
+        "book_order": 10,
+        "section_title": "4. Виды священнодействий (обрядов) и их значение",
+        "chapter": "Глава I. Богослужение общественное и частное",
+        "epub_href": "index_split_010.xhtml",
+        "reader_href": "reader.html?href=index_split_010.xhtml"
+      }
+    ],
+    "mapping_confidence": "medium",
+    "mapping_note": "Формулировка почти дословно совпадает с общим разделом о видах священнодействий, но в билете добавлены слова «Таинства Крещения».",
+    "study_order": 8
+  },
+  {
+    "id": "T10Q2",
+    "ticket": 10,
+    "ticket_position": 2,
+    "original_question": "Происхождение, содержание и виды чинопоследований",
+    "normalized_question": "Происхождение, содержание и виды чинопоследований",
+    "topic_id": "topic-2976138413",
+    "book_order": 95,
+    "chapter": "Глава IV. Богослужение присоединения к Православию",
+    "book_section_title": "Происхождение, содержание и виды чинопоследований",
+    "epub_href": "index_split_095.xhtml",
+    "reader_href": "reader.html?href=index_split_095.xhtml",
+    "book_refs": [
+      {
+        "book_order": 95,
+        "section_title": "Происхождение, содержание и виды чинопоследований",
+        "chapter": "Глава IV. Богослужение присоединения к Православию",
+        "epub_href": "index_split_095.xhtml",
+        "reader_href": "reader.html?href=index_split_095.xhtml"
+      }
+    ],
+    "mapping_confidence": "high",
+    "mapping_note": "",
+    "study_order": 70
+  },
+  {
+    "id": "T10Q3",
+    "ticket": 10,
+    "ticket_position": 3,
+    "original_question": "История установления чина епископа",
+    "normalized_question": "История установления чина епископа",
+    "topic_id": "topic-2b1a6288bc",
+    "book_order": 167,
+    "chapter": "Глава VII. Таинство Священства",
+    "book_section_title": "1. История установления чина",
+    "epub_href": "index_split_167.xhtml",
+    "reader_href": "reader.html?href=index_split_167.xhtml",
+    "book_refs": [
+      {
+        "book_order": 167,
+        "section_title": "1. История установления чина",
+        "chapter": "Глава VII. Таинство Священства",
+        "epub_href": "index_split_167.xhtml",
+        "reader_href": "reader.html?href=index_split_167.xhtml"
+      }
+    ],
+    "mapping_confidence": "high",
+    "mapping_note": "",
+    "study_order": 117
+  },
+  {
+    "id": "T10Q4",
+    "ticket": 10,
+    "ticket_position": 4,
+    "original_question": "История формирования чина отпевания мирских человек",
+    "normalized_question": "История формирования чина отпевания мирских человек",
+    "topic_id": "topic-1afc19beab",
+    "book_order": 182,
+    "chapter": "Глава VIII. Богослужение погребений и поминовения усопших",
+    "book_section_title": "1. История формирования чина отпевания мирских человек",
+    "epub_href": "index_split_182.xhtml",
+    "reader_href": "reader.html?href=index_split_182.xhtml",
+    "book_refs": [
+      {
+        "book_order": 182,
+        "section_title": "1. История формирования чина отпевания мирских человек",
+        "chapter": "Глава VIII. Богослужение погребений и поминовения усопших",
+        "epub_href": "index_split_182.xhtml",
+        "reader_href": "reader.html?href=index_split_182.xhtml"
+      }
+    ],
+    "mapping_confidence": "high",
+    "mapping_note": "",
+    "study_order": 127
+  },
+  {
+    "id": "T10Q5",
+    "ticket": 10,
+    "ticket_position": 5,
+    "original_question": "Содержание молитвословий чина водоосвящения",
+    "normalized_question": "Содержание молитвословий чина водоосвящения",
+    "topic_id": "topic-bdec537f7e",
+    "book_order": 221,
+    "chapter": "Глава IX. Богослужение молебных пений.",
+    "book_section_title": "Содержание молитвословий чина",
+    "epub_href": "index_split_221.xhtml",
+    "reader_href": "reader.html?href=index_split_221.xhtml",
+    "book_refs": [
+      {
+        "book_order": 221,
+        "section_title": "Содержание молитвословий чина",
+        "chapter": "Глава IX. Богослужение молебных пений.",
+        "epub_href": "index_split_221.xhtml",
+        "reader_href": "reader.html?href=index_split_221.xhtml"
+      }
+    ],
+    "mapping_confidence": "high",
+    "mapping_note": "",
+    "study_order": 166
+  },
+  {
+    "id": "T10Q6",
+    "ticket": 10,
+    "ticket_position": 6,
+    "original_question": "Тайная исповедь",
+    "normalized_question": "Тайная исповедь",
+    "topic_id": "topic-aea7861725",
+    "book_order": 70,
+    "chapter": "Глава III. Таинство Покаяния",
+    "book_section_title": "Тайная исповедь",
+    "epub_href": "index_split_070.xhtml",
+    "reader_href": "reader.html?href=index_split_070.xhtml",
+    "book_refs": [
+      {
+        "book_order": 70,
+        "section_title": "Тайная исповедь",
+        "chapter": "Глава III. Таинство Покаяния",
+        "epub_href": "index_split_070.xhtml",
+        "reader_href": "reader.html?href=index_split_070.xhtml"
+      }
+    ],
+    "mapping_confidence": "high",
+    "mapping_note": "",
+    "study_order": 53
+  },
+  {
+    "id": "T11Q1",
+    "ticket": 11,
+    "ticket_position": 1,
+    "original_question": "Богослужение святых Таинства Крещения",
+    "normalized_question": "Богослужение Таинства Крещения",
+    "topic_id": "topic-172976b25e",
+    "book_order": 20,
+    "chapter": "Глава II. Богослужение Таинств Крещения и Миропомазания",
+    "book_section_title": "Чин крещения",
+    "epub_href": "index_split_020.xhtml",
+    "reader_href": "reader.html?href=index_split_020.xhtml",
+    "book_refs": [
+      {
+        "book_order": 20,
+        "section_title": "Чин крещения",
+        "chapter": "Глава II. Богослужение Таинств Крещения и Миропомазания",
+        "epub_href": "index_split_020.xhtml",
+        "reader_href": "reader.html?href=index_split_020.xhtml"
+      }
+    ],
+    "mapping_confidence": "medium",
+    "mapping_note": "Исходная формулировка грамматически повреждена; привязка дана к чину Крещения.",
+    "study_order": 16
+  },
+  {
+    "id": "T11Q2",
+    "ticket": 11,
+    "ticket_position": 2,
+    "original_question": "Схема чинопоследования исповеди",
+    "normalized_question": "Схема чинопоследования исповеди",
+    "topic_id": "topic-6045675ac0",
+    "book_order": 71,
+    "chapter": "Глава III. Таинство Покаяния",
+    "book_section_title": "3. Схема чинопоследования исповеди",
+    "epub_href": "index_split_071.xhtml",
+    "reader_href": "reader.html?href=index_split_071.xhtml",
+    "book_refs": [
+      {
+        "book_order": 71,
+        "section_title": "3. Схема чинопоследования исповеди",
+        "chapter": "Глава III. Таинство Покаяния",
+        "epub_href": "index_split_071.xhtml",
+        "reader_href": "reader.html?href=index_split_071.xhtml"
+      }
+    ],
+    "mapping_confidence": "high",
+    "mapping_note": "",
+    "study_order": 56
+  },
+  {
+    "id": "T11Q3",
+    "ticket": 11,
+    "ticket_position": 3,
+    "original_question": "Схема современного чинопоследования отпевания мирских человек",
+    "normalized_question": "Схема современного чинопоследования отпевания мирских человек",
+    "topic_id": "topic-9478f8d2a6",
+    "book_order": 183,
+    "chapter": "Глава VIII. Богослужение погребений и поминовения усопших",
+    "book_section_title": "2. Схема современного чинопоследования отпевания мирских человек",
+    "epub_href": "index_split_183.xhtml",
+    "reader_href": "reader.html?href=index_split_183.xhtml",
+    "book_refs": [
+      {
+        "book_order": 183,
+        "section_title": "2. Схема современного чинопоследования отпевания мирских человек",
+        "chapter": "Глава VIII. Богослужение погребений и поминовения усопших",
+        "epub_href": "index_split_183.xhtml",
+        "reader_href": "reader.html?href=index_split_183.xhtml"
+      }
+    ],
+    "mapping_confidence": "high",
+    "mapping_note": "",
+    "study_order": 128
+  },
+  {
+    "id": "T11Q4",
+    "ticket": 11,
+    "ticket_position": 4,
+    "original_question": "Идейный смысл священнодействий рукоположения во пресвитера",
+    "normalized_question": "Идейный смысл священнодействий рукоположения во пресвитера",
+    "topic_id": "topic-7816ee07c3",
+    "book_order": 165,
+    "chapter": "Глава VII. Таинство Священства",
+    "book_section_title": "3. Идейный смысл священнодействий рукоположения во пресвитера",
+    "epub_href": "index_split_165.xhtml",
+    "reader_href": "reader.html?href=index_split_165.xhtml",
+    "book_refs": [
+      {
+        "book_order": 165,
+        "section_title": "3. Идейный смысл священнодействий рукоположения во пресвитера",
+        "chapter": "Глава VII. Таинство Священства",
+        "epub_href": "index_split_165.xhtml",
+        "reader_href": "reader.html?href=index_split_165.xhtml"
+      }
+    ],
+    "mapping_confidence": "high",
+    "mapping_note": "",
+    "study_order": 116
+  },
+  {
+    "id": "T11Q5",
+    "ticket": 11,
+    "ticket_position": 5,
+    "original_question": "История формирования чина освящения храма архиереем",
+    "normalized_question": "История формирования чина освящения храма архиереем",
+    "topic_id": "topic-58c0ee1b50",
+    "book_order": 223,
+    "chapter": "Глава X. Богослужение освящения храма",
+    "book_section_title": "1. История формирования чина",
+    "epub_href": "index_split_223.xhtml",
+    "reader_href": "reader.html?href=index_split_223.xhtml",
+    "book_refs": [
+      {
+        "book_order": 223,
+        "section_title": "1. История формирования чина",
+        "chapter": "Глава X. Богослужение освящения храма",
+        "epub_href": "index_split_223.xhtml",
+        "reader_href": "reader.html?href=index_split_223.xhtml"
+      }
+    ],
+    "mapping_confidence": "high",
+    "mapping_note": "",
+    "study_order": 167
+  },
+  {
+    "id": "T11Q6",
+    "ticket": 11,
+    "ticket_position": 6,
+    "original_question": "История формирования чина Покаяния",
+    "normalized_question": "История формирования чина Покаяния",
+    "topic_id": "topic-8c810ec3f7",
+    "book_order": 67,
+    "chapter": "Глава III. Таинство Покаяния",
+    "book_section_title": "2. История формирования Чина Покаяния",
+    "epub_href": "index_split_067.xhtml",
+    "reader_href": "reader.html?href=index_split_067.xhtml",
+    "book_refs": [
+      {
+        "book_order": 67,
+        "section_title": "2. История формирования Чина Покаяния",
+        "chapter": "Глава III. Таинство Покаяния",
+        "epub_href": "index_split_067.xhtml",
+        "reader_href": "reader.html?href=index_split_067.xhtml"
+      },
+      {
+        "book_order": 68,
+        "section_title": "Установление Таинства Покаяния",
+        "chapter": "Глава III. Таинство Покаяния",
+        "epub_href": "index_split_068.xhtml",
+        "reader_href": "reader.html?href=index_split_068.xhtml"
+      },
+      {
+        "book_order": 69,
+        "section_title": "Публичное Покаяние",
+        "chapter": "Глава III. Таинство Покаяния",
+        "epub_href": "index_split_069.xhtml",
+        "reader_href": "reader.html?href=index_split_069.xhtml"
+      },
+      {
+        "book_order": 70,
+        "section_title": "Тайная исповедь",
+        "chapter": "Глава III. Таинство Покаяния",
+        "epub_href": "index_split_070.xhtml",
+        "reader_href": "reader.html?href=index_split_070.xhtml"
+      }
+    ],
+    "mapping_confidence": "high",
+    "mapping_note": "",
+    "study_order": 49
+  },
+  {
+    "id": "T12Q1",
+    "ticket": 12,
+    "ticket_position": 1,
+    "original_question": "Символика Таинства Крещения",
+    "normalized_question": "Символика Таинства Крещения",
+    "topic_id": "topic-89afbaf174",
+    "book_order": 23,
+    "chapter": "Глава II. Богослужение Таинств Крещения и Миропомазания",
+    "book_section_title": "3. Символика Таинства Крещения",
+    "epub_href": "index_split_023.xhtml",
+    "reader_href": "reader.html?href=index_split_023.xhtml",
+    "book_refs": [
+      {
+        "book_order": 23,
+        "section_title": "3. Символика Таинства Крещения",
+        "chapter": "Глава II. Богослужение Таинств Крещения и Миропомазания",
+        "epub_href": "index_split_023.xhtml",
+        "reader_href": "reader.html?href=index_split_023.xhtml"
+      }
+    ],
+    "mapping_confidence": "high",
+    "mapping_note": "",
+    "study_order": 23
+  },
+  {
+    "id": "T12Q2",
+    "ticket": 12,
+    "ticket_position": 2,
+    "original_question": "Публичное покаяние",
+    "normalized_question": "Публичное покаяние",
+    "topic_id": "topic-29bbbb0393",
+    "book_order": 69,
+    "chapter": "Глава III. Таинство Покаяния",
+    "book_section_title": "Публичное Покаяние",
+    "epub_href": "index_split_069.xhtml",
+    "reader_href": "reader.html?href=index_split_069.xhtml",
+    "book_refs": [
+      {
+        "book_order": 69,
+        "section_title": "Публичное Покаяние",
+        "chapter": "Глава III. Таинство Покаяния",
+        "epub_href": "index_split_069.xhtml",
+        "reader_href": "reader.html?href=index_split_069.xhtml"
+      }
+    ],
+    "mapping_confidence": "high",
+    "mapping_note": "",
+    "study_order": 52
+  },
+  {
+    "id": "T12Q3",
+    "ticket": 12,
+    "ticket_position": 3,
+    "original_question": "Происхождение и содержание чинопоследования исповеди",
+    "normalized_question": "Происхождение и содержание чинопоследования исповеди",
+    "topic_id": "topic-571ee1c9a4",
+    "book_order": 67,
+    "chapter": "Глава III. Таинство Покаяния",
+    "book_section_title": "2. История формирования Чина Покаяния",
+    "epub_href": "index_split_067.xhtml",
+    "reader_href": "reader.html?href=index_split_067.xhtml",
+    "book_refs": [
+      {
+        "book_order": 67,
+        "section_title": "2. История формирования Чина Покаяния",
+        "chapter": "Глава III. Таинство Покаяния",
+        "epub_href": "index_split_067.xhtml",
+        "reader_href": "reader.html?href=index_split_067.xhtml"
+      },
+      {
+        "book_order": 72,
+        "section_title": "4. Богословский смысл Таинства и содержание молитвословий",
+        "chapter": "Глава III. Таинство Покаяния",
+        "epub_href": "index_split_072.xhtml",
+        "reader_href": "reader.html?href=index_split_072.xhtml"
+      },
+      {
+        "book_order": 84,
+        "section_title": "5. История совершения исповеди в Русской Церкви",
+        "chapter": "Глава III. Таинство Покаяния",
+        "epub_href": "index_split_084.xhtml",
+        "reader_href": "reader.html?href=index_split_084.xhtml"
+      },
+      {
+        "book_order": 68,
+        "section_title": "Установление Таинства Покаяния",
+        "chapter": "Глава III. Таинство Покаяния",
+        "epub_href": "index_split_068.xhtml",
+        "reader_href": "reader.html?href=index_split_068.xhtml"
+      },
+      {
+        "book_order": 69,
+        "section_title": "Публичное Покаяние",
+        "chapter": "Глава III. Таинство Покаяния",
+        "epub_href": "index_split_069.xhtml",
+        "reader_href": "reader.html?href=index_split_069.xhtml"
+      },
+      {
+        "book_order": 70,
+        "section_title": "Тайная исповедь",
+        "chapter": "Глава III. Таинство Покаяния",
+        "epub_href": "index_split_070.xhtml",
+        "reader_href": "reader.html?href=index_split_070.xhtml"
+      }
+    ],
+    "mapping_confidence": "medium",
+    "mapping_note": "В учебнике история и богословское содержание исповеди разнесены по нескольким разделам; указаны основной и дополнительные разделы.",
+    "study_order": 51
+  },
+  {
+    "id": "T12Q4",
+    "ticket": 12,
+    "ticket_position": 4,
+    "original_question": "Схема чинопоследоваиия хиротонии во пресвитера",
+    "normalized_question": "Схема чинопоследования хиротонии во пресвитера",
+    "topic_id": "topic-c630a71015",
+    "book_order": 164,
+    "chapter": "Глава VII. Таинство Священства",
+    "book_section_title": "2. Схема чинопоследования хиротонии во пресвитера",
+    "epub_href": "index_split_164.xhtml",
+    "reader_href": "reader.html?href=index_split_164.xhtml",
+    "book_refs": [
+      {
+        "book_order": 164,
+        "section_title": "2. Схема чинопоследования хиротонии во пресвитера",
+        "chapter": "Глава VII. Таинство Священства",
+        "epub_href": "index_split_164.xhtml",
+        "reader_href": "reader.html?href=index_split_164.xhtml"
+      }
+    ],
+    "mapping_confidence": "high",
+    "mapping_note": "",
+    "study_order": 115
+  },
+  {
+    "id": "T12Q5",
+    "ticket": 12,
+    "ticket_position": 5,
+    "original_question": "Содержание и смысл молитвословий и священнодействий",
+    "normalized_question": "Содержание и смысл молитвословий и священнодействий",
+    "topic_id": "topic-67f00f8971",
+    "book_order": 184,
+    "chapter": "Глава VIII. Богослужение погребений и поминовения усопших",
+    "book_section_title": "3. Содержание и смысл молитвословий и священнодействий",
+    "epub_href": "index_split_184.xhtml",
+    "reader_href": "reader.html?href=index_split_184.xhtml",
+    "book_refs": [
+      {
+        "book_order": 184,
+        "section_title": "3. Содержание и смысл молитвословий и священнодействий",
+        "chapter": "Глава VIII. Богослужение погребений и поминовения усопших",
+        "epub_href": "index_split_184.xhtml",
+        "reader_href": "reader.html?href=index_split_184.xhtml"
+      }
+    ],
+    "mapping_confidence": "high",
+    "mapping_note": "",
+    "study_order": 130
+  },
+  {
+    "id": "T12Q6",
+    "ticket": 12,
+    "ticket_position": 6,
+    "original_question": "Схема чинопоследования освящения храма архиереем",
+    "normalized_question": "Схема чинопоследования освящения храма архиереем",
+    "topic_id": "topic-c05af2ab1e",
+    "book_order": 224,
+    "chapter": "Глава X. Богослужение освящения храма",
+    "book_section_title": "2. Схема чинопоследования освящения храма архиереем",
+    "epub_href": "index_split_224.xhtml",
+    "reader_href": "reader.html?href=index_split_224.xhtml",
+    "book_refs": [
+      {
+        "book_order": 224,
+        "section_title": "2. Схема чинопоследования освящения храма архиереем",
+        "chapter": "Глава X. Богослужение освящения храма",
+        "epub_href": "index_split_224.xhtml",
+        "reader_href": "reader.html?href=index_split_224.xhtml"
+      },
+      {
+        "book_order": 225,
+        "section_title": "I. Утверждение святой трапезы",
+        "chapter": "Глава X. Богослужение освящения храма",
+        "epub_href": "index_split_225.xhtml",
+        "reader_href": "reader.html?href=index_split_225.xhtml"
+      },
+      {
+        "book_order": 226,
+        "section_title": "II. Омовение и помазание святым Миром трапезы",
+        "chapter": "Глава X. Богослужение освящения храма",
+        "epub_href": "index_split_226.xhtml",
+        "reader_href": "reader.html?href=index_split_226.xhtml"
+      },
+      {
+        "book_order": 227,
+        "section_title": "III. Облачение престола и жертвенника",
+        "chapter": "Глава X. Богослужение освящения храма",
+        "epub_href": "index_split_227.xhtml",
+        "reader_href": "reader.html?href=index_split_227.xhtml"
+      },
+      {
+        "book_order": 228,
+        "section_title": "IV. Окропление святою водою и помазание Миром всего храма",
+        "chapter": "Глава X. Богослужение освящения храма",
+        "epub_href": "index_split_228.xhtml",
+        "reader_href": "reader.html?href=index_split_228.xhtml"
+      },
+      {
+        "book_order": 229,
+        "section_title": "V. Крестный ход со святыми мощами",
+        "chapter": "Глава X. Богослужение освящения храма",
+        "epub_href": "index_split_229.xhtml",
+        "reader_href": "reader.html?href=index_split_229.xhtml"
+      },
+      {
+        "book_order": 230,
+        "section_title": "VI. Положение святых мощей под престол и в антиминс",
+        "chapter": "Глава X. Богослужение освящения храма",
+        "epub_href": "index_split_230.xhtml",
+        "reader_href": "reader.html?href=index_split_230.xhtml"
+      }
+    ],
+    "mapping_confidence": "high",
+    "mapping_note": "",
+    "study_order": 168
+  },
+  {
+    "id": "T13Q1",
+    "ticket": 13,
+    "ticket_position": 1,
+    "original_question": "История формирования чинопоследования Крещения",
+    "normalized_question": "История формирования чинопоследования Крещения",
+    "topic_id": "topic-dda21fe00f",
+    "book_order": 24,
+    "chapter": "Глава II. Богослужение Таинств Крещения и Миропомазания",
+    "book_section_title": "4. История формирования чинопоследования Крещения",
+    "epub_href": "index_split_024.xhtml",
+    "reader_href": "reader.html?href=index_split_024.xhtml",
+    "book_refs": [
+      {
+        "book_order": 24,
+        "section_title": "4. История формирования чинопоследования Крещения",
+        "chapter": "Глава II. Богослужение Таинств Крещения и Миропомазания",
+        "epub_href": "index_split_024.xhtml",
+        "reader_href": "reader.html?href=index_split_024.xhtml"
+      }
+    ],
+    "mapping_confidence": "high",
+    "mapping_note": "",
+    "study_order": 24
+  },
+  {
+    "id": "T13Q2",
+    "ticket": 13,
+    "ticket_position": 2,
+    "original_question": "История совершения воцерковления в Руссокой Церкви",
+    "normalized_question": "История совершения воцерковления в Русской Церкви",
+    "topic_id": "topic-362c0ae9f3",
+    "book_order": 54,
+    "chapter": "Глава II. Богослужение Таинств Крещения и Миропомазания",
+    "book_section_title": "Воцерковление",
+    "epub_href": "index_split_054.xhtml",
+    "reader_href": "reader.html?href=index_split_054.xhtml",
+    "book_refs": [
+      {
+        "book_order": 54,
+        "section_title": "Воцерковление",
+        "chapter": "Глава II. Богослужение Таинств Крещения и Миропомазания",
+        "epub_href": "index_split_054.xhtml",
+        "reader_href": "reader.html?href=index_split_054.xhtml"
+      }
+    ],
+    "mapping_confidence": "high",
+    "mapping_note": "",
+    "study_order": 45
+  },
+  {
+    "id": "T13Q3",
+    "ticket": 13,
+    "ticket_position": 3,
+    "original_question": "Чины присоединения к Православию через Таинство Покаяния",
+    "normalized_question": "Чины присоединения к Православию через Таинство Покаяния",
+    "topic_id": "topic-07b26846c2",
+    "book_order": 93,
+    "chapter": "Глава IV. Богослужение присоединения к Православию",
+    "book_section_title": "4. Чины присоединения к Православию через Таинство Покаяния",
+    "epub_href": "index_split_093.xhtml",
+    "reader_href": "reader.html?href=index_split_093.xhtml",
+    "book_refs": [
+      {
+        "book_order": 93,
+        "section_title": "4. Чины присоединения к Православию через Таинство Покаяния",
+        "chapter": "Глава IV. Богослужение присоединения к Православию",
+        "epub_href": "index_split_093.xhtml",
+        "reader_href": "reader.html?href=index_split_093.xhtml"
+      },
+      {
+        "book_order": 94,
+        "section_title": "Схема чинопоследования",
+        "chapter": "Глава IV. Богослужение присоединения к Православию",
+        "epub_href": "index_split_094.xhtml",
+        "reader_href": "reader.html?href=index_split_094.xhtml"
+      },
+      {
+        "book_order": 95,
+        "section_title": "Происхождение, содержание и виды чинопоследований",
+        "chapter": "Глава IV. Богослужение присоединения к Православию",
+        "epub_href": "index_split_095.xhtml",
+        "reader_href": "reader.html?href=index_split_095.xhtml"
+      }
+    ],
+    "mapping_confidence": "high",
+    "mapping_note": "",
+    "study_order": 69
+  },
+  {
+    "id": "T13Q4",
+    "ticket": 13,
+    "ticket_position": 4,
+    "original_question": "История установления чина пресвитера",
+    "normalized_question": "История установления чина пресвитера",
+    "topic_id": "topic-7c44fd7943",
+    "book_order": 163,
+    "chapter": "Глава VII. Таинство Священства",
+    "book_section_title": "1. История установления чина",
+    "epub_href": "index_split_163.xhtml",
+    "reader_href": "reader.html?href=index_split_163.xhtml",
+    "book_refs": [
+      {
+        "book_order": 163,
+        "section_title": "1. История установления чина",
+        "chapter": "Глава VII. Таинство Священства",
+        "epub_href": "index_split_163.xhtml",
+        "reader_href": "reader.html?href=index_split_163.xhtml"
+      }
+    ],
+    "mapping_confidence": "high",
+    "mapping_note": "",
+    "study_order": 114
+  },
+  {
+    "id": "T13Q5",
+    "ticket": 13,
+    "ticket_position": 5,
+    "original_question": "Происхождение чина отпевания мирских человек в светлую седмицу Пасху",
+    "normalized_question": "Происхождение чина отпевания мирских человек в светлую седмицу Пасху",
+    "topic_id": "topic-9d812eb47c",
+    "book_order": 186,
+    "chapter": "Глава VIII. Богослужение погребений и поминовения усопших",
+    "book_section_title": "1. Происхождение чина",
+    "epub_href": "index_split_186.xhtml",
+    "reader_href": "reader.html?href=index_split_186.xhtml",
+    "book_refs": [
+      {
+        "book_order": 186,
+        "section_title": "1. Происхождение чина",
+        "chapter": "Глава VIII. Богослужение погребений и поминовения усопших",
+        "epub_href": "index_split_186.xhtml",
+        "reader_href": "reader.html?href=index_split_186.xhtml"
+      }
+    ],
+    "mapping_confidence": "high",
+    "mapping_note": "",
+    "study_order": 131
+  },
+  {
+    "id": "T13Q6",
+    "ticket": 13,
+    "ticket_position": 6,
+    "original_question": "Символика водоосвящения",
+    "normalized_question": "Символика водоосвящения",
+    "topic_id": "topic-dd7499a452",
+    "book_order": 218,
+    "chapter": "Глава IX. Богослужение молебных пений.",
+    "book_section_title": "Богослужение малого освящения воды. Символика водоосвящения",
+    "epub_href": "index_split_218.xhtml",
+    "reader_href": "reader.html?href=index_split_218.xhtml",
+    "book_refs": [
+      {
+        "book_order": 218,
+        "section_title": "Богослужение малого освящения воды. Символика водоосвящения",
+        "chapter": "Глава IX. Богослужение молебных пений.",
+        "epub_href": "index_split_218.xhtml",
+        "reader_href": "reader.html?href=index_split_218.xhtml"
+      }
+    ],
+    "mapping_confidence": "high",
+    "mapping_note": "",
+    "study_order": 162
+  },
+  {
+    "id": "T14Q1",
+    "ticket": 14,
+    "ticket_position": 1,
+    "original_question": "Схема богослужения Таинств Крещения и Миропомазания",
+    "normalized_question": "Схема богослужения Таинств Крещении и Миропомазания",
+    "topic_id": "topic-2d25d6d2c4",
+    "book_order": 17,
+    "chapter": "Глава II. Богослужение Таинств Крещения и Миропомазания",
+    "book_section_title": "2. Схема богослужения Таинств Крещения и Миропомазания",
+    "epub_href": "index_split_017.xhtml",
+    "reader_href": "reader.html?href=index_split_017.xhtml",
+    "book_refs": [
+      {
+        "book_order": 17,
+        "section_title": "2. Схема богослужения Таинств Крещения и Миропомазания",
+        "chapter": "Глава II. Богослужение Таинств Крещения и Миропомазания",
+        "epub_href": "index_split_017.xhtml",
+        "reader_href": "reader.html?href=index_split_017.xhtml"
+      },
+      {
+        "book_order": 18,
+        "section_title": "Молитвы младенцу, предваряющие крещение",
+        "chapter": "Глава II. Богослужение Таинств Крещения и Миропомазания",
+        "epub_href": "index_split_018.xhtml",
+        "reader_href": "reader.html?href=index_split_018.xhtml"
+      },
+      {
+        "book_order": 19,
+        "section_title": "Чин оглашения",
+        "chapter": "Глава II. Богослужение Таинств Крещения и Миропомазания",
+        "epub_href": "index_split_019.xhtml",
+        "reader_href": "reader.html?href=index_split_019.xhtml"
+      },
+      {
+        "book_order": 20,
+        "section_title": "Чин крещения",
+        "chapter": "Глава II. Богослужение Таинств Крещения и Миропомазания",
+        "epub_href": "index_split_020.xhtml",
+        "reader_href": "reader.html?href=index_split_020.xhtml"
+      },
+      {
+        "book_order": 21,
+        "section_title": "Чин миропомазания",
+        "chapter": "Глава II. Богослужение Таинств Крещения и Миропомазания",
+        "epub_href": "index_split_021.xhtml",
+        "reader_href": "reader.html?href=index_split_021.xhtml"
+      },
+      {
+        "book_order": 22,
+        "section_title": "Воцерковление",
+        "chapter": "Глава II. Богослужение Таинств Крещения и Миропомазания",
+        "epub_href": "index_split_022.xhtml",
+        "reader_href": "reader.html?href=index_split_022.xhtml"
+      }
+    ],
+    "mapping_confidence": "high",
+    "mapping_note": "",
+    "study_order": 14
+  },
+  {
+    "id": "T14Q2",
+    "ticket": 14,
+    "ticket_position": 2,
+    "original_question": "Схема чинопоследования Таинства Покаяния",
+    "normalized_question": "Схема чинопоследования Таинства Покаяния",
+    "topic_id": "topic-fe08b4331f",
+    "book_order": 71,
+    "chapter": "Глава III. Таинство Покаяния",
+    "book_section_title": "3. Схема чинопоследования исповеди",
+    "epub_href": "index_split_071.xhtml",
+    "reader_href": "reader.html?href=index_split_071.xhtml",
+    "book_refs": [
+      {
+        "book_order": 71,
+        "section_title": "3. Схема чинопоследования исповеди",
+        "chapter": "Глава III. Таинство Покаяния",
+        "epub_href": "index_split_071.xhtml",
+        "reader_href": "reader.html?href=index_split_071.xhtml"
+      }
+    ],
+    "mapping_confidence": "high",
+    "mapping_note": "",
+    "study_order": 58
+  },
+  {
+    "id": "T14Q3",
+    "ticket": 14,
+    "ticket_position": 3,
+    "original_question": "Схема чинопоследования. отпевания младенцев",
+    "normalized_question": "Схема чинопоследования. отпевания младенцев",
+    "topic_id": "topic-f4179aea17",
+    "book_order": 190,
+    "chapter": "Глава VIII. Богослужение погребений и поминовения усопших",
+    "book_section_title": "2. Схема современного чинопоследования",
+    "epub_href": "index_split_190.xhtml",
+    "reader_href": "reader.html?href=index_split_190.xhtml",
+    "book_refs": [
+      {
+        "book_order": 190,
+        "section_title": "2. Схема современного чинопоследования",
+        "chapter": "Глава VIII. Богослужение погребений и поминовения усопших",
+        "epub_href": "index_split_190.xhtml",
+        "reader_href": "reader.html?href=index_split_190.xhtml"
+      }
+    ],
+    "mapping_confidence": "high",
+    "mapping_note": "",
+    "study_order": 133
+  },
+  {
+    "id": "T14Q4",
+    "ticket": 14,
+    "ticket_position": 4,
+    "original_question": "Схема чина водоосвящения",
+    "normalized_question": "Схема чина водоосвящения",
+    "topic_id": "topic-8f9b12b76d",
+    "book_order": 220,
+    "chapter": "Глава IX. Богослужение молебных пений.",
+    "book_section_title": "Схема чина",
+    "epub_href": "index_split_220.xhtml",
+    "reader_href": "reader.html?href=index_split_220.xhtml",
+    "book_refs": [
+      {
+        "book_order": 220,
+        "section_title": "Схема чина",
+        "chapter": "Глава IX. Богослужение молебных пений.",
+        "epub_href": "index_split_220.xhtml",
+        "reader_href": "reader.html?href=index_split_220.xhtml"
+      }
+    ],
+    "mapping_confidence": "high",
+    "mapping_note": "",
+    "study_order": 165
+  },
+  {
+    "id": "T14Q5",
+    "ticket": 14,
+    "ticket_position": 5,
+    "original_question": "Схема чинопоследования исповеди",
+    "normalized_question": "Схема чинопоследования исповеди",
+    "topic_id": "topic-6045675ac0",
+    "book_order": 71,
+    "chapter": "Глава III. Таинство Покаяния",
+    "book_section_title": "3. Схема чинопоследования исповеди",
+    "epub_href": "index_split_071.xhtml",
+    "reader_href": "reader.html?href=index_split_071.xhtml",
+    "book_refs": [
+      {
+        "book_order": 71,
+        "section_title": "3. Схема чинопоследования исповеди",
+        "chapter": "Глава III. Таинство Покаяния",
+        "epub_href": "index_split_071.xhtml",
+        "reader_href": "reader.html?href=index_split_071.xhtml"
+      }
+    ],
+    "mapping_confidence": "high",
+    "mapping_note": "",
+    "study_order": 57
+  },
+  {
+    "id": "T14Q6",
+    "ticket": 14,
+    "ticket_position": 6,
+    "original_question": "Идейный смысл священнодействий чина рукоположения во диакона",
+    "normalized_question": "Идейный смысл священнодействий чина рукоположения во диакона",
+    "topic_id": "topic-f0b191ddc5",
+    "book_order": 161,
+    "chapter": "Глава VII. Таинство Священства",
+    "book_section_title": "3. Идейный смысл священнодействий чина рукоположения во диакона",
+    "epub_href": "index_split_161.xhtml",
+    "reader_href": "reader.html?href=index_split_161.xhtml",
+    "book_refs": [
+      {
+        "book_order": 161,
+        "section_title": "3. Идейный смысл священнодействий чина рукоположения во диакона",
+        "chapter": "Глава VII. Таинство Священства",
+        "epub_href": "index_split_161.xhtml",
+        "reader_href": "reader.html?href=index_split_161.xhtml"
+      }
+    ],
+    "mapping_confidence": "high",
+    "mapping_note": "",
+    "study_order": 113
+  },
+  {
+    "id": "T15Q1",
+    "ticket": 15,
+    "ticket_position": 1,
+    "original_question": "Молитвы матери по рождении ею ребенка",
+    "normalized_question": "Молитвы матери по рождении ею ребенка",
+    "topic_id": "topic-f99b198fd9",
+    "book_order": 13,
+    "chapter": "Глава II. Богослужение Таинств Крещения и Миропомазания",
+    "book_section_title": "1. Молитва матери по рождении ребенка",
+    "epub_href": "index_split_013.xhtml",
+    "reader_href": "reader.html?href=index_split_013.xhtml",
+    "book_refs": [
+      {
+        "book_order": 13,
+        "section_title": "1. Молитва матери по рождении ребенка",
+        "chapter": "Глава II. Богослужение Таинств Крещения и Миропомазания",
+        "epub_href": "index_split_013.xhtml",
+        "reader_href": "reader.html?href=index_split_013.xhtml"
+      }
+    ],
+    "mapping_confidence": "high",
+    "mapping_note": "",
+    "study_order": 9
+  },
+  {
+    "id": "T15Q2",
+    "ticket": 15,
+    "ticket_position": 2,
+    "original_question": "Богословие священнодействий чина исповеди",
+    "normalized_question": "Богословие священнодействий чина исповеди",
+    "topic_id": "topic-77987f5d13",
+    "book_order": 72,
+    "chapter": "Глава III. Таинство Покаяния",
+    "book_section_title": "4. Богословский смысл Таинства и содержание молитвословий",
+    "epub_href": "index_split_072.xhtml",
+    "reader_href": "reader.html?href=index_split_072.xhtml",
+    "book_refs": [
+      {
+        "book_order": 72,
+        "section_title": "4. Богословский смысл Таинства и содержание молитвословий",
+        "chapter": "Глава III. Таинство Покаяния",
+        "epub_href": "index_split_072.xhtml",
+        "reader_href": "reader.html?href=index_split_072.xhtml"
+      },
+      {
+        "book_order": 73,
+        "section_title": "Священник – совершитель Таинства Покаяния",
+        "chapter": "Глава III. Таинство Покаяния",
+        "epub_href": "index_split_073.xhtml",
+        "reader_href": "reader.html?href=index_split_073.xhtml"
+      },
+      {
+        "book_order": 74,
+        "section_title": "Подготовка священника к совершению исповеди",
+        "chapter": "Глава III. Таинство Покаяния",
+        "epub_href": "index_split_074.xhtml",
+        "reader_href": "reader.html?href=index_split_074.xhtml"
+      },
+      {
+        "book_order": 75,
+        "section_title": "Увещание к кающемуся перед исповедью",
+        "chapter": "Глава III. Таинство Покаяния",
+        "epub_href": "index_split_075.xhtml",
+        "reader_href": "reader.html?href=index_split_075.xhtml"
+      },
+      {
+        "book_order": 76,
+        "section_title": "Священное Писание о покаянном делании христианина",
+        "chapter": "Глава III. Таинство Покаяния",
+        "epub_href": "index_split_076.xhtml",
+        "reader_href": "reader.html?href=index_split_076.xhtml"
+      },
+      {
+        "book_order": 77,
+        "section_title": "Подготовка кающегося к исповеди",
+        "chapter": "Глава III. Таинство Покаяния",
+        "epub_href": "index_split_077.xhtml",
+        "reader_href": "reader.html?href=index_split_077.xhtml"
+      },
+      {
+        "book_order": 78,
+        "section_title": "Начальный момент исповеди",
+        "chapter": "Глава III. Таинство Покаяния",
+        "epub_href": "index_split_078.xhtml",
+        "reader_href": "reader.html?href=index_split_078.xhtml"
+      },
+      {
+        "book_order": 79,
+        "section_title": "Покаянное обращение к Богу",
+        "chapter": "Глава III. Таинство Покаяния",
+        "epub_href": "index_split_079.xhtml",
+        "reader_href": "reader.html?href=index_split_079.xhtml"
+      },
+      {
+        "book_order": 80,
+        "section_title": "Молитвы священника о кающихся и обращение к ним",
+        "chapter": "Глава III. Таинство Покаяния",
+        "epub_href": "index_split_080.xhtml",
+        "reader_href": "reader.html?href=index_split_080.xhtml"
+      },
+      {
+        "book_order": 81,
+        "section_title": "Чтение Символа веры",
+        "chapter": "Глава III. Таинство Покаяния",
+        "epub_href": "index_split_081.xhtml",
+        "reader_href": "reader.html?href=index_split_081.xhtml"
+      },
+      {
+        "book_order": 82,
+        "section_title": "Исповедание кающимся своих грехов",
+        "chapter": "Глава III. Таинство Покаяния",
+        "epub_href": "index_split_082.xhtml",
+        "reader_href": "reader.html?href=index_split_082.xhtml"
+      },
+      {
+        "book_order": 83,
+        "section_title": "О епитимиях",
+        "chapter": "Глава III. Таинство Покаяния",
+        "epub_href": "index_split_083.xhtml",
+        "reader_href": "reader.html?href=index_split_083.xhtml"
+      }
+    ],
+    "mapping_confidence": "high",
+    "mapping_note": "",
+    "study_order": 59
+  },
+  {
+    "id": "T15Q3",
+    "ticket": 15,
+    "ticket_position": 3,
+    "original_question": "Брачный союз",
+    "normalized_question": "Брачный союз",
+    "topic_id": "topic-7d42bf06eb",
+    "book_order": 97,
+    "chapter": "Глава V. Богослужение Таинства Брака",
+    "book_section_title": "1. Союз брачный",
+    "epub_href": "index_split_097.xhtml",
+    "reader_href": "reader.html?href=index_split_097.xhtml",
+    "book_refs": [
+      {
+        "book_order": 97,
+        "section_title": "1. Союз брачный",
+        "chapter": "Глава V. Богослужение Таинства Брака",
+        "epub_href": "index_split_097.xhtml",
+        "reader_href": "reader.html?href=index_split_097.xhtml"
+      }
+    ],
+    "mapping_confidence": "high",
+    "mapping_note": "",
+    "study_order": 71
+  },
+  {
+    "id": "T15Q4",
+    "ticket": 15,
+    "ticket_position": 4,
+    "original_question": "Чинопоследование молебна общего (по Часослову )",
+    "normalized_question": "Чинопоследование молебна общего (по Часослову )",
+    "topic_id": "topic-a4bc713447",
+    "book_order": 217,
+    "chapter": "Глава IX. Богослужение молебных пений.",
+    "book_section_title": "3. Чинопоследование молебна общего",
+    "epub_href": "index_split_217.xhtml",
+    "reader_href": "reader.html?href=index_split_217.xhtml",
+    "book_refs": [
+      {
+        "book_order": 217,
+        "section_title": "3. Чинопоследование молебна общего",
+        "chapter": "Глава IX. Богослужение молебных пений.",
+        "epub_href": "index_split_217.xhtml",
+        "reader_href": "reader.html?href=index_split_217.xhtml"
+      }
+    ],
+    "mapping_confidence": "high",
+    "mapping_note": "",
+    "study_order": 161
+  },
+  {
+    "id": "T15Q5",
+    "ticket": 15,
+    "ticket_position": 5,
+    "original_question": "Происхождение чина отпевания младенцев",
+    "normalized_question": "Происхождение чина отпевания младенцев",
+    "topic_id": "topic-2ad03d3988",
+    "book_order": 189,
+    "chapter": "Глава VIII. Богослужение погребений и поминовения усопших",
+    "book_section_title": "1. Происхождение чина",
+    "epub_href": "index_split_189.xhtml",
+    "reader_href": "reader.html?href=index_split_189.xhtml",
+    "book_refs": [
+      {
+        "book_order": 189,
+        "section_title": "1. Происхождение чина",
+        "chapter": "Глава VIII. Богослужение погребений и поминовения усопших",
+        "epub_href": "index_split_189.xhtml",
+        "reader_href": "reader.html?href=index_split_189.xhtml"
+      }
+    ],
+    "mapping_confidence": "high",
+    "mapping_note": "",
+    "study_order": 132
+  },
+  {
+    "id": "T15Q6",
+    "ticket": 15,
+    "ticket_position": 6,
+    "original_question": "Схема чинопоследования хиротонии во диакона",
+    "normalized_question": "Схема чинопоследования хиротонии во диакона",
+    "topic_id": "topic-04f5efb745",
+    "book_order": 160,
+    "chapter": "Глава VII. Таинство Священства",
+    "book_section_title": "2.Схема чинопоследования хиротонии во диакона",
+    "epub_href": "index_split_160.xhtml",
+    "reader_href": "reader.html?href=index_split_160.xhtml",
+    "book_refs": [
+      {
+        "book_order": 160,
+        "section_title": "2.Схема чинопоследования хиротонии во диакона",
+        "chapter": "Глава VII. Таинство Священства",
+        "epub_href": "index_split_160.xhtml",
+        "reader_href": "reader.html?href=index_split_160.xhtml"
+      }
+    ],
+    "mapping_confidence": "high",
+    "mapping_note": "",
+    "study_order": 111
+  },
+  {
+    "id": "T16Q1",
+    "ticket": 16,
+    "ticket_position": 1,
+    "original_question": "Молитвы в первый день, по внегдародити жене отроча",
+    "normalized_question": "Молитвы в первый день, по внегда родити жене отроча",
+    "topic_id": "topic-589f0c137a",
+    "book_order": 14,
+    "chapter": "Глава II. Богослужение Таинств Крещения и Миропомазания",
+    "book_section_title": "Молитвы в первый день",
+    "epub_href": "index_split_014.xhtml",
+    "reader_href": "reader.html?href=index_split_014.xhtml",
+    "book_refs": [
+      {
+        "book_order": 14,
+        "section_title": "Молитвы в первый день",
+        "chapter": "Глава II. Богослужение Таинств Крещения и Миропомазания",
+        "epub_href": "index_split_014.xhtml",
+        "reader_href": "reader.html?href=index_split_014.xhtml"
+      }
+    ],
+    "mapping_confidence": "high",
+    "mapping_note": "",
+    "study_order": 10
+  },
+  {
+    "id": "T16Q2",
+    "ticket": 16,
+    "ticket_position": 2,
+    "original_question": "Начальный момент исповеди",
+    "normalized_question": "Начальный момент исповеди",
+    "topic_id": "topic-631bce91bc",
+    "book_order": 78,
+    "chapter": "Глава III. Таинство Покаяния",
+    "book_section_title": "Начальный момент исповеди",
+    "epub_href": "index_split_078.xhtml",
+    "reader_href": "reader.html?href=index_split_078.xhtml",
+    "book_refs": [
+      {
+        "book_order": 78,
+        "section_title": "Начальный момент исповеди",
+        "chapter": "Глава III. Таинство Покаяния",
+        "epub_href": "index_split_078.xhtml",
+        "reader_href": "reader.html?href=index_split_078.xhtml"
+      }
+    ],
+    "mapping_confidence": "high",
+    "mapping_note": "",
+    "study_order": 60
+  },
+  {
+    "id": "T16Q3",
+    "ticket": 16,
+    "ticket_position": 3,
+    "original_question": "Возникновение брачного союза и формы его совершения",
+    "normalized_question": "Возникновение брачного союза и формы его совершения",
+    "topic_id": "topic-2218652ffd",
+    "book_order": 98,
+    "chapter": "Глава V. Богослужение Таинства Брака",
+    "book_section_title": "Возникновение брачного союза и формы его совершения",
+    "epub_href": "index_split_098.xhtml",
+    "reader_href": "reader.html?href=index_split_098.xhtml",
+    "book_refs": [
+      {
+        "book_order": 98,
+        "section_title": "Возникновение брачного союза и формы его совершения",
+        "chapter": "Глава V. Богослужение Таинства Брака",
+        "epub_href": "index_split_098.xhtml",
+        "reader_href": "reader.html?href=index_split_098.xhtml"
+      }
+    ],
+    "mapping_confidence": "high",
+    "mapping_note": "",
+    "study_order": 72
+  },
+  {
+    "id": "T16Q4",
+    "ticket": 16,
+    "ticket_position": 4,
+    "original_question": "Содержание и смысл молитвословий чина отпевания младенцев",
+    "normalized_question": "Содержание и смысл молитвословий чина отпевания младенцев",
+    "topic_id": "topic-3365c262c6",
+    "book_order": 191,
+    "chapter": "Глава VIII. Богослужение погребений и поминовения усопших",
+    "book_section_title": "3. Содержание и смысл молитвословий чина",
+    "epub_href": "index_split_191.xhtml",
+    "reader_href": "reader.html?href=index_split_191.xhtml",
+    "book_refs": [
+      {
+        "book_order": 191,
+        "section_title": "3. Содержание и смысл молитвословий чина",
+        "chapter": "Глава VIII. Богослужение погребений и поминовения усопших",
+        "epub_href": "index_split_191.xhtml",
+        "reader_href": "reader.html?href=index_split_191.xhtml"
+      }
+    ],
+    "mapping_confidence": "high",
+    "mapping_note": "",
+    "study_order": 134
+  },
+  {
+    "id": "T16Q5",
+    "ticket": 16,
+    "ticket_position": 5,
+    "original_question": "История установления чина диакона",
+    "normalized_question": "История установления чина диакона",
+    "topic_id": "topic-ca48cb4152",
+    "book_order": 159,
+    "chapter": "Глава VII. Таинство Священства",
+    "book_section_title": "1. История установления чина",
+    "epub_href": "index_split_159.xhtml",
+    "reader_href": "reader.html?href=index_split_159.xhtml",
+    "book_refs": [
+      {
+        "book_order": 159,
+        "section_title": "1. История установления чина",
+        "chapter": "Глава VII. Таинство Священства",
+        "epub_href": "index_split_159.xhtml",
+        "reader_href": "reader.html?href=index_split_159.xhtml"
+      }
+    ],
+    "mapping_confidence": "high",
+    "mapping_note": "",
+    "study_order": 110
+  },
+  {
+    "id": "T16Q6",
+    "ticket": 16,
+    "ticket_position": 6,
+    "original_question": "Содержание молебных пений и история возникновения чинов",
+    "normalized_question": "Содержание молебных пений и история возникновения чинов",
+    "topic_id": "topic-f96e0b7021",
+    "book_order": 216,
+    "chapter": "Глава IX. Богослужение молебных пений.",
+    "book_section_title": "2. Содержание молебных пений и история возникновения чинов",
+    "epub_href": "index_split_216.xhtml",
+    "reader_href": "reader.html?href=index_split_216.xhtml",
+    "book_refs": [
+      {
+        "book_order": 216,
+        "section_title": "2. Содержание молебных пений и история возникновения чинов",
+        "chapter": "Глава IX. Богослужение молебных пений.",
+        "epub_href": "index_split_216.xhtml",
+        "reader_href": "reader.html?href=index_split_216.xhtml"
+      }
+    ],
+    "mapping_confidence": "high",
+    "mapping_note": "",
+    "study_order": 160
+  },
+  {
+    "id": "T17Q1",
+    "ticket": 17,
+    "ticket_position": 1,
+    "original_question": "Молитва женщине, извергшей отроча",
+    "normalized_question": "Молитва женщине, извергшей отроча",
+    "topic_id": "topic-14b7a3ed7f",
+    "book_order": 15,
+    "chapter": "Глава II. Богослужение Таинств Крещения и Миропомазания",
+    "book_section_title": "Молитва о женщине, извергшей младенца",
+    "epub_href": "index_split_015.xhtml",
+    "reader_href": "reader.html?href=index_split_015.xhtml",
+    "book_refs": [
+      {
+        "book_order": 15,
+        "section_title": "Молитва о женщине, извергшей младенца",
+        "chapter": "Глава II. Богослужение Таинств Крещения и Миропомазания",
+        "epub_href": "index_split_015.xhtml",
+        "reader_href": "reader.html?href=index_split_015.xhtml"
+      }
+    ],
+    "mapping_confidence": "high",
+    "mapping_note": "",
+    "study_order": 11
+  },
+  {
+    "id": "T17Q2",
+    "ticket": 17,
+    "ticket_position": 2,
+    "original_question": "Покаянное обращение к Богу",
+    "normalized_question": "Покаянное обращение к Богу",
+    "topic_id": "topic-f98ab44f8f",
+    "book_order": 79,
+    "chapter": "Глава III. Таинство Покаяния",
+    "book_section_title": "Покаянное обращение к Богу",
+    "epub_href": "index_split_079.xhtml",
+    "reader_href": "reader.html?href=index_split_079.xhtml",
+    "book_refs": [
+      {
+        "book_order": 79,
+        "section_title": "Покаянное обращение к Богу",
+        "chapter": "Глава III. Таинство Покаяния",
+        "epub_href": "index_split_079.xhtml",
+        "reader_href": "reader.html?href=index_split_079.xhtml"
+      }
+    ],
+    "mapping_confidence": "high",
+    "mapping_note": "",
+    "study_order": 61
+  },
+  {
+    "id": "T17Q3",
+    "ticket": 17,
+    "ticket_position": 3,
+    "original_question": "Форма совершения брака в ранней христианской Церкви",
+    "normalized_question": "Форма совершения брака в ранней христианской Церкви",
+    "topic_id": "topic-c6383927b7",
+    "book_order": 99,
+    "chapter": "Глава V. Богослужение Таинства Брака",
+    "book_section_title": "Формы совершения брака в Древней Церкви",
+    "epub_href": "index_split_099.xhtml",
+    "reader_href": "reader.html?href=index_split_099.xhtml",
+    "book_refs": [
+      {
+        "book_order": 99,
+        "section_title": "Формы совершения брака в Древней Церкви",
+        "chapter": "Глава V. Богослужение Таинства Брака",
+        "epub_href": "index_split_099.xhtml",
+        "reader_href": "reader.html?href=index_split_099.xhtml"
+      }
+    ],
+    "mapping_confidence": "high",
+    "mapping_note": "",
+    "study_order": 73
+  },
+  {
+    "id": "T17Q4",
+    "ticket": 17,
+    "ticket_position": 4,
+    "original_question": "Идейный смысл священнодействий поставления в иподиакона",
+    "normalized_question": "Идейный смысл священнодействий поставления в иподиакона",
+    "topic_id": "topic-ad44f05e7e",
+    "book_order": 157,
+    "chapter": "Глава VII. Таинство Священства",
+    "book_section_title": "3. Идейный смысл священнодействий поставления в иподиакона",
+    "epub_href": "index_split_157.xhtml",
+    "reader_href": "reader.html?href=index_split_157.xhtml",
+    "book_refs": [
+      {
+        "book_order": 157,
+        "section_title": "3. Идейный смысл священнодействий поставления в иподиакона",
+        "chapter": "Глава VII. Таинство Священства",
+        "epub_href": "index_split_157.xhtml",
+        "reader_href": "reader.html?href=index_split_157.xhtml"
+      }
+    ],
+    "mapping_confidence": "high",
+    "mapping_note": "",
+    "study_order": 108
+  },
+  {
+    "id": "T17Q5",
+    "ticket": 17,
+    "ticket_position": 5,
+    "original_question": "История чина отпевания монахов",
+    "normalized_question": "История чина отпевания монахов",
+    "topic_id": "topic-9572019b11",
+    "book_order": 193,
+    "chapter": "Глава VIII. Богослужение погребений и поминовения усопших",
+    "book_section_title": "1. История чина",
+    "epub_href": "index_split_193.xhtml",
+    "reader_href": "reader.html?href=index_split_193.xhtml",
+    "book_refs": [
+      {
+        "book_order": 193,
+        "section_title": "1. История чина",
+        "chapter": "Глава VIII. Богослужение погребений и поминовения усопших",
+        "epub_href": "index_split_193.xhtml",
+        "reader_href": "reader.html?href=index_split_193.xhtml"
+      }
+    ],
+    "mapping_confidence": "high",
+    "mapping_note": "",
+    "study_order": 135
+  },
+  {
+    "id": "T17Q6",
+    "ticket": 17,
+    "ticket_position": 6,
+    "original_question": "Виды молебных пений",
+    "normalized_question": "Виды молебных пений",
+    "topic_id": "topic-f7808d7c04",
+    "book_order": 215,
+    "chapter": "Глава IX. Богослужение молебных пений.",
+    "book_section_title": "1. Виды молебных пений",
+    "epub_href": "index_split_215.xhtml",
+    "reader_href": "reader.html?href=index_split_215.xhtml",
+    "book_refs": [
+      {
+        "book_order": 215,
+        "section_title": "1. Виды молебных пений",
+        "chapter": "Глава IX. Богослужение молебных пений.",
+        "epub_href": "index_split_215.xhtml",
+        "reader_href": "reader.html?href=index_split_215.xhtml"
+      }
+    ],
+    "mapping_confidence": "high",
+    "mapping_note": "",
+    "study_order": 159
+  },
+  {
+    "id": "T18Q1",
+    "ticket": 18,
+    "ticket_position": 1,
+    "original_question": "Молитвы 40-го дня",
+    "normalized_question": "Молитвы 40-го дня",
+    "topic_id": "topic-4e95ab892f",
+    "book_order": 16,
+    "chapter": "Глава II. Богослужение Таинств Крещения и Миропомазания",
+    "book_section_title": "Молитвы сорокового дня",
+    "epub_href": "index_split_016.xhtml",
+    "reader_href": "reader.html?href=index_split_016.xhtml",
+    "book_refs": [
+      {
+        "book_order": 16,
+        "section_title": "Молитвы сорокового дня",
+        "chapter": "Глава II. Богослужение Таинств Крещения и Миропомазания",
+        "epub_href": "index_split_016.xhtml",
+        "reader_href": "reader.html?href=index_split_016.xhtml"
+      }
+    ],
+    "mapping_confidence": "high",
+    "mapping_note": "",
+    "study_order": 12
+  },
+  {
+    "id": "T18Q2",
+    "ticket": 18,
+    "ticket_position": 2,
+    "original_question": "Молитвы священника о кающихся и обращение к ним",
+    "normalized_question": "Молитвы священника о кающихся и обращение к ним",
+    "topic_id": "topic-78067f203b",
+    "book_order": 80,
+    "chapter": "Глава III. Таинство Покаяния",
+    "book_section_title": "Молитвы священника о кающихся и обращение к ним",
+    "epub_href": "index_split_080.xhtml",
+    "reader_href": "reader.html?href=index_split_080.xhtml",
+    "book_refs": [
+      {
+        "book_order": 80,
+        "section_title": "Молитвы священника о кающихся и обращение к ним",
+        "chapter": "Глава III. Таинство Покаяния",
+        "epub_href": "index_split_080.xhtml",
+        "reader_href": "reader.html?href=index_split_080.xhtml"
+      }
+    ],
+    "mapping_confidence": "high",
+    "mapping_note": "",
+    "study_order": 62
+  },
+  {
+    "id": "T18Q3",
+    "ticket": 18,
+    "ticket_position": 3,
+    "original_question": "Символика Таинства Брака",
+    "normalized_question": "Символика Таинства Брака",
+    "topic_id": "topic-d5b2e77632",
+    "book_order": 101,
+    "chapter": "Глава V. Богослужение Таинства Брака",
+    "book_section_title": "2. Символика Таинства Брака",
+    "epub_href": "index_split_101.xhtml",
+    "reader_href": "reader.html?href=index_split_101.xhtml",
+    "book_refs": [
+      {
+        "book_order": 101,
+        "section_title": "2. Символика Таинства Брака",
+        "chapter": "Глава V. Богослужение Таинства Брака",
+        "epub_href": "index_split_101.xhtml",
+        "reader_href": "reader.html?href=index_split_101.xhtml"
+      }
+    ],
+    "mapping_confidence": "high",
+    "mapping_note": "",
+    "study_order": 74
+  },
+  {
+    "id": "T18Q4",
+    "ticket": 18,
+    "ticket_position": 4,
+    "original_question": "Схема чинопоследования отпевания монахов",
+    "normalized_question": "Схема чинопоследования отпевания монахов",
+    "topic_id": "topic-cc3add3103",
+    "book_order": 194,
+    "chapter": "Глава VIII. Богослужение погребений и поминовения усопших",
+    "book_section_title": "2 Схема современного чинопоследования",
+    "epub_href": "index_split_194.xhtml",
+    "reader_href": "reader.html?href=index_split_194.xhtml",
+    "book_refs": [
+      {
+        "book_order": 194,
+        "section_title": "2 Схема современного чинопоследования",
+        "chapter": "Глава VIII. Богослужение погребений и поминовения усопших",
+        "epub_href": "index_split_194.xhtml",
+        "reader_href": "reader.html?href=index_split_194.xhtml"
+      }
+    ],
+    "mapping_confidence": "high",
+    "mapping_note": "",
+    "study_order": 136
+  },
+  {
+    "id": "T18Q5",
+    "ticket": 18,
+    "ticket_position": 5,
+    "original_question": "Родительские поминальные дни в Русской Православной Церкви",
+    "normalized_question": "Родительские поминальные дни в Русской Православной Церкви",
+    "topic_id": "topic-64ca8099e9",
+    "book_order": 213,
+    "chapter": "Глава VIII. Богослужение погребений и поминовения усопших",
+    "book_section_title": "2. Церковный устав о поминовении",
+    "epub_href": "index_split_213.xhtml",
+    "reader_href": "reader.html?href=index_split_213.xhtml",
+    "book_refs": [
+      {
+        "book_order": 213,
+        "section_title": "2. Церковный устав о поминовении",
+        "chapter": "Глава VIII. Богослужение погребений и поминовения усопших",
+        "epub_href": "index_split_213.xhtml",
+        "reader_href": "reader.html?href=index_split_213.xhtml"
+      }
+    ],
+    "mapping_confidence": "high",
+    "mapping_note": "",
+    "study_order": 154
+  },
+  {
+    "id": "T18Q6",
+    "ticket": 18,
+    "ticket_position": 6,
+    "original_question": "Схема чина посвящения в иподиакона",
+    "normalized_question": "Схема чина посвящения в иподиакона",
+    "topic_id": "topic-c9ae45116a",
+    "book_order": 156,
+    "chapter": "Глава VII. Таинство Священства",
+    "book_section_title": "2. Схема чина посвящения в иподиакона",
+    "epub_href": "index_split_156.xhtml",
+    "reader_href": "reader.html?href=index_split_156.xhtml",
+    "book_refs": [
+      {
+        "book_order": 156,
+        "section_title": "2. Схема чина посвящения в иподиакона",
+        "chapter": "Глава VII. Таинство Священства",
+        "epub_href": "index_split_156.xhtml",
+        "reader_href": "reader.html?href=index_split_156.xhtml"
+      }
+    ],
+    "mapping_confidence": "high",
+    "mapping_note": "",
+    "study_order": 107
+  },
+  {
+    "id": "T19Q1",
+    "ticket": 19,
+    "ticket_position": 1,
+    "original_question": "Молитвы ребенку, предваряющие Крещение",
+    "normalized_question": "Молитвы ребенку, предваряющие Крещение",
+    "topic_id": "topic-09aa60df41",
+    "book_order": 18,
+    "chapter": "Глава II. Богослужение Таинств Крещения и Миропомазания",
+    "book_section_title": "Молитвы младенцу, предваряющие крещение",
+    "epub_href": "index_split_018.xhtml",
+    "reader_href": "reader.html?href=index_split_018.xhtml",
+    "book_refs": [
+      {
+        "book_order": 18,
+        "section_title": "Молитвы младенцу, предваряющие крещение",
+        "chapter": "Глава II. Богослужение Таинств Крещения и Миропомазания",
+        "epub_href": "index_split_018.xhtml",
+        "reader_href": "reader.html?href=index_split_018.xhtml"
+      }
+    ],
+    "mapping_confidence": "high",
+    "mapping_note": "",
+    "study_order": 15
+  },
+  {
+    "id": "T19Q2",
+    "ticket": 19,
+    "ticket_position": 2,
+    "original_question": "Содержание молитвословий чина отпевания монахов",
+    "normalized_question": "Содержание молитвословий чина отпевания монахов",
+    "topic_id": "topic-ff814ed1c8",
+    "book_order": 195,
+    "chapter": "Глава VIII. Богослужение погребений и поминовения усопших",
+    "book_section_title": "3. Содержание молитвословий чина",
+    "epub_href": "index_split_195.xhtml",
+    "reader_href": "reader.html?href=index_split_195.xhtml",
+    "book_refs": [
+      {
+        "book_order": 195,
+        "section_title": "3. Содержание молитвословий чина",
+        "chapter": "Глава VIII. Богослужение погребений и поминовения усопших",
+        "epub_href": "index_split_195.xhtml",
+        "reader_href": "reader.html?href=index_split_195.xhtml"
+      }
+    ],
+    "mapping_confidence": "high",
+    "mapping_note": "",
+    "study_order": 137
+  },
+  {
+    "id": "T19Q3",
+    "ticket": 19,
+    "ticket_position": 3,
+    "original_question": "Устав, бываемый о поколебавшейся святой трапезе",
+    "normalized_question": "Устав, бываемый о поколебавшейся святой трапезе",
+    "topic_id": "topic-91e8c01c0a",
+    "book_order": 236,
+    "chapter": "Глава X. Богослужение освящения храма",
+    "book_section_title": "Устав, бываемый о поколебавшейся святой трапезе",
+    "epub_href": "index_split_236.xhtml",
+    "reader_href": "reader.html?href=index_split_236.xhtml",
+    "book_refs": [
+      {
+        "book_order": 236,
+        "section_title": "Устав, бываемый о поколебавшейся святой трапезе",
+        "chapter": "Глава X. Богослужение освящения храма",
+        "epub_href": "index_split_236.xhtml",
+        "reader_href": "reader.html?href=index_split_236.xhtml"
+      }
+    ],
+    "mapping_confidence": "high",
+    "mapping_note": "",
+    "study_order": 175
+  },
+  {
+    "id": "T19Q4",
+    "ticket": 19,
+    "ticket_position": 4,
+    "original_question": "Символика Таинства причастия",
+    "normalized_question": "Символика Таинства причастия",
+    "topic_id": "topic-43f7aa2b73",
+    "book_order": 139,
+    "chapter": "Глава VI. Богослужение Таинства Елеосвящения",
+    "book_section_title": "1. Таинство святой Евхаристии",
+    "epub_href": "index_split_139.xhtml",
+    "reader_href": "reader.html?href=index_split_139.xhtml",
+    "book_refs": [
+      {
+        "book_order": 139,
+        "section_title": "1. Таинство святой Евхаристии",
+        "chapter": "Глава VI. Богослужение Таинства Елеосвящения",
+        "epub_href": "index_split_139.xhtml",
+        "reader_href": "reader.html?href=index_split_139.xhtml"
+      }
+    ],
+    "mapping_confidence": "medium",
+    "mapping_note": "Отдельного заголовка «Символика Таинства причастия» в оглавлении нет; привязано к разделу «Таинство святой Евхаристии».",
+    "study_order": 96
+  },
+  {
+    "id": "T19Q5",
+    "ticket": 19,
+    "ticket_position": 5,
+    "original_question": "Схема богослужения обручения и венчания",
+    "normalized_question": "Схема богослужения обручения и венчания",
+    "topic_id": "topic-972e631835",
+    "book_order": 102,
+    "chapter": "Глава V. Богослужение Таинства Брака",
+    "book_section_title": "3. Схема богослужения обручения и венчания",
+    "epub_href": "index_split_102.xhtml",
+    "reader_href": "reader.html?href=index_split_102.xhtml",
+    "book_refs": [
+      {
+        "book_order": 102,
+        "section_title": "3. Схема богослужения обручения и венчания",
+        "chapter": "Глава V. Богослужение Таинства Брака",
+        "epub_href": "index_split_102.xhtml",
+        "reader_href": "reader.html?href=index_split_102.xhtml"
+      },
+      {
+        "book_order": 103,
+        "section_title": "Обручение:",
+        "chapter": "Глава V. Богослужение Таинства Брака",
+        "epub_href": "index_split_103.xhtml",
+        "reader_href": "reader.html?href=index_split_103.xhtml"
+      },
+      {
+        "book_order": 104,
+        "section_title": "Венчание:",
+        "chapter": "Глава V. Богослужение Таинства Брака",
+        "epub_href": "index_split_104.xhtml",
+        "reader_href": "reader.html?href=index_split_104.xhtml"
+      }
+    ],
+    "mapping_confidence": "high",
+    "mapping_note": "",
+    "study_order": 75
+  },
+  {
+    "id": "T19Q6",
+    "ticket": 19,
+    "ticket_position": 6,
+    "original_question": "Схема чинопоследования хиротонии во диакона",
+    "normalized_question": "Схема чинопоследования хиротонии во диакона",
+    "topic_id": "topic-04f5efb745",
+    "book_order": 160,
+    "chapter": "Глава VII. Таинство Священства",
+    "book_section_title": "2.Схема чинопоследования хиротонии во диакона",
+    "epub_href": "index_split_160.xhtml",
+    "reader_href": "reader.html?href=index_split_160.xhtml",
+    "book_refs": [
+      {
+        "book_order": 160,
+        "section_title": "2.Схема чинопоследования хиротонии во диакона",
+        "chapter": "Глава VII. Таинство Священства",
+        "epub_href": "index_split_160.xhtml",
+        "reader_href": "reader.html?href=index_split_160.xhtml"
+      }
+    ],
+    "mapping_confidence": "high",
+    "mapping_note": "",
+    "study_order": 112
+  },
+  {
+    "id": "T20Q1",
+    "ticket": 20,
+    "ticket_position": 1,
+    "original_question": "Таинственный смысл священнодействий обручения и венчания",
+    "normalized_question": "Таинственный смысл священнодействий обручения и венчания",
+    "topic_id": "topic-bdd29c2966",
+    "book_order": 105,
+    "chapter": "Глава V. Богослужение Таинства Брака",
+    "book_section_title": "4. Богословский смысл священнодействий обручения и венчания и содержание молитвословий",
+    "epub_href": "index_split_105.xhtml",
+    "reader_href": "reader.html?href=index_split_105.xhtml",
+    "book_refs": [
+      {
+        "book_order": 105,
+        "section_title": "4. Богословский смысл священнодействий обручения и венчания и содержание молитвословий",
+        "chapter": "Глава V. Богослужение Таинства Брака",
+        "epub_href": "index_split_105.xhtml",
+        "reader_href": "reader.html?href=index_split_105.xhtml"
+      },
+      {
+        "book_order": 106,
+        "section_title": "Обручение",
+        "chapter": "Глава V. Богослужение Таинства Брака",
+        "epub_href": "index_split_106.xhtml",
+        "reader_href": "reader.html?href=index_split_106.xhtml"
+      },
+      {
+        "book_order": 107,
+        "section_title": "Начальный момент обручения",
+        "chapter": "Глава V. Богослужение Таинства Брака",
+        "epub_href": "index_split_107.xhtml",
+        "reader_href": "reader.html?href=index_split_107.xhtml"
+      },
+      {
+        "book_order": 108,
+        "section_title": "Обручение кольцами",
+        "chapter": "Глава V. Богослужение Таинства Брака",
+        "epub_href": "index_split_108.xhtml",
+        "reader_href": "reader.html?href=index_split_108.xhtml"
+      },
+      {
+        "book_order": 109,
+        "section_title": "Венчание",
+        "chapter": "Глава V. Богослужение Таинства Брака",
+        "epub_href": "index_split_109.xhtml",
+        "reader_href": "reader.html?href=index_split_109.xhtml"
+      },
+      {
+        "book_order": 110,
+        "section_title": "Начало венчания",
+        "chapter": "Глава V. Богослужение Таинства Брака",
+        "epub_href": "index_split_110.xhtml",
+        "reader_href": "reader.html?href=index_split_110.xhtml"
+      },
+      {
+        "book_order": 111,
+        "section_title": "Тайносовершительный момент венчания",
+        "chapter": "Глава V. Богослужение Таинства Брака",
+        "epub_href": "index_split_111.xhtml",
+        "reader_href": "reader.html?href=index_split_111.xhtml"
+      },
+      {
+        "book_order": 112,
+        "section_title": "Чтение Священного Писания и общая чаша",
+        "chapter": "Глава V. Богослужение Таинства Брака",
+        "epub_href": "index_split_112.xhtml",
+        "reader_href": "reader.html?href=index_split_112.xhtml"
+      },
+      {
+        "book_order": 113,
+        "section_title": "Образ круга во славу Святой Троицы",
+        "chapter": "Глава V. Богослужение Таинства Брака",
+        "epub_href": "index_split_113.xhtml",
+        "reader_href": "reader.html?href=index_split_113.xhtml"
+      },
+      {
+        "book_order": 114,
+        "section_title": "Окончание чина венчания",
+        "chapter": "Глава V. Богослужение Таинства Брака",
+        "epub_href": "index_split_114.xhtml",
+        "reader_href": "reader.html?href=index_split_114.xhtml"
+      }
+    ],
+    "mapping_confidence": "high",
+    "mapping_note": "",
+    "study_order": 76
+  },
+  {
+    "id": "T20Q2",
+    "ticket": 20,
+    "ticket_position": 2,
+    "original_question": "Схема чинопоследования освящения нового дома",
+    "normalized_question": "Схема чинопоследования освящения нового дома",
+    "topic_id": "topic-93b6c0b893",
+    "book_order": 240,
+    "chapter": "Глава X. Богослужение освящения храма",
+    "book_section_title": "1. Схема чинопоследования",
+    "epub_href": "index_split_240.xhtml",
+    "reader_href": "reader.html?href=index_split_240.xhtml",
+    "book_refs": [
+      {
+        "book_order": 240,
+        "section_title": "1. Схема чинопоследования",
+        "chapter": "Глава X. Богослужение освящения храма",
+        "epub_href": "index_split_240.xhtml",
+        "reader_href": "reader.html?href=index_split_240.xhtml"
+      }
+    ],
+    "mapping_confidence": "high",
+    "mapping_note": "",
+    "study_order": 179
+  },
+  {
+    "id": "T20Q3",
+    "ticket": 20,
+    "ticket_position": 3,
+    "original_question": "История чина отпевания священников",
+    "normalized_question": "История чина отпевания священников",
+    "topic_id": "topic-e786b41366",
+    "book_order": 197,
+    "chapter": "Глава VIII. Богослужение погребений и поминовения усопших",
+    "book_section_title": "1. История чина",
+    "epub_href": "index_split_197.xhtml",
+    "reader_href": "reader.html?href=index_split_197.xhtml",
+    "book_refs": [
+      {
+        "book_order": 197,
+        "section_title": "1. История чина",
+        "chapter": "Глава VIII. Богослужение погребений и поминовения усопших",
+        "epub_href": "index_split_197.xhtml",
+        "reader_href": "reader.html?href=index_split_197.xhtml"
+      }
+    ],
+    "mapping_confidence": "high",
+    "mapping_note": "",
+    "study_order": 138
+  },
+  {
+    "id": "T20Q4",
+    "ticket": 20,
+    "ticket_position": 4,
+    "original_question": "Молитва на наречение имени",
+    "normalized_question": "Молитва на наречение имени",
+    "topic_id": "topic-cfbb2cd0eb",
+    "book_order": 36,
+    "chapter": "Глава II. Богослужение Таинств Крещения и Миропомазания",
+    "book_section_title": "Молитва на наречение имени младенцу",
+    "epub_href": "index_split_036.xhtml",
+    "reader_href": "reader.html?href=index_split_036.xhtml",
+    "book_refs": [
+      {
+        "book_order": 36,
+        "section_title": "Молитва на наречение имени младенцу",
+        "chapter": "Глава II. Богослужение Таинств Крещения и Миропомазания",
+        "epub_href": "index_split_036.xhtml",
+        "reader_href": "reader.html?href=index_split_036.xhtml"
+      }
+    ],
+    "mapping_confidence": "high",
+    "mapping_note": "",
+    "study_order": 31
+  },
+  {
+    "id": "T20Q5",
+    "ticket": 20,
+    "ticket_position": 5,
+    "original_question": "История совершения воцерковления в Руссокой Церкви",
+    "normalized_question": "История совершения воцерковления в Русской Церкви",
+    "topic_id": "topic-362c0ae9f3",
+    "book_order": 54,
+    "chapter": "Глава II. Богослужение Таинств Крещения и Миропомазания",
+    "book_section_title": "Воцерковление",
+    "epub_href": "index_split_054.xhtml",
+    "reader_href": "reader.html?href=index_split_054.xhtml",
+    "book_refs": [
+      {
+        "book_order": 54,
+        "section_title": "Воцерковление",
+        "chapter": "Глава II. Богослужение Таинств Крещения и Миропомазания",
+        "epub_href": "index_split_054.xhtml",
+        "reader_href": "reader.html?href=index_split_054.xhtml"
+      }
+    ],
+    "mapping_confidence": "high",
+    "mapping_note": "",
+    "study_order": 46
+  },
+  {
+    "id": "T20Q6",
+    "ticket": 20,
+    "ticket_position": 6,
+    "original_question": "История возникновения чина в иподиакона",
+    "normalized_question": "История возникновения чина в иподиакона",
+    "topic_id": "topic-5ff427667a",
+    "book_order": 155,
+    "chapter": "Глава VII. Таинство Священства",
+    "book_section_title": "1. История возникновения чина",
+    "epub_href": "index_split_155.xhtml",
+    "reader_href": "reader.html?href=index_split_155.xhtml",
+    "book_refs": [
+      {
+        "book_order": 155,
+        "section_title": "1. История возникновения чина",
+        "chapter": "Глава VII. Таинство Священства",
+        "epub_href": "index_split_155.xhtml",
+        "reader_href": "reader.html?href=index_split_155.xhtml"
+      }
+    ],
+    "mapping_confidence": "high",
+    "mapping_note": "",
+    "study_order": 106
+  },
+  {
+    "id": "T21Q1",
+    "ticket": 21,
+    "ticket_position": 1,
+    "original_question": "История совершения молитв на наречение имени в Русской Церкви",
+    "normalized_question": "История совершения молитв на наречение имени в Русской Церкви",
+    "topic_id": "topic-c01ae9a85b",
+    "book_order": 25,
+    "chapter": "Глава II. Богослужение Таинств Крещения и Миропомазания",
+    "book_section_title": "Наречение имени",
+    "epub_href": "index_split_025.xhtml",
+    "reader_href": "reader.html?href=index_split_025.xhtml",
+    "book_refs": [
+      {
+        "book_order": 25,
+        "section_title": "Наречение имени",
+        "chapter": "Глава II. Богослужение Таинств Крещения и Миропомазания",
+        "epub_href": "index_split_025.xhtml",
+        "reader_href": "reader.html?href=index_split_025.xhtml"
+      }
+    ],
+    "mapping_confidence": "high",
+    "mapping_note": "",
+    "study_order": 26
+  },
+  {
+    "id": "T21Q2",
+    "ticket": 21,
+    "ticket_position": 2,
+    "original_question": "Причащение Святых Христовых Таин",
+    "normalized_question": "Причащение Святых Христовых Таин",
+    "topic_id": "topic-46db3ffe70",
+    "book_order": 22,
+    "chapter": "Глава II. Богослужение Таинств Крещения и Миропомазания",
+    "book_section_title": "Воцерковление",
+    "epub_href": "index_split_022.xhtml",
+    "reader_href": "reader.html?href=index_split_022.xhtml",
+    "book_refs": [
+      {
+        "book_order": 22,
+        "section_title": "Воцерковление",
+        "chapter": "Глава II. Богослужение Таинств Крещения и Миропомазания",
+        "epub_href": "index_split_022.xhtml",
+        "reader_href": "reader.html?href=index_split_022.xhtml"
+      },
+      {
+        "book_order": 139,
+        "section_title": "1. Таинство святой Евхаристии",
+        "chapter": "Глава VI. Богослужение Таинства Елеосвящения",
+        "epub_href": "index_split_139.xhtml",
+        "reader_href": "reader.html?href=index_split_139.xhtml"
+      }
+    ],
+    "mapping_confidence": "high",
+    "mapping_note": "",
+    "study_order": 22
+  },
+  {
+    "id": "T21Q3",
+    "ticket": 21,
+    "ticket_position": 3,
+    "original_question": "Схема чинопоследования священников",
+    "normalized_question": "Схема чинопоследования отпевания священников",
+    "topic_id": "topic-1df6e1e1f4",
+    "book_order": 198,
+    "chapter": "Глава VIII. Богослужение погребений и поминовения усопших",
+    "book_section_title": "2. Схема современного чинопоследования",
+    "epub_href": "index_split_198.xhtml",
+    "reader_href": "reader.html?href=index_split_198.xhtml",
+    "book_refs": [
+      {
+        "book_order": 198,
+        "section_title": "2. Схема современного чинопоследования",
+        "chapter": "Глава VIII. Богослужение погребений и поминовения усопших",
+        "epub_href": "index_split_198.xhtml",
+        "reader_href": "reader.html?href=index_split_198.xhtml"
+      }
+    ],
+    "mapping_confidence": "medium",
+    "mapping_note": "В исходнике, вероятно, пропущено слово «отпевания»; привязано к схеме отпевания священников.",
+    "study_order": 139
+  },
+  {
+    "id": "T21Q4",
+    "ticket": 21,
+    "ticket_position": 4,
+    "original_question": "Идейный смысл священнодействий чина в иподиакона",
+    "normalized_question": "Идейный смысл священнодействий чина в иподиакона",
+    "topic_id": "topic-49256288bd",
+    "book_order": 157,
+    "chapter": "Глава VII. Таинство Священства",
+    "book_section_title": "3. Идейный смысл священнодействий поставления в иподиакона",
+    "epub_href": "index_split_157.xhtml",
+    "reader_href": "reader.html?href=index_split_157.xhtml",
+    "book_refs": [
+      {
+        "book_order": 157,
+        "section_title": "3. Идейный смысл священнодействий поставления в иподиакона",
+        "chapter": "Глава VII. Таинство Священства",
+        "epub_href": "index_split_157.xhtml",
+        "reader_href": "reader.html?href=index_split_157.xhtml"
+      }
+    ],
+    "mapping_confidence": "high",
+    "mapping_note": "",
+    "study_order": 109
+  },
+  {
+    "id": "T21Q5",
+    "ticket": 21,
+    "ticket_position": 5,
+    "original_question": "Чины и молитвы на освящение различных церковно-богослужебных принадлежностей",
+    "normalized_question": "Чины и молитвы на освящение различных церковно-богослужебных принадлежностей",
+    "topic_id": "topic-c7ccd031e9",
+    "book_order": 238,
+    "chapter": "Глава X. Богослужение освящения храма",
+    "book_section_title": "Чины и молитвы на освящение различных церковно-богослужебных принадлежностей",
+    "epub_href": "index_split_238.xhtml",
+    "reader_href": "reader.html?href=index_split_238.xhtml",
+    "book_refs": [
+      {
+        "book_order": 238,
+        "section_title": "Чины и молитвы на освящение различных церковно-богослужебных принадлежностей",
+        "chapter": "Глава X. Богослужение освящения храма",
+        "epub_href": "index_split_238.xhtml",
+        "reader_href": "reader.html?href=index_split_238.xhtml"
+      }
+    ],
+    "mapping_confidence": "high",
+    "mapping_note": "",
+    "study_order": 178
+  },
+  {
+    "id": "T21Q6",
+    "ticket": 21,
+    "ticket_position": 6,
+    "original_question": "Обручение: начальный момент",
+    "normalized_question": "Обручение: начальный момент",
+    "topic_id": "topic-0dded2fc06",
+    "book_order": 107,
+    "chapter": "Глава V. Богослужение Таинства Брака",
+    "book_section_title": "Начальный момент обручения",
+    "epub_href": "index_split_107.xhtml",
+    "reader_href": "reader.html?href=index_split_107.xhtml",
+    "book_refs": [
+      {
+        "book_order": 107,
+        "section_title": "Начальный момент обручения",
+        "chapter": "Глава V. Богослужение Таинства Брака",
+        "epub_href": "index_split_107.xhtml",
+        "reader_href": "reader.html?href=index_split_107.xhtml"
+      }
+    ],
+    "mapping_confidence": "high",
+    "mapping_note": "",
+    "study_order": 77
+  },
+  {
+    "id": "T22Q1",
+    "ticket": 22,
+    "ticket_position": 1,
+    "original_question": "Чинопоследование оглашения",
+    "normalized_question": "Чинопоследование оглашения",
+    "topic_id": "topic-8c6fd697c7",
+    "book_order": 38,
+    "chapter": "Глава II. Богослужение Таинств Крещения и Миропомазания",
+    "book_section_title": "Чинопоследование оглашения",
+    "epub_href": "index_split_038.xhtml",
+    "reader_href": "reader.html?href=index_split_038.xhtml",
+    "book_refs": [
+      {
+        "book_order": 38,
+        "section_title": "Чинопоследование оглашения",
+        "chapter": "Глава II. Богослужение Таинств Крещения и Миропомазания",
+        "epub_href": "index_split_038.xhtml",
+        "reader_href": "reader.html?href=index_split_038.xhtml"
+      }
+    ],
+    "mapping_confidence": "high",
+    "mapping_note": "",
+    "study_order": 32
+  },
+  {
+    "id": "T22Q2",
+    "ticket": 22,
+    "ticket_position": 2,
+    "original_question": "Введение во храм",
+    "normalized_question": "Введение во храм",
+    "topic_id": "topic-0aecf8bf25",
+    "book_order": 22,
+    "chapter": "Глава II. Богослужение Таинств Крещения и Миропомазания",
+    "book_section_title": "Воцерковление",
+    "epub_href": "index_split_022.xhtml",
+    "reader_href": "reader.html?href=index_split_022.xhtml",
+    "book_refs": [
+      {
+        "book_order": 22,
+        "section_title": "Воцерковление",
+        "chapter": "Глава II. Богослужение Таинств Крещения и Миропомазания",
+        "epub_href": "index_split_022.xhtml",
+        "reader_href": "reader.html?href=index_split_022.xhtml"
+      }
+    ],
+    "mapping_confidence": "high",
+    "mapping_note": "",
+    "study_order": 21
+  },
+  {
+    "id": "T22Q3",
+    "ticket": 22,
+    "ticket_position": 3,
+    "original_question": "Обручение кольцами",
+    "normalized_question": "Обручение кольцами",
+    "topic_id": "topic-c0c579920a",
+    "book_order": 108,
+    "chapter": "Глава V. Богослужение Таинства Брака",
+    "book_section_title": "Обручение кольцами",
+    "epub_href": "index_split_108.xhtml",
+    "reader_href": "reader.html?href=index_split_108.xhtml",
+    "book_refs": [
+      {
+        "book_order": 108,
+        "section_title": "Обручение кольцами",
+        "chapter": "Глава V. Богослужение Таинства Брака",
+        "epub_href": "index_split_108.xhtml",
+        "reader_href": "reader.html?href=index_split_108.xhtml"
+      }
+    ],
+    "mapping_confidence": "high",
+    "mapping_note": "",
+    "study_order": 78
+  },
+  {
+    "id": "T22Q4",
+    "ticket": 22,
+    "ticket_position": 4,
+    "original_question": "Схема чина поставления чтеца и певца",
+    "normalized_question": "Схема чина поставления чтеца и певца",
+    "topic_id": "topic-0db410355d",
+    "book_order": 152,
+    "chapter": "Глава VII. Таинство Священства",
+    "book_section_title": "2. Схема чина поставления чтеца, певца, свещеносца",
+    "epub_href": "index_split_152.xhtml",
+    "reader_href": "reader.html?href=index_split_152.xhtml",
+    "book_refs": [
+      {
+        "book_order": 152,
+        "section_title": "2. Схема чина поставления чтеца, певца, свещеносца",
+        "chapter": "Глава VII. Таинство Священства",
+        "epub_href": "index_split_152.xhtml",
+        "reader_href": "reader.html?href=index_split_152.xhtml"
+      }
+    ],
+    "mapping_confidence": "high",
+    "mapping_note": "",
+    "study_order": 104
+  },
+  {
+    "id": "T22Q5",
+    "ticket": 22,
+    "ticket_position": 5,
+    "original_question": "Содержание молитвословий чина отпевания священников",
+    "normalized_question": "Содержание молитвословий чина отпевания священников",
+    "topic_id": "topic-405680e477",
+    "book_order": 199,
+    "chapter": "Глава VIII. Богослужение погребений и поминовения усопших",
+    "book_section_title": "3. Содержание молитвословий чина",
+    "epub_href": "index_split_199.xhtml",
+    "reader_href": "reader.html?href=index_split_199.xhtml",
+    "book_refs": [
+      {
+        "book_order": 199,
+        "section_title": "3. Содержание молитвословий чина",
+        "chapter": "Глава VIII. Богослужение погребений и поминовения усопших",
+        "epub_href": "index_split_199.xhtml",
+        "reader_href": "reader.html?href=index_split_199.xhtml"
+      }
+    ],
+    "mapping_confidence": "high",
+    "mapping_note": "",
+    "study_order": 140
+  },
+  {
+    "id": "T22Q6",
+    "ticket": 22,
+    "ticket_position": 6,
+    "original_question": "Чин во отверзение церкви от еретик осквернившийся",
+    "normalized_question": "Чин во отверзение церкви от еретик осквернившийся",
+    "topic_id": "topic-e57ea9233a",
+    "book_order": 237,
+    "chapter": "Глава X. Богослужение освящения храма",
+    "book_section_title": "Чин во отверзение церкви от еретик осквернившейся",
+    "epub_href": "index_split_237.xhtml",
+    "reader_href": "reader.html?href=index_split_237.xhtml",
+    "book_refs": [
+      {
+        "book_order": 237,
+        "section_title": "Чин во отверзение церкви от еретик осквернившейся",
+        "chapter": "Глава X. Богослужение освящения храма",
+        "epub_href": "index_split_237.xhtml",
+        "reader_href": "reader.html?href=index_split_237.xhtml"
+      }
+    ],
+    "mapping_confidence": "high",
+    "mapping_note": "",
+    "study_order": 177
+  },
+  {
+    "id": "T23Q1",
+    "ticket": 23,
+    "ticket_position": 1,
+    "original_question": "История формирования чина оглашения",
+    "normalized_question": "История формирования чина оглашения",
+    "topic_id": "topic-08f0c5e167",
+    "book_order": 27,
+    "chapter": "Глава II. Богослужение Таинств Крещения и Миропомазания",
+    "book_section_title": "Чин оглашения",
+    "epub_href": "index_split_027.xhtml",
+    "reader_href": "reader.html?href=index_split_027.xhtml",
+    "book_refs": [
+      {
+        "book_order": 27,
+        "section_title": "Чин оглашения",
+        "chapter": "Глава II. Богослужение Таинств Крещения и Миропомазания",
+        "epub_href": "index_split_027.xhtml",
+        "reader_href": "reader.html?href=index_split_027.xhtml"
+      }
+    ],
+    "mapping_confidence": "medium",
+    "mapping_note": "История оглашения раскрывается внутри исторического блока чинопоследования Крещения; привязано к соответствующему разделу «Чин оглашения».",
+    "study_order": 28
+  },
+  {
+    "id": "T23Q2",
+    "ticket": 23,
+    "ticket_position": 2,
+    "original_question": "Воцерковление",
+    "normalized_question": "Воцерковление",
+    "topic_id": "topic-36c05d2d90",
+    "book_order": 54,
+    "chapter": "Глава II. Богослужение Таинств Крещения и Миропомазания",
+    "book_section_title": "Воцерковление",
+    "epub_href": "index_split_054.xhtml",
+    "reader_href": "reader.html?href=index_split_054.xhtml",
+    "book_refs": [
+      {
+        "book_order": 54,
+        "section_title": "Воцерковление",
+        "chapter": "Глава II. Богослужение Таинств Крещения и Миропомазания",
+        "epub_href": "index_split_054.xhtml",
+        "reader_href": "reader.html?href=index_split_054.xhtml"
+      },
+      {
+        "book_order": 22,
+        "section_title": "Воцерковление",
+        "chapter": "Глава II. Богослужение Таинств Крещения и Миропомазания",
+        "epub_href": "index_split_022.xhtml",
+        "reader_href": "reader.html?href=index_split_022.xhtml"
+      },
+      {
+        "book_order": 64,
+        "section_title": "Воцерковление",
+        "chapter": "Глава II. Богослужение Таинств Крещения и Миропомазания",
+        "epub_href": "index_split_064.xhtml",
+        "reader_href": "reader.html?href=index_split_064.xhtml"
+      }
+    ],
+    "mapping_confidence": "high",
+    "mapping_note": "",
+    "study_order": 44
+  },
+  {
+    "id": "T23Q3",
+    "ticket": 23,
+    "ticket_position": 3,
+    "original_question": "Чин венчания: начальный момент",
+    "normalized_question": "Чин венчания: начальный момент",
+    "topic_id": "topic-13bb64f99c",
+    "book_order": 110,
+    "chapter": "Глава V. Богослужение Таинства Брака",
+    "book_section_title": "Начало венчания",
+    "epub_href": "index_split_110.xhtml",
+    "reader_href": "reader.html?href=index_split_110.xhtml",
+    "book_refs": [
+      {
+        "book_order": 110,
+        "section_title": "Начало венчания",
+        "chapter": "Глава V. Богослужение Таинства Брака",
+        "epub_href": "index_split_110.xhtml",
+        "reader_href": "reader.html?href=index_split_110.xhtml"
+      }
+    ],
+    "mapping_confidence": "high",
+    "mapping_note": "",
+    "study_order": 79
+  },
+  {
+    "id": "T23Q4",
+    "ticket": 23,
+    "ticket_position": 4,
+    "original_question": "История чина отпевания архиреев",
+    "normalized_question": "История чина отпевания архиереев",
+    "topic_id": "topic-d369107010",
+    "book_order": 201,
+    "chapter": "Глава VIII. Богослужение погребений и поминовения усопших",
+    "book_section_title": "1. История чина",
+    "epub_href": "index_split_201.xhtml",
+    "reader_href": "reader.html?href=index_split_201.xhtml",
+    "book_refs": [
+      {
+        "book_order": 201,
+        "section_title": "1. История чина",
+        "chapter": "Глава VIII. Богослужение погребений и поминовения усопших",
+        "epub_href": "index_split_201.xhtml",
+        "reader_href": "reader.html?href=index_split_201.xhtml"
+      }
+    ],
+    "mapping_confidence": "high",
+    "mapping_note": "",
+    "study_order": 141
+  },
+  {
+    "id": "T23Q5",
+    "ticket": 23,
+    "ticket_position": 5,
+    "original_question": "История чинов малого освящения храма и его принадлежностей в Русской Церкви",
+    "normalized_question": "История чинов малого освящения храма и его принадлежностей в Русской Церкви",
+    "topic_id": "topic-923e564b6c",
+    "book_order": 235,
+    "chapter": "Глава X. Богослужение освящения храма",
+    "book_section_title": "7. История чинов малого освящения храма и его принадлежностей в Русской Церкви",
+    "epub_href": "index_split_235.xhtml",
+    "reader_href": "reader.html?href=index_split_235.xhtml",
+    "book_refs": [
+      {
+        "book_order": 235,
+        "section_title": "7. История чинов малого освящения храма и его принадлежностей в Русской Церкви",
+        "chapter": "Глава X. Богослужение освящения храма",
+        "epub_href": "index_split_235.xhtml",
+        "reader_href": "reader.html?href=index_split_235.xhtml"
+      }
+    ],
+    "mapping_confidence": "high",
+    "mapping_note": "",
+    "study_order": 174
+  },
+  {
+    "id": "T23Q6",
+    "ticket": 23,
+    "ticket_position": 6,
+    "original_question": "Символика хиротонии и хиротесии",
+    "normalized_question": "Символика хиротонии и хиротесии",
+    "topic_id": "topic-e12eeb3d0a",
+    "book_order": 149,
+    "chapter": "Глава VII. Таинство Священства",
+    "book_section_title": "2. Символика хиротонии и хиротесии",
+    "epub_href": "index_split_149.xhtml",
+    "reader_href": "reader.html?href=index_split_149.xhtml",
+    "book_refs": [
+      {
+        "book_order": 149,
+        "section_title": "2. Символика хиротонии и хиротесии",
+        "chapter": "Глава VII. Таинство Священства",
+        "epub_href": "index_split_149.xhtml",
+        "reader_href": "reader.html?href=index_split_149.xhtml"
+      }
+    ],
+    "mapping_confidence": "high",
+    "mapping_note": "",
+    "study_order": 102
+  },
+  {
+    "id": "T24Q1",
+    "ticket": 24,
+    "ticket_position": 1,
+    "original_question": "Тайносовершительный момент венчания",
+    "normalized_question": "Тайносовершительный момент венчания",
+    "topic_id": "topic-e8f5f59838",
+    "book_order": 111,
+    "chapter": "Глава V. Богослужение Таинства Брака",
+    "book_section_title": "Тайносовершительный момент венчания",
+    "epub_href": "index_split_111.xhtml",
+    "reader_href": "reader.html?href=index_split_111.xhtml",
+    "book_refs": [
+      {
+        "book_order": 111,
+        "section_title": "Тайносовершительный момент венчания",
+        "chapter": "Глава V. Богослужение Таинства Брака",
+        "epub_href": "index_split_111.xhtml",
+        "reader_href": "reader.html?href=index_split_111.xhtml"
+      }
+    ],
+    "mapping_confidence": "high",
+    "mapping_note": "",
+    "study_order": 80
+  },
+  {
+    "id": "T24Q2",
+    "ticket": 24,
+    "ticket_position": 2,
+    "original_question": "История возникновения чинов посвящения в чин чтеца и певца",
+    "normalized_question": "История возникновения чинов посвящения в чин чтеца и певца",
+    "topic_id": "topic-9c275fe1b2",
+    "book_order": 151,
+    "chapter": "Глава VII. Таинство Священства",
+    "book_section_title": "1. История возникновения чина",
+    "epub_href": "index_split_151.xhtml",
+    "reader_href": "reader.html?href=index_split_151.xhtml",
+    "book_refs": [
+      {
+        "book_order": 151,
+        "section_title": "1. История возникновения чина",
+        "chapter": "Глава VII. Таинство Священства",
+        "epub_href": "index_split_151.xhtml",
+        "reader_href": "reader.html?href=index_split_151.xhtml"
+      }
+    ],
+    "mapping_confidence": "high",
+    "mapping_note": "",
+    "study_order": 103
+  },
+  {
+    "id": "T24Q3",
+    "ticket": 24,
+    "ticket_position": 3,
+    "original_question": "Схема чинопоследования отпевания архиреев",
+    "normalized_question": "Схема чинопоследования отпевания архиереев",
+    "topic_id": "topic-33fe6360ec",
+    "book_order": 202,
+    "chapter": "Глава VIII. Богослужение погребений и поминовения усопших",
+    "book_section_title": "2. Схема чинопоследования",
+    "epub_href": "index_split_202.xhtml",
+    "reader_href": "reader.html?href=index_split_202.xhtml",
+    "book_refs": [
+      {
+        "book_order": 202,
+        "section_title": "2. Схема чинопоследования",
+        "chapter": "Глава VIII. Богослужение погребений и поминовения усопших",
+        "epub_href": "index_split_202.xhtml",
+        "reader_href": "reader.html?href=index_split_202.xhtml"
+      }
+    ],
+    "mapping_confidence": "high",
+    "mapping_note": "",
+    "study_order": 142
+  },
+  {
+    "id": "T24Q4",
+    "ticket": 24,
+    "ticket_position": 4,
+    "original_question": "Освящение принадлежностей храма",
+    "normalized_question": "Освящение принадлежностей храма",
+    "topic_id": "topic-7c5a2a3592",
+    "book_order": 234,
+    "chapter": "Глава X. Богослужение освящения храма",
+    "book_section_title": "6. Освящение принадлежностей храма",
+    "epub_href": "index_split_234.xhtml",
+    "reader_href": "reader.html?href=index_split_234.xhtml",
+    "book_refs": [
+      {
+        "book_order": 234,
+        "section_title": "6. Освящение принадлежностей храма",
+        "chapter": "Глава X. Богослужение освящения храма",
+        "epub_href": "index_split_234.xhtml",
+        "reader_href": "reader.html?href=index_split_234.xhtml"
+      }
+    ],
+    "mapping_confidence": "high",
+    "mapping_note": "",
+    "study_order": 172
+  },
+  {
+    "id": "T24Q5",
+    "ticket": 24,
+    "ticket_position": 5,
+    "original_question": "Молитва предогласительная",
+    "normalized_question": "Молитва предогласительная",
+    "topic_id": "topic-f9fec6ab60",
+    "book_order": 39,
+    "chapter": "Глава II. Богослужение Таинств Крещения и Миропомазания",
+    "book_section_title": "Молитва во еже сотворити оглашенного",
+    "epub_href": "index_split_039.xhtml",
+    "reader_href": "reader.html?href=index_split_039.xhtml",
+    "book_refs": [
+      {
+        "book_order": 39,
+        "section_title": "Молитва во еже сотворити оглашенного",
+        "chapter": "Глава II. Богослужение Таинств Крещения и Миропомазания",
+        "epub_href": "index_split_039.xhtml",
+        "reader_href": "reader.html?href=index_split_039.xhtml"
+      }
+    ],
+    "mapping_confidence": "medium",
+    "mapping_note": "Термин «предогласительная молитва» в оглавлении не выделен; по содержанию привязано к молитве «во еже сотворити оглашенного».",
+    "study_order": 33
+  },
+  {
+    "id": "T24Q6",
+    "ticket": 24,
+    "ticket_position": 6,
+    "original_question": "История совершения чина Миропомазания в Русской Церкви",
+    "normalized_question": "История совершения чина Миропомазания в Русской Церкви",
+    "topic_id": "topic-1e08b8c4b8",
+    "book_order": 49,
+    "chapter": "Глава II. Богослужение Таинств Крещения и Миропомазания",
+    "book_section_title": "7. История формирования чина Миропомазания",
+    "epub_href": "index_split_049.xhtml",
+    "reader_href": "reader.html?href=index_split_049.xhtml",
+    "book_refs": [
+      {
+        "book_order": 49,
+        "section_title": "7. История формирования чина Миропомазания",
+        "chapter": "Глава II. Богослужение Таинств Крещения и Миропомазания",
+        "epub_href": "index_split_049.xhtml",
+        "reader_href": "reader.html?href=index_split_049.xhtml"
+      }
+    ],
+    "mapping_confidence": "high",
+    "mapping_note": "",
+    "study_order": 41
+  },
+  {
+    "id": "T25Q1",
+    "ticket": 25,
+    "ticket_position": 1,
+    "original_question": "Молитвы запрещения злых духов",
+    "normalized_question": "Молитвы запрещения злых духов",
+    "topic_id": "topic-68361ca5c5",
+    "book_order": 40,
+    "chapter": "Глава II. Богослужение Таинств Крещения и Миропомазания",
+    "book_section_title": "Молитвы запрещения злых духов",
+    "epub_href": "index_split_040.xhtml",
+    "reader_href": "reader.html?href=index_split_040.xhtml",
+    "book_refs": [
+      {
+        "book_order": 40,
+        "section_title": "Молитвы запрещения злых духов",
+        "chapter": "Глава II. Богослужение Таинств Крещения и Миропомазания",
+        "epub_href": "index_split_040.xhtml",
+        "reader_href": "reader.html?href=index_split_040.xhtml"
+      }
+    ],
+    "mapping_confidence": "high",
+    "mapping_note": "",
+    "study_order": 34
+  },
+  {
+    "id": "T25Q2",
+    "ticket": 25,
+    "ticket_position": 2,
+    "original_question": "Сугубая ектения и отпуст при крещении",
+    "normalized_question": "Сугубая ектения и отпуст при крещении",
+    "topic_id": "topic-e70f01ae0c",
+    "book_order": 21,
+    "chapter": "Глава II. Богослужение Таинств Крещения и Миропомазания",
+    "book_section_title": "Чин миропомазания",
+    "epub_href": "index_split_021.xhtml",
+    "reader_href": "reader.html?href=index_split_021.xhtml",
+    "book_refs": [
+      {
+        "book_order": 21,
+        "section_title": "Чин миропомазания",
+        "chapter": "Глава II. Богослужение Таинств Крещения и Миропомазания",
+        "epub_href": "index_split_021.xhtml",
+        "reader_href": "reader.html?href=index_split_021.xhtml"
+      }
+    ],
+    "mapping_confidence": "medium",
+    "mapping_note": "Сугубая ектения и отпуст указаны в схеме Миропомазания, завершающей соединённое крещально-миропомазательное богослужение.",
+    "study_order": 19
+  },
+  {
+    "id": "T25Q3",
+    "ticket": 25,
+    "ticket_position": 3,
+    "original_question": "Схема чинопоследования чтеца и певца",
+    "normalized_question": "Схема чинопоследования чтеца и певца",
+    "topic_id": "topic-48b6e9b71d",
+    "book_order": 152,
+    "chapter": "Глава VII. Таинство Священства",
+    "book_section_title": "2. Схема чина поставления чтеца, певца, свещеносца",
+    "epub_href": "index_split_152.xhtml",
+    "reader_href": "reader.html?href=index_split_152.xhtml",
+    "book_refs": [
+      {
+        "book_order": 152,
+        "section_title": "2. Схема чина поставления чтеца, певца, свещеносца",
+        "chapter": "Глава VII. Таинство Священства",
+        "epub_href": "index_split_152.xhtml",
+        "reader_href": "reader.html?href=index_split_152.xhtml"
+      }
+    ],
+    "mapping_confidence": "high",
+    "mapping_note": "",
+    "study_order": 105
+  },
+  {
+    "id": "T25Q4",
+    "ticket": 25,
+    "ticket_position": 4,
+    "original_question": "Чтение Священного Писания и общая чаша",
+    "normalized_question": "Чтение Священного Писания и общая чаша",
+    "topic_id": "topic-f4be89ced5",
+    "book_order": 112,
+    "chapter": "Глава V. Богослужение Таинства Брака",
+    "book_section_title": "Чтение Священного Писания и общая чаша",
+    "epub_href": "index_split_112.xhtml",
+    "reader_href": "reader.html?href=index_split_112.xhtml",
+    "book_refs": [
+      {
+        "book_order": 112,
+        "section_title": "Чтение Священного Писания и общая чаша",
+        "chapter": "Глава V. Богослужение Таинства Брака",
+        "epub_href": "index_split_112.xhtml",
+        "reader_href": "reader.html?href=index_split_112.xhtml"
+      }
+    ],
+    "mapping_confidence": "high",
+    "mapping_note": "",
+    "study_order": 81
+  },
+  {
+    "id": "T25Q5",
+    "ticket": 25,
+    "ticket_position": 5,
+    "original_question": "Содержание молитвословий чина архиреев",
+    "normalized_question": "Содержание молитвословий чина архиереев",
+    "topic_id": "topic-8b98957b85",
+    "book_order": 203,
+    "chapter": "Глава VIII. Богослужение погребений и поминовения усопших",
+    "book_section_title": "3. Содержание молитвословий чина",
+    "epub_href": "index_split_203.xhtml",
+    "reader_href": "reader.html?href=index_split_203.xhtml",
+    "book_refs": [
+      {
+        "book_order": 203,
+        "section_title": "3. Содержание молитвословий чина",
+        "chapter": "Глава VIII. Богослужение погребений и поминовения усопших",
+        "epub_href": "index_split_203.xhtml",
+        "reader_href": "reader.html?href=index_split_203.xhtml"
+      }
+    ],
+    "mapping_confidence": "high",
+    "mapping_note": "",
+    "study_order": 143
+  },
+  {
+    "id": "T25Q6",
+    "ticket": 25,
+    "ticket_position": 6,
+    "original_question": "Особенности чина освящения храма священником",
+    "normalized_question": "Особенности чина освящения храма священником",
+    "topic_id": "topic-9edb87db08",
+    "book_order": 232,
+    "chapter": "Глава X. Богослужение освящения храма",
+    "book_section_title": "4. Особенности чина освящения храма священником",
+    "epub_href": "index_split_232.xhtml",
+    "reader_href": "reader.html?href=index_split_232.xhtml",
+    "book_refs": [
+      {
+        "book_order": 232,
+        "section_title": "4. Особенности чина освящения храма священником",
+        "chapter": "Глава X. Богослужение освящения храма",
+        "epub_href": "index_split_232.xhtml",
+        "reader_href": "reader.html?href=index_split_232.xhtml"
+      }
+    ],
+    "mapping_confidence": "high",
+    "mapping_note": "",
+    "study_order": 170
+  },
+  {
+    "id": "T26Q1",
+    "ticket": 26,
+    "ticket_position": 1,
+    "original_question": "Отречение от сатаны в Крещения",
+    "normalized_question": "Отречение от сатаны в Крещении",
+    "topic_id": "topic-ae06fd5d4b",
+    "book_order": 41,
+    "chapter": "Глава II. Богослужение Таинств Крещения и Миропомазания",
+    "book_section_title": "Отречение от сатаны",
+    "epub_href": "index_split_041.xhtml",
+    "reader_href": "reader.html?href=index_split_041.xhtml",
+    "book_refs": [
+      {
+        "book_order": 41,
+        "section_title": "Отречение от сатаны",
+        "chapter": "Глава II. Богослужение Таинств Крещения и Миропомазания",
+        "epub_href": "index_split_041.xhtml",
+        "reader_href": "reader.html?href=index_split_041.xhtml"
+      },
+      {
+        "book_order": 29,
+        "section_title": "Отречение от сатаны",
+        "chapter": "Глава II. Богослужение Таинств Крещения и Миропомазания",
+        "epub_href": "index_split_029.xhtml",
+        "reader_href": "reader.html?href=index_split_029.xhtml"
+      }
+    ],
+    "mapping_confidence": "high",
+    "mapping_note": "",
+    "study_order": 35
+  },
+  {
+    "id": "T26Q2",
+    "ticket": 26,
+    "ticket_position": 2,
+    "original_question": "Пострижение волос",
+    "normalized_question": "Пострижение волос",
+    "topic_id": "topic-bf19f8c37e",
+    "book_order": 53,
+    "chapter": "Глава II. Богослужение Таинств Крещения и Миропомазания",
+    "book_section_title": "Пострижение волос",
+    "epub_href": "index_split_053.xhtml",
+    "reader_href": "reader.html?href=index_split_053.xhtml",
+    "book_refs": [
+      {
+        "book_order": 53,
+        "section_title": "Пострижение волос",
+        "chapter": "Глава II. Богослужение Таинств Крещения и Миропомазания",
+        "epub_href": "index_split_053.xhtml",
+        "reader_href": "reader.html?href=index_split_053.xhtml"
+      }
+    ],
+    "mapping_confidence": "high",
+    "mapping_note": "",
+    "study_order": 43
+  },
+  {
+    "id": "T26Q3",
+    "ticket": 26,
+    "ticket_position": 3,
+    "original_question": "Чинопоследование над усопшим неправославным",
+    "normalized_question": "Чинопоследование над усопшим неправославным",
+    "topic_id": "topic-3c285a9a21",
+    "book_order": 204,
+    "chapter": "Глава VIII. Богослужение погребений и поминовения усопших",
+    "book_section_title": "Чинопоследование над усопшим неправославным",
+    "epub_href": "index_split_204.xhtml",
+    "reader_href": "reader.html?href=index_split_204.xhtml",
+    "book_refs": [
+      {
+        "book_order": 204,
+        "section_title": "Чинопоследование над усопшим неправославным",
+        "chapter": "Глава VIII. Богослужение погребений и поминовения усопших",
+        "epub_href": "index_split_204.xhtml",
+        "reader_href": "reader.html?href=index_split_204.xhtml"
+      },
+      {
+        "book_order": 205,
+        "section_title": "1. История возникновения чина",
+        "chapter": "Глава VIII. Богослужение погребений и поминовения усопших",
+        "epub_href": "index_split_205.xhtml",
+        "reader_href": "reader.html?href=index_split_205.xhtml"
+      },
+      {
+        "book_order": 206,
+        "section_title": "2. Схема чинопоследования",
+        "chapter": "Глава VIII. Богослужение погребений и поминовения усопших",
+        "epub_href": "index_split_206.xhtml",
+        "reader_href": "reader.html?href=index_split_206.xhtml"
+      }
+    ],
+    "mapping_confidence": "high",
+    "mapping_note": "",
+    "study_order": 144
+  },
+  {
+    "id": "T26Q4",
+    "ticket": 26,
+    "ticket_position": 4,
+    "original_question": "Литургический смысл священнодействий и молитвословий чина освящения храма",
+    "normalized_question": "Литургический смысл священнодействий и молитвословий чина освящения храма",
+    "topic_id": "topic-32e4d2b233",
+    "book_order": 231,
+    "chapter": "Глава X. Богослужение освящения храма",
+    "book_section_title": "3. Литургический смысл священнодействий и молитствований чина освящения храма",
+    "epub_href": "index_split_231.xhtml",
+    "reader_href": "reader.html?href=index_split_231.xhtml",
+    "book_refs": [
+      {
+        "book_order": 231,
+        "section_title": "3. Литургический смысл священнодействий и молитствований чина освящения храма",
+        "chapter": "Глава X. Богослужение освящения храма",
+        "epub_href": "index_split_231.xhtml",
+        "reader_href": "reader.html?href=index_split_231.xhtml"
+      }
+    ],
+    "mapping_confidence": "high",
+    "mapping_note": "",
+    "study_order": 169
+  },
+  {
+    "id": "T26Q5",
+    "ticket": 26,
+    "ticket_position": 5,
+    "original_question": "История чинопоследования «Отходной»",
+    "normalized_question": "История чинопоследования «Отходной",
+    "topic_id": "topic-bf47ac0915",
+    "book_order": 144,
+    "chapter": "Глава VI. Богослужение Таинства Елеосвящения",
+    "book_section_title": "1. История чинопоследования «Отходной»",
+    "epub_href": "index_split_144.xhtml",
+    "reader_href": "reader.html?href=index_split_144.xhtml",
+    "book_refs": [
+      {
+        "book_order": 144,
+        "section_title": "1. История чинопоследования «Отходной»",
+        "chapter": "Глава VI. Богослужение Таинства Елеосвящения",
+        "epub_href": "index_split_144.xhtml",
+        "reader_href": "reader.html?href=index_split_144.xhtml"
+      }
+    ],
+    "mapping_confidence": "high",
+    "mapping_note": "",
+    "study_order": 101
+  },
+  {
+    "id": "T26Q6",
+    "ticket": 26,
+    "ticket_position": 6,
+    "original_question": "Совершение браковенчания в Русской Церкви",
+    "normalized_question": "Совершение браковенчания в Русской Церкви",
+    "topic_id": "topic-8b94ad0b95",
+    "book_order": 117,
+    "chapter": "Глава V. Богослужение Таинства Брака",
+    "book_section_title": "7. Совершение браковенчания в Русской Церкви",
+    "epub_href": "index_split_117.xhtml",
+    "reader_href": "reader.html?href=index_split_117.xhtml",
+    "book_refs": [
+      {
+        "book_order": 117,
+        "section_title": "7. Совершение браковенчания в Русской Церкви",
+        "chapter": "Глава V. Богослужение Таинства Брака",
+        "epub_href": "index_split_117.xhtml",
+        "reader_href": "reader.html?href=index_split_117.xhtml"
+      }
+    ],
+    "mapping_confidence": "high",
+    "mapping_note": "",
+    "study_order": 86
+  },
+  {
+    "id": "T27Q1",
+    "ticket": 27,
+    "ticket_position": 1,
+    "original_question": "Сочетание Христу в Крещения",
+    "normalized_question": "Сочетание Христу в Крещении",
+    "topic_id": "topic-4c81a0803f",
+    "book_order": 42,
+    "chapter": "Глава II. Богослужение Таинств Крещения и Миропомазания",
+    "book_section_title": "Сочетание Христу",
+    "epub_href": "index_split_042.xhtml",
+    "reader_href": "reader.html?href=index_split_042.xhtml",
+    "book_refs": [
+      {
+        "book_order": 42,
+        "section_title": "Сочетание Христу",
+        "chapter": "Глава II. Богослужение Таинств Крещения и Миропомазания",
+        "epub_href": "index_split_042.xhtml",
+        "reader_href": "reader.html?href=index_split_042.xhtml"
+      },
+      {
+        "book_order": 30,
+        "section_title": "Сочетание Христу",
+        "chapter": "Глава II. Богослужение Таинств Крещения и Миропомазания",
+        "epub_href": "index_split_030.xhtml",
+        "reader_href": "reader.html?href=index_split_030.xhtml"
+      }
+    ],
+    "mapping_confidence": "high",
+    "mapping_note": "",
+    "study_order": 36
+  },
+  {
+    "id": "T27Q2",
+    "ticket": 27,
+    "ticket_position": 2,
+    "original_question": "Измовение святого Мира",
+    "normalized_question": "Измовение святого Мира",
+    "topic_id": "topic-19262edf11",
+    "book_order": 62,
+    "chapter": "Глава II. Богослужение Таинств Крещения и Миропомазания",
+    "book_section_title": "Молитвы на измовение святого Мира",
+    "epub_href": "index_split_062.xhtml",
+    "reader_href": "reader.html?href=index_split_062.xhtml",
+    "book_refs": [
+      {
+        "book_order": 62,
+        "section_title": "Молитвы на измовение святого Мира",
+        "chapter": "Глава II. Богослужение Таинств Крещения и Миропомазания",
+        "epub_href": "index_split_062.xhtml",
+        "reader_href": "reader.html?href=index_split_062.xhtml"
+      }
+    ],
+    "mapping_confidence": "high",
+    "mapping_note": "",
+    "study_order": 48
+  },
+  {
+    "id": "T27Q3",
+    "ticket": 27,
+    "ticket_position": 3,
+    "original_question": "Образ круга во славу Святой Троицы Венчания",
+    "normalized_question": "Образ круга во славу Святой Троицы Венчания",
+    "topic_id": "topic-108e5f7405",
+    "book_order": 113,
+    "chapter": "Глава V. Богослужение Таинства Брака",
+    "book_section_title": "Образ круга во славу Святой Троицы",
+    "epub_href": "index_split_113.xhtml",
+    "reader_href": "reader.html?href=index_split_113.xhtml",
+    "book_refs": [
+      {
+        "book_order": 113,
+        "section_title": "Образ круга во славу Святой Троицы",
+        "chapter": "Глава V. Богослужение Таинства Брака",
+        "epub_href": "index_split_113.xhtml",
+        "reader_href": "reader.html?href=index_split_113.xhtml"
+      }
+    ],
+    "mapping_confidence": "high",
+    "mapping_note": "",
+    "study_order": 82
+  },
+  {
+    "id": "T27Q4",
+    "ticket": 27,
+    "ticket_position": 4,
+    "original_question": "История возникновения чина неправославным",
+    "normalized_question": "История возникновения чина неправославным",
+    "topic_id": "topic-a3440ffa83",
+    "book_order": 205,
+    "chapter": "Глава VIII. Богослужение погребений и поминовения усопших",
+    "book_section_title": "1. История возникновения чина",
+    "epub_href": "index_split_205.xhtml",
+    "reader_href": "reader.html?href=index_split_205.xhtml",
+    "book_refs": [
+      {
+        "book_order": 205,
+        "section_title": "1. История возникновения чина",
+        "chapter": "Глава VIII. Богослужение погребений и поминовения усопших",
+        "epub_href": "index_split_205.xhtml",
+        "reader_href": "reader.html?href=index_split_205.xhtml"
+      }
+    ],
+    "mapping_confidence": "high",
+    "mapping_note": "",
+    "study_order": 145
+  },
+  {
+    "id": "T27Q5",
+    "ticket": 27,
+    "ticket_position": 5,
+    "original_question": "Малое освящение храма",
+    "normalized_question": "Малое освящение храма",
+    "topic_id": "topic-2577248304",
+    "book_order": 233,
+    "chapter": "Глава X. Богослужение освящения храма",
+    "book_section_title": "5. Малое освящение храма",
+    "epub_href": "index_split_233.xhtml",
+    "reader_href": "reader.html?href=index_split_233.xhtml",
+    "book_refs": [
+      {
+        "book_order": 233,
+        "section_title": "5. Малое освящение храма",
+        "chapter": "Глава X. Богослужение освящения храма",
+        "epub_href": "index_split_233.xhtml",
+        "reader_href": "reader.html?href=index_split_233.xhtml"
+      }
+    ],
+    "mapping_confidence": "high",
+    "mapping_note": "",
+    "study_order": 171
+  },
+  {
+    "id": "T27Q6",
+    "ticket": 27,
+    "ticket_position": 6,
+    "original_question": "Священнодействия чина и их духовный смысл причащения больных",
+    "normalized_question": "Священнодействия чина и их духовный смысл причащения больных",
+    "topic_id": "topic-61936ee638",
+    "book_order": 142,
+    "chapter": "Глава VI. Богослужение Таинства Елеосвящения",
+    "book_section_title": "4. Священнодействия чина и их духовный смысл",
+    "epub_href": "index_split_142.xhtml",
+    "reader_href": "reader.html?href=index_split_142.xhtml",
+    "book_refs": [
+      {
+        "book_order": 142,
+        "section_title": "4. Священнодействия чина и их духовный смысл",
+        "chapter": "Глава VI. Богослужение Таинства Елеосвящения",
+        "epub_href": "index_split_142.xhtml",
+        "reader_href": "reader.html?href=index_split_142.xhtml"
+      }
+    ],
+    "mapping_confidence": "high",
+    "mapping_note": "",
+    "study_order": 100
+  },
+  {
+    "id": "T28Q1",
+    "ticket": 28,
+    "ticket_position": 1,
+    "original_question": "История совершения чина оглашения в Русской Церкви",
+    "normalized_question": "История совершения чина оглашения в Русской Церкви",
+    "topic_id": "topic-c146a8e2be",
+    "book_order": 27,
+    "chapter": "Глава II. Богослужение Таинств Крещения и Миропомазания",
+    "book_section_title": "Чин оглашения",
+    "epub_href": "index_split_027.xhtml",
+    "reader_href": "reader.html?href=index_split_027.xhtml",
+    "book_refs": [
+      {
+        "book_order": 27,
+        "section_title": "Чин оглашения",
+        "chapter": "Глава II. Богослужение Таинств Крещения и Миропомазания",
+        "epub_href": "index_split_027.xhtml",
+        "reader_href": "reader.html?href=index_split_027.xhtml"
+      },
+      {
+        "book_order": 38,
+        "section_title": "Чинопоследование оглашения",
+        "chapter": "Глава II. Богослужение Таинств Крещения и Миропомазания",
+        "epub_href": "index_split_038.xhtml",
+        "reader_href": "reader.html?href=index_split_038.xhtml"
+      }
+    ],
+    "mapping_confidence": "medium",
+    "mapping_note": "История оглашения в Русской Церкви раскрывается в историческом разделе «Чин оглашения»; дополнительная ссылка ведёт к богословскому описанию чинопоследования.",
+    "study_order": 27
+  },
+  {
+    "id": "T28Q2",
+    "ticket": 28,
+    "ticket_position": 2,
+    "original_question": "Хождение вокруг купели",
+    "normalized_question": "Хождение вокруг купели",
+    "topic_id": "topic-ac6c61bba9",
+    "book_order": 50,
+    "chapter": "Глава II. Богослужение Таинств Крещения и Миропомазания",
+    "book_section_title": "Хождение вокруг купели",
+    "epub_href": "index_split_050.xhtml",
+    "reader_href": "reader.html?href=index_split_050.xhtml",
+    "book_refs": [
+      {
+        "book_order": 50,
+        "section_title": "Хождение вокруг купели",
+        "chapter": "Глава II. Богослужение Таинств Крещения и Миропомазания",
+        "epub_href": "index_split_050.xhtml",
+        "reader_href": "reader.html?href=index_split_050.xhtml"
+      }
+    ],
+    "mapping_confidence": "high",
+    "mapping_note": "",
+    "study_order": 42
+  },
+  {
+    "id": "T28Q3",
+    "ticket": 28,
+    "ticket_position": 3,
+    "original_question": "Окончание чина венчания",
+    "normalized_question": "Окончание чина венчания",
+    "topic_id": "topic-d6d7a7f226",
+    "book_order": 114,
+    "chapter": "Глава V. Богослужение Таинства Брака",
+    "book_section_title": "Окончание чина венчания",
+    "epub_href": "index_split_114.xhtml",
+    "reader_href": "reader.html?href=index_split_114.xhtml",
+    "book_refs": [
+      {
+        "book_order": 114,
+        "section_title": "Окончание чина венчания",
+        "chapter": "Глава V. Богослужение Таинства Брака",
+        "epub_href": "index_split_114.xhtml",
+        "reader_href": "reader.html?href=index_split_114.xhtml"
+      }
+    ],
+    "mapping_confidence": "high",
+    "mapping_note": "",
+    "study_order": 83
+  },
+  {
+    "id": "T28Q4",
+    "ticket": 28,
+    "ticket_position": 4,
+    "original_question": "Схема чинопоследования причащения больных",
+    "normalized_question": "Схема чинопоследования причащения больных",
+    "topic_id": "topic-1604a1a1c6",
+    "book_order": 141,
+    "chapter": "Глава VI. Богослужение Таинства Елеосвящения",
+    "book_section_title": "3. Схема чинопоследования",
+    "epub_href": "index_split_141.xhtml",
+    "reader_href": "reader.html?href=index_split_141.xhtml",
+    "book_refs": [
+      {
+        "book_order": 141,
+        "section_title": "3. Схема чинопоследования",
+        "chapter": "Глава VI. Богослужение Таинства Елеосвящения",
+        "epub_href": "index_split_141.xhtml",
+        "reader_href": "reader.html?href=index_split_141.xhtml"
+      }
+    ],
+    "mapping_confidence": "high",
+    "mapping_note": "",
+    "study_order": 99
+  },
+  {
+    "id": "T28Q5",
+    "ticket": 28,
+    "ticket_position": 5,
+    "original_question": "Схема чинопоследованиянеправославным",
+    "normalized_question": "Схема чинопоследования над усопшим неправославным",
+    "topic_id": "topic-f6f03624c5",
+    "book_order": 206,
+    "chapter": "Глава VIII. Богослужение погребений и поминовения усопших",
+    "book_section_title": "2. Схема чинопоследования",
+    "epub_href": "index_split_206.xhtml",
+    "reader_href": "reader.html?href=index_split_206.xhtml",
+    "book_refs": [
+      {
+        "book_order": 206,
+        "section_title": "2. Схема чинопоследования",
+        "chapter": "Глава VIII. Богослужение погребений и поминовения усопших",
+        "epub_href": "index_split_206.xhtml",
+        "reader_href": "reader.html?href=index_split_206.xhtml"
+      }
+    ],
+    "mapping_confidence": "high",
+    "mapping_note": "",
+    "study_order": 146
+  },
+  {
+    "id": "T28Q6",
+    "ticket": 28,
+    "ticket_position": 6,
+    "original_question": "Устав, бываемый о поколебавшейся святой трапезе",
+    "normalized_question": "Устав, бываемый о поколебавшейся святой трапезе",
+    "topic_id": "topic-91e8c01c0a",
+    "book_order": 236,
+    "chapter": "Глава X. Богослужение освящения храма",
+    "book_section_title": "Устав, бываемый о поколебавшейся святой трапезе",
+    "epub_href": "index_split_236.xhtml",
+    "reader_href": "reader.html?href=index_split_236.xhtml",
+    "book_refs": [
+      {
+        "book_order": 236,
+        "section_title": "Устав, бываемый о поколебавшейся святой трапезе",
+        "chapter": "Глава X. Богослужение освящения храма",
+        "epub_href": "index_split_236.xhtml",
+        "reader_href": "reader.html?href=index_split_236.xhtml"
+      }
+    ],
+    "mapping_confidence": "high",
+    "mapping_note": "",
+    "study_order": 176
+  },
+  {
+    "id": "T29Q1",
+    "ticket": 29,
+    "ticket_position": 1,
+    "original_question": "Молитва о призвании ко святому Просвящению",
+    "normalized_question": "Молитва о призвании ко святому Просвящению",
+    "topic_id": "topic-3953807af5",
+    "book_order": 43,
+    "chapter": "Глава II. Богослужение Таинств Крещения и Миропомазания",
+    "book_section_title": "Завершительная молитва чина оглашения",
+    "epub_href": "index_split_043.xhtml",
+    "reader_href": "reader.html?href=index_split_043.xhtml",
+    "book_refs": [
+      {
+        "book_order": 43,
+        "section_title": "Завершительная молитва чина оглашения",
+        "chapter": "Глава II. Богослужение Таинств Крещения и Миропомазания",
+        "epub_href": "index_split_043.xhtml",
+        "reader_href": "reader.html?href=index_split_043.xhtml"
+      },
+      {
+        "book_order": 38,
+        "section_title": "Чинопоследование оглашения",
+        "chapter": "Глава II. Богослужение Таинств Крещения и Миропомазания",
+        "epub_href": "index_split_038.xhtml",
+        "reader_href": "reader.html?href=index_split_038.xhtml"
+      },
+      {
+        "book_order": 43,
+        "section_title": "Завершительная молитва чина оглашения",
+        "chapter": "Глава II. Богослужение Таинств Крещения и Миропомазания",
+        "epub_href": "index_split_043.xhtml",
+        "reader_href": "reader.html?href=index_split_043.xhtml"
+      }
+    ],
+    "mapping_confidence": "medium",
+    "mapping_note": "Отдельного одноимённого заголовка в оглавлении нет; молитва о призвании к Просвещению соотнесена с завершением оглашения и общим чинопоследованием.",
+    "study_order": 37
+  },
+  {
+    "id": "T29Q2",
+    "ticket": 29,
+    "ticket_position": 2,
+    "original_question": "Молитва и помазание святым Миром новокрещенного",
+    "normalized_question": "Молитва и помазание святым Миром новокрещенного",
+    "topic_id": "topic-75f9cd9e22",
+    "book_order": 60,
+    "chapter": "Глава II. Богослужение Таинств Крещения и Миропомазания",
+    "book_section_title": "Помазание святым Миром новокрещенного",
+    "epub_href": "index_split_060.xhtml",
+    "reader_href": "reader.html?href=index_split_060.xhtml",
+    "book_refs": [
+      {
+        "book_order": 60,
+        "section_title": "Помазание святым Миром новокрещенного",
+        "chapter": "Глава II. Богослужение Таинств Крещения и Миропомазания",
+        "epub_href": "index_split_060.xhtml",
+        "reader_href": "reader.html?href=index_split_060.xhtml"
+      }
+    ],
+    "mapping_confidence": "high",
+    "mapping_note": "",
+    "study_order": 47
+  },
+  {
+    "id": "T29Q3",
+    "ticket": 29,
+    "ticket_position": 3,
+    "original_question": "История чина обручения",
+    "normalized_question": "История чина обручения",
+    "topic_id": "topic-0d4d41ac9a",
+    "book_order": 115,
+    "chapter": "Глава V. Богослужение Таинства Брака",
+    "book_section_title": "5. История чина обручения",
+    "epub_href": "index_split_115.xhtml",
+    "reader_href": "reader.html?href=index_split_115.xhtml",
+    "book_refs": [
+      {
+        "book_order": 115,
+        "section_title": "5. История чина обручения",
+        "chapter": "Глава V. Богослужение Таинства Брака",
+        "epub_href": "index_split_115.xhtml",
+        "reader_href": "reader.html?href=index_split_115.xhtml"
+      }
+    ],
+    "mapping_confidence": "high",
+    "mapping_note": "",
+    "study_order": 84
+  },
+  {
+    "id": "T29Q4",
+    "ticket": 29,
+    "ticket_position": 4,
+    "original_question": "Понятие о панихиде и времени ее совершения",
+    "normalized_question": "Понятие о панихиде и времени ее совершения",
+    "topic_id": "topic-0d0e990360",
+    "book_order": 208,
+    "chapter": "Глава VIII. Богослужение погребений и поминовения усопших",
+    "book_section_title": "1. Понятие о панихиде и времени ее совершения",
+    "epub_href": "index_split_208.xhtml",
+    "reader_href": "reader.html?href=index_split_208.xhtml",
+    "book_refs": [
+      {
+        "book_order": 208,
+        "section_title": "1. Понятие о панихиде и времени ее совершения",
+        "chapter": "Глава VIII. Богослужение погребений и поминовения усопших",
+        "epub_href": "index_split_208.xhtml",
+        "reader_href": "reader.html?href=index_split_208.xhtml"
+      }
+    ],
+    "mapping_confidence": "high",
+    "mapping_note": "",
+    "study_order": 147
+  },
+  {
+    "id": "T29Q5",
+    "ticket": 29,
+    "ticket_position": 5,
+    "original_question": "Освящение принадлежностей храма",
+    "normalized_question": "Освящение принадлежностей храма",
+    "topic_id": "topic-7c5a2a3592",
+    "book_order": 234,
+    "chapter": "Глава X. Богослужение освящения храма",
+    "book_section_title": "6. Освящение принадлежностей храма",
+    "epub_href": "index_split_234.xhtml",
+    "reader_href": "reader.html?href=index_split_234.xhtml",
+    "book_refs": [
+      {
+        "book_order": 234,
+        "section_title": "6. Освящение принадлежностей храма",
+        "chapter": "Глава X. Богослужение освящения храма",
+        "epub_href": "index_split_234.xhtml",
+        "reader_href": "reader.html?href=index_split_234.xhtml"
+      }
+    ],
+    "mapping_confidence": "high",
+    "mapping_note": "",
+    "study_order": 173
+  },
+  {
+    "id": "T29Q6",
+    "ticket": 29,
+    "ticket_position": 6,
+    "original_question": "История чинопоследования причащения больных",
+    "normalized_question": "История чинопоследования причащения больных",
+    "topic_id": "topic-a16baaf089",
+    "book_order": 140,
+    "chapter": "Глава VI. Богослужение Таинства Елеосвящения",
+    "book_section_title": "2. История чинопоследования причащения больных",
+    "epub_href": "index_split_140.xhtml",
+    "reader_href": "reader.html?href=index_split_140.xhtml",
+    "book_refs": [
+      {
+        "book_order": 140,
+        "section_title": "2. История чинопоследования причащения больных",
+        "chapter": "Глава VI. Богослужение Таинства Елеосвящения",
+        "epub_href": "index_split_140.xhtml",
+        "reader_href": "reader.html?href=index_split_140.xhtml"
+      }
+    ],
+    "mapping_confidence": "high",
+    "mapping_note": "",
+    "study_order": 98
+  },
+  {
+    "id": "T30Q1",
+    "ticket": 30,
+    "ticket_position": 1,
+    "original_question": "Молитвы 40-го дня",
+    "normalized_question": "Молитвы 40-го дня",
+    "topic_id": "topic-4e95ab892f",
+    "book_order": 16,
+    "chapter": "Глава II. Богослужение Таинств Крещения и Миропомазания",
+    "book_section_title": "Молитвы сорокового дня",
+    "epub_href": "index_split_016.xhtml",
+    "reader_href": "reader.html?href=index_split_016.xhtml",
+    "book_refs": [
+      {
+        "book_order": 16,
+        "section_title": "Молитвы сорокового дня",
+        "chapter": "Глава II. Богослужение Таинств Крещения и Миропомазания",
+        "epub_href": "index_split_016.xhtml",
+        "reader_href": "reader.html?href=index_split_016.xhtml"
+      }
+    ],
+    "mapping_confidence": "high",
+    "mapping_note": "",
+    "study_order": 13
+  },
+  {
+    "id": "T30Q2",
+    "ticket": 30,
+    "ticket_position": 2,
+    "original_question": "Схема чинопоследования панихиды в пяток вечера в притворе храма по Типикону",
+    "normalized_question": "Схема чинопоследования панихиды в пяток вечера в притворе храма по Типикону",
+    "topic_id": "topic-02cddedeb9",
+    "book_order": 209,
+    "chapter": "Глава VIII. Богослужение погребений и поминовения усопших",
+    "book_section_title": "2. Схема чинопоследования панихиды в пяток вечера в притворе храма по Типикону",
+    "epub_href": "index_split_209.xhtml",
+    "reader_href": "reader.html?href=index_split_209.xhtml",
+    "book_refs": [
+      {
+        "book_order": 209,
+        "section_title": "2. Схема чинопоследования панихиды в пяток вечера в притворе храма по Типикону",
+        "chapter": "Глава VIII. Богослужение погребений и поминовения усопших",
+        "epub_href": "index_split_209.xhtml",
+        "reader_href": "reader.html?href=index_split_209.xhtml"
+      }
+    ],
+    "mapping_confidence": "high",
+    "mapping_note": "",
+    "study_order": 148
+  },
+  {
+    "id": "T30Q3",
+    "ticket": 30,
+    "ticket_position": 3,
+    "original_question": "Чинопоследование Миропомазания",
+    "normalized_question": "Чинопоследование Миропомазания",
+    "topic_id": "topic-d6975b0189",
+    "book_order": 21,
+    "chapter": "Глава II. Богослужение Таинств Крещения и Миропомазания",
+    "book_section_title": "Чин миропомазания",
+    "epub_href": "index_split_021.xhtml",
+    "reader_href": "reader.html?href=index_split_021.xhtml",
+    "book_refs": [
+      {
+        "book_order": 21,
+        "section_title": "Чин миропомазания",
+        "chapter": "Глава II. Богослужение Таинств Крещения и Миропомазания",
+        "epub_href": "index_split_021.xhtml",
+        "reader_href": "reader.html?href=index_split_021.xhtml"
+      }
+    ],
+    "mapping_confidence": "high",
+    "mapping_note": "",
+    "study_order": 20
+  },
+  {
+    "id": "T30Q4",
+    "ticket": 30,
+    "ticket_position": 4,
+    "original_question": "История чина венчания",
+    "normalized_question": "История чина венчания",
+    "topic_id": "topic-c15e27cf4a",
+    "book_order": 116,
+    "chapter": "Глава V. Богослужение Таинства Брака",
+    "book_section_title": "6. История чина венчания",
+    "epub_href": "index_split_116.xhtml",
+    "reader_href": "reader.html?href=index_split_116.xhtml",
+    "book_refs": [
+      {
+        "book_order": 116,
+        "section_title": "6. История чина венчания",
+        "chapter": "Глава V. Богослужение Таинства Брака",
+        "epub_href": "index_split_116.xhtml",
+        "reader_href": "reader.html?href=index_split_116.xhtml"
+      }
+    ],
+    "mapping_confidence": "high",
+    "mapping_note": "",
+    "study_order": 85
+  },
+  {
+    "id": "T30Q5",
+    "ticket": 30,
+    "ticket_position": 5,
+    "original_question": "Таинство Святой Евхаристии",
+    "normalized_question": "Таинство Святой Евхаристии",
+    "topic_id": "topic-38b8f74cef",
+    "book_order": 139,
+    "chapter": "Глава VI. Богослужение Таинства Елеосвящения",
+    "book_section_title": "1. Таинство святой Евхаристии",
+    "epub_href": "index_split_139.xhtml",
+    "reader_href": "reader.html?href=index_split_139.xhtml",
+    "book_refs": [
+      {
+        "book_order": 139,
+        "section_title": "1. Таинство святой Евхаристии",
+        "chapter": "Глава VI. Богослужение Таинства Елеосвящения",
+        "epub_href": "index_split_139.xhtml",
+        "reader_href": "reader.html?href=index_split_139.xhtml"
+      }
+    ],
+    "mapping_confidence": "high",
+    "mapping_note": "",
+    "study_order": 97
+  },
+  {
+    "id": "T30Q6",
+    "ticket": 30,
+    "ticket_position": 6,
+    "original_question": "Происхождение чина и содержание молитвословий.",
+    "normalized_question": "Происхождение чина и содержание молитвословий.",
+    "topic_id": "topic-4ea3dd9ee7",
+    "book_order": 241,
+    "chapter": "Глава X. Богослужение освящения храма",
+    "book_section_title": "2. Происхождение чина и содержание молитвословий",
+    "epub_href": "index_split_241.xhtml",
+    "reader_href": "reader.html?href=index_split_241.xhtml",
+    "book_refs": [
+      {
+        "book_order": 241,
+        "section_title": "2. Происхождение чина и содержание молитвословий",
+        "chapter": "Глава X. Богослужение освящения храма",
+        "epub_href": "index_split_241.xhtml",
+        "reader_href": "reader.html?href=index_split_241.xhtml"
+      }
+    ],
+    "mapping_confidence": "high",
+    "mapping_note": "",
+    "study_order": 180
+  }
+]
