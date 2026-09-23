@@ -16,12 +16,9 @@
       <a class="button-link secondary" href="index.html">Главное меню</a>
     </div>
     <div class="reader-title-wrap">
-      <div id="readerContext" class="reader-context">Источник ответа</div>
-      <div id="readerQuestion" class="reader-question">Загрузка…</div>
-      <div id="readerTitle" class="reader-title"></div>
-      <div id="readerChapter" class="reader-chapter"></div>
+      <div id="readerChapter" class="reader-current-chapter">Загрузка учебника…</div>
+      <div id="readerTitle" class="reader-current-title"></div>
     </div>
-    <button id="sourceJump" class="action source-jump hidden" type="button">К фрагментам ответа</button>
   </div>
   <div class="reader-nav">
     <button id="prevSection" class="reader-nav-button" type="button">← Предыдущий раздел</button>
@@ -30,32 +27,31 @@
       <select id="sectionSelect" aria-label="Раздел учебника"></select>
     </label>
     <button id="nextSection" class="reader-nav-button" type="button">Следующий раздел →</button>
-    <span id="sourceStatus" class="source-status"></span>
   </div>
 </header>
+
 <main class="reader-main">
   <div id="readerError" class="notice error hidden"></div>
   <div id="bookFrame" class="book-frame"></div>
 </main>
+
 <script>
 (async function(){
   var params=new URLSearchParams(location.search);
   var raw=params.get('href')||'';
   var topicId=params.get('topic')||'';
-  var ctx=params.get('ctx')||'book';
   var returnRaw=params.get('return')||'index.html';
   var safe=/^index_split_\d{3}\.xhtml(?:#[A-Za-z0-9_.:-]+)?$/.test(raw);
+
   var error=document.getElementById('readerError');
   var viewer=document.getElementById('bookFrame');
   var returnLink=document.getElementById('returnLink');
-  var sourceJump=document.getElementById('sourceJump');
-  var sourceStatus=document.getElementById('sourceStatus');
   var sectionSelect=document.getElementById('sectionSelect');
   var prevButton=document.getElementById('prevSection');
   var nextButton=document.getElementById('nextSection');
-  var highlighted=[];
+
   var sourceFragments=[];
-  var sourceBase=raw.split('#')[0];
+  var sourceBase=hrefKey(raw);
   var currentIndex=-1;
   var indexData=[];
   var rendition=null;
@@ -66,6 +62,15 @@
       if(u.origin===location.origin&&/\/index\.html$/.test(u.pathname))return value;
     }catch(e){}
     return 'index.html';
+  }
+
+  function hrefKey(value){
+    return String(value||'').split('#')[0].split('/').pop();
+  }
+
+  function findIndexByHref(value){
+    var key=hrefKey(value);
+    return indexData.findIndex(function(item){return hrefKey(item.href)===key;});
   }
 
   function normText(s){
@@ -80,34 +85,39 @@
     return hit/fw.length;
   }
 
-  function clearHighlightState(){
-    highlighted=[];
-    sourceJump.classList.add('hidden');
-    sourceStatus.textContent='';
-  }
-
   function applyHighlights(contents){
-    clearHighlightState();
     if(!sourceFragments.length||currentIndex<0)return;
-    var currentBase=(indexData[currentIndex].href||'').split('#')[0];
+    var currentBase=hrefKey(indexData[currentIndex].href);
     if(currentBase!==sourceBase)return;
+
     var doc=contents.document;
     if(!doc)return;
 
-    var style=doc.createElement('style');
-    style.textContent='.answer-source-highlight{background:#fff0a6!important;box-shadow:inset 4px 0 0 #c08b16!important;border-radius:4px!important;padding:.12em .28em!important;}';
-    doc.head.appendChild(style);
+    if(!doc.getElementById('answer-source-style')){
+      var style=doc.createElement('style');
+      style.id='answer-source-style';
+      style.textContent='.answer-source-highlight{background:#fff0a6!important;box-shadow:inset 4px 0 0 #c08b16!important;border-radius:4px!important;padding:.12em .28em!important;}';
+      doc.head.appendChild(style);
+    }
+
+    Array.from(doc.querySelectorAll('.answer-source-highlight')).forEach(function(el){
+      el.classList.remove('answer-source-highlight');
+    });
 
     var all=Array.from(doc.querySelectorAll('p,li,blockquote,div'));
     var candidates=all.filter(function(el){
-      var nested=Array.from(el.children).some(function(ch){return ['P','LI','BLOCKQUOTE','DIV'].indexOf(ch.tagName)>=0;});
+      var nested=Array.from(el.children).some(function(ch){
+        return ['P','LI','BLOCKQUOTE','DIV'].indexOf(ch.tagName)>=0;
+      });
       return !nested&&normText(el.textContent).length>=25;
     });
     if(!candidates.length)candidates=Array.from(doc.querySelectorAll('p,li,blockquote'));
 
+    var highlighted=[];
     sourceFragments.forEach(function(fragment){
       var nf=normText(fragment);
       var best=null,bestScore=0;
+
       candidates.forEach(function(el){
         var nt=normText(el.textContent);
         var score=0;
@@ -116,6 +126,7 @@
         else score=overlapScore(fragment,el.textContent);
         if(score>bestScore){bestScore=score;best=el;}
       });
+
       if(best&&bestScore>=0.55&&!highlighted.includes(best)){
         best.classList.add('answer-source-highlight');
         highlighted.push(best);
@@ -123,16 +134,25 @@
     });
 
     if(highlighted.length){
-      sourceJump.classList.remove('hidden');
-      sourceStatus.textContent='Подсвечено фрагментов: '+highlighted.length;
-      setTimeout(function(){highlighted[0].scrollIntoView({behavior:'smooth',block:'center'});},180);
+      setTimeout(function(){
+        highlighted[0].scrollIntoView({behavior:'smooth',block:'center'});
+      },180);
     }
   }
 
   function updateHeader(item){
-    document.getElementById('readerTitle').textContent=item?item.title:'';
-    document.getElementById('readerChapter').textContent=item?(item.chapter||''):'';
-    document.title=(item?item.title:'Учебник')+' — Практическое руководство';
+    var chapter=item&&item.chapter?item.chapter:'';
+    var title=item&&item.title?item.title:'';
+
+    if(chapter&&title&&normText(chapter)===normText(title)){
+      document.getElementById('readerChapter').textContent='';
+      document.getElementById('readerTitle').textContent=title;
+    }else{
+      document.getElementById('readerChapter').textContent=chapter||'Учебник';
+      document.getElementById('readerTitle').textContent=title;
+    }
+
+    document.title=(title||chapter||'Учебник')+' — Практическое руководство';
     sectionSelect.value=String(currentIndex);
     prevButton.disabled=currentIndex<=0;
     nextButton.disabled=currentIndex<0||currentIndex>=indexData.length-1;
@@ -141,10 +161,8 @@
   async function navigateTo(i,useRaw){
     if(i<0||i>=indexData.length)return;
     currentIndex=i;
-    clearHighlightState();
-    var item=indexData[i];
-    updateHeader(item);
-    await rendition.display(useRaw?raw:item.href);
+    updateHeader(indexData[i]);
+    await rendition.display(useRaw?raw:indexData[i].href);
   }
 
   if(!safe){
@@ -159,56 +177,69 @@
   try{
     var loaded=await Promise.all([
       fetch('data/book-index.json').then(function(r){if(!r.ok)throw new Error('index');return r.json();}),
-      fetch('data/answers.json').then(function(r){if(!r.ok)throw new Error('answers');return r.json();}),
-      fetch('data/ticket-questions.json').then(function(r){if(!r.ok)throw new Error('tickets');return r.json();})
+      fetch('data/answers.json').then(function(r){if(!r.ok)throw new Error('answers');return r.json();})
     ]);
+
     indexData=loaded[0];
     var answer=loaded[1].find(function(x){return x.topic_id===topicId;});
-    var ticketRows=loaded[2];
     sourceFragments=answer&&Array.isArray(answer.source_fragments)?answer.source_fragments:[];
 
-    if(answer){
-      document.getElementById('readerQuestion').textContent=answer.question;
-    }
-
-    if(ctx.indexOf('ticket:')===0){
-      var bits=ctx.split(':');
-      var tn=Number(bits[1]),pn=Number(bits[2]);
-      var row=ticketRows.find(function(x){return x.ticket===tn&&x.ticket_position===pn;});
-      document.getElementById('readerContext').textContent='Билет № '+tn+' · вопрос '+pn;
-      if(row)document.getElementById('readerQuestion').textContent=row.original_question;
-    }else if(ctx==='search'){
-      document.getElementById('readerContext').textContent='Переход из поиска';
-    }else{
-      document.getElementById('readerContext').textContent='Переход из раздела «По учебнику»';
-    }
-
+    var groups=new Map();
     indexData.forEach(function(item,i){
+      var groupName=item.chapter||'Начальные разделы';
+      var group=groups.get(groupName);
+      if(!group){
+        group=document.createElement('optgroup');
+        group.label=groupName;
+        groups.set(groupName,group);
+        sectionSelect.appendChild(group);
+      }
       var opt=document.createElement('option');
       opt.value=String(i);
-      opt.textContent='#'+String(item.order||i+1).padStart(3,'0')+' '+item.title;
-      sectionSelect.appendChild(opt);
+      opt.textContent=(item.title===item.chapter)?'Начало главы':item.title;
+      group.appendChild(opt);
     });
 
-    currentIndex=indexData.findIndex(function(x){return (x.href||'').split('#')[0]===sourceBase;});
+    currentIndex=findIndexByHref(raw);
     if(currentIndex<0)throw new Error('section');
 
     if(typeof ePub!=='function')throw new Error('epubjs');
     var book=ePub('assets/book/taintstva-i-obryady-pravoslavnoy-tserkvi.epub');
-    rendition=book.renderTo('bookFrame',{width:'100%',height:'100%',spread:'none',flow:'scrolled-doc'});
+    rendition=book.renderTo('bookFrame',{
+      width:'100%',
+      height:'100%',
+      spread:'none',
+      flow:'scrolled-doc'
+    });
+
     rendition.hooks.content.register(function(contents){
       setTimeout(function(){applyHighlights(contents);},30);
     });
+
     rendition.on('rendered',function(){
       var contents=rendition.getContents();
-      if(contents&&contents.length)setTimeout(function(){applyHighlights(contents[0]);},40);
+      if(contents&&contents.length){
+        setTimeout(function(){applyHighlights(contents[0]);},40);
+      }
     });
 
-    sectionSelect.addEventListener('change',function(){navigateTo(Number(sectionSelect.value),false);});
-    prevButton.addEventListener('click',function(){navigateTo(currentIndex-1,false);});
-    nextButton.addEventListener('click',function(){navigateTo(currentIndex+1,false);});
-    sourceJump.addEventListener('click',function(){
-      if(highlighted.length)highlighted[0].scrollIntoView({behavior:'smooth',block:'center'});
+    rendition.on('relocated',function(location){
+      var href=location&&location.start?location.start.href:'';
+      var i=findIndexByHref(href);
+      if(i>=0){
+        currentIndex=i;
+        updateHeader(indexData[i]);
+      }
+    });
+
+    sectionSelect.addEventListener('change',function(){
+      navigateTo(Number(sectionSelect.value),false);
+    });
+    prevButton.addEventListener('click',function(){
+      navigateTo(currentIndex-1,false);
+    });
+    nextButton.addEventListener('click',function(){
+      navigateTo(currentIndex+1,false);
     });
 
     await navigateTo(currentIndex,true);
