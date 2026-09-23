@@ -137,6 +137,36 @@ def answer_for(topic,blocks):
     chosen.sort(key=lambda c:chunks.index(c))
     return clip(' '.join(chosen),1000 if meaning else 950)
 
+def source_fragments_for(topic,blocks,answer,limit=3):
+    chunks=[c for c in sentence_chunks(blocks) if len(norm(c))>=25]
+    if not chunks:
+        return []
+    qst=stems(topic['normalized_question'])
+    ast=stems(answer)
+    scored=[]
+    for idx,c in enumerate(chunks):
+        cst=stems(c)
+        q_overlap=len(qst & cst)
+        a_overlap=len(ast & cst)
+        phrase_bonus=5 if norm(c) and norm(c) in norm(answer) else 0
+        score=q_overlap*5+a_overlap*2+phrase_bonus-(idx*0.002)
+        scored.append((score,idx,c))
+    chosen=[]
+    for score,idx,c in sorted(scored,reverse=True):
+        if score<=0 and chosen:
+            continue
+        nc=norm(c)
+        if any(nc==norm(x) or nc in norm(x) or norm(x) in nc for x in chosen):
+            continue
+        fragment=c[:900].strip()
+        if len(fragment)>=25:
+            chosen.append(fragment)
+        if len(chosen)>=limit:
+            break
+    if not chosen:
+        chosen=[chunks[0][:900].strip()]
+    return chosen
+
 topics=json.loads(TOPICS.read_text(encoding='utf-8'))
 answers=[]
 with zipfile.ZipFile(EPUB) as z:
@@ -150,12 +180,14 @@ with zipfile.ZipFile(EPUB) as z:
                 elif ref['section_title']: child_blocks.append(ref['section_title'])
             blocks=child_blocks
         ans=MANUAL_ANSWERS.get(t['normalized_question']) or answer_for(t,blocks)
+        fragments=source_fragments_for(t,blocks,ans)
         answers.append({
             'topic_id':t['topic_id'],'topic_order':t['topic_order'],
             'question':t['normalized_question'],'short_answer':ans,
             'source_book_order':t['book_order'],'source_section_title':t['book_section_title'],
             'epub_href':t['epub_href'],'reader_href':t['reader_href'],
+            'source_fragments':fragments,
             'answer_method':'source-grounded extractive draft',
         })
 OUT.write_text(json.dumps(answers,ensure_ascii=False,indent=2),encoding='utf-8')
-print(f'Built {len(answers)} source-grounded short answers.')
+print(f'Built {len(answers)} source-grounded short answers with source fragments.')
