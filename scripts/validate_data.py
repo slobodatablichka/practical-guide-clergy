@@ -22,6 +22,8 @@ ids={x['topic_id'] for x in topics}
 assert ids=={x['topic_id'] for x in answers}
 assert all(x['topic_id'] in ids for x in tickets)
 assert all(x['short_answer'].strip() for x in answers)
+assert all(x.get('source_fragments') for x in answers)
+assert all(1 <= len(x['source_fragments']) <= 3 for x in answers)
 
 epub=ROOT/'assets/book/taintstva-i-obryady-pravoslavnoy-tserkvi.epub'
 with zipfile.ZipFile(epub) as z:
@@ -29,4 +31,4 @@ with zipfile.ZipFile(epub) as z:
     for x in tickets:
         assert x['epub_href'].split('#')[0] in names, x['epub_href']
 
-print('OK: 30 tickets, 180 positions, 171 topics, 171 answers, 556 textbook entries; all EPUB targets exist.')
+print('OK: 30 tickets, 180 positions, 171 topics, 171 answers, 171 source-fragment sets, 556 textbook entries; all EPUB targets exist.')
