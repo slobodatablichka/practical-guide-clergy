@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Практическое руководство для священнослужителя: 30 экзаменационных билетов, краткие ответы и учебник.">
+<title>Практическое руководство для священнослужителя</title>
+<link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="shell">
+    <div class="eyebrow">Учебный справочник</div>
+    <h1>Практическое руководство для священнослужителя</h1>
+    <p class="lead">30 билетов · 180 экзаменационных позиций · краткие ответы по учебнику</p>
+    <nav class="tabs" aria-label="Главное меню">
+      <button class="tab active" data-view="tickets">Билеты</button>
+      <button class="tab" data-view="book">По учебнику</button>
+      <button class="tab" data-view="search">Поиск</button>
+    </nav>
+  </div>
+</header>
+
+<main class="shell">
+  <div id="loading" class="notice">Загружаю материалы…</div>
+
+  <section id="ticketsView" class="view hidden" aria-labelledby="ticketsHeading">
+    <div class="section-head">
+      <div>
+        <h2 id="ticketsHeading">Билеты</h2>
+        <p>Сначала показываются только исходные формулировки шести вопросов. После проверки билета нажмите «Показать ответы».</p>
+      </div>
+    </div>
+    <div id="ticketGrid" class="ticket-grid"></div>
+    <div id="ticketPanel"></div>
+  </section>
+
+  <section id="bookView" class="view hidden" aria-labelledby="bookHeading">
+    <div class="section-head">
+      <div>
+        <h2 id="bookHeading">Вопросы по порядку учебника</h2>
+        <p>Нормализованные темы расположены последовательно по структуре учебника. Повторяющиеся вопросы разных билетов объединены в одну тему.</p>
+      </div>
+    </div>
+    <div id="bookTopics"></div>
+  </section>
+
+  <section id="searchView" class="view hidden" aria-labelledby="searchHeading">
+    <div class="section-head">
+      <div>
+        <h2 id="searchHeading">Поиск</h2>
+        <p>Поиск работает по формулировкам вопросов, ответам, разделам учебника и номерам билетов. Допускаются словоформы и небольшие опечатки.</p>
+      </div>
+    </div>
+    <label class="search-box">
+      <span class="sr-only">Введите слова для поиска</span>
+      <input id="searchInput" type="search" autocomplete="off" placeholder="Например: оглашение, исповедь, водоосвящение…">
+    </label>
+    <div id="searchMeta" class="muted"></div>
+    <div id="searchResults"></div>
+  </section>
+
+  <section class="source-box">
+    <strong>Учебник:</strong> «Таинства и обряды Православной Церкви».
+    <a href="assets/book/taintstva-i-obryady-pravoslavnoy-tserkvi.epub" download>Скачать EPUB</a>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="shell">Исходные формулировки билетов сохраняются отдельно от нормализованных тем. Краткие ответы составлены по загруженному учебнику.</div>
+</footer>
+
+<script src="assets/app.js" defer></script>
+</body>
+</html>

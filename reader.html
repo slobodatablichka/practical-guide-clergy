@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Учебник — Практическое руководство</title>
+<link rel="stylesheet" href="assets/styles.css">
+<script src="https://cdn.jsdelivr.net/npm/jszip@3.10.1/dist/jszip.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/epubjs@0.3.93/dist/epub.min.js"></script>
+</head>
+<body class="reader-page">
+<header class="reader-toolbar">
+  <div class="reader-toolbar-inner">
+    <a class="button-link secondary" href="index.html">← К справочнику</a>
+    <div class="reader-title-wrap">
+      <div class="eyebrow">Учебник</div>
+      <div id="readerTitle" class="reader-title">Загрузка раздела…</div>
+      <div id="readerChapter" class="reader-chapter"></div>
+    </div>
+    <a class="button-link" href="assets/book/taintstva-i-obryady-pravoslavnoy-tserkvi.epub" download>Скачать EPUB</a>
+  </div>
+</header>
+<main class="reader-main">
+  <div id="readerError" class="notice error hidden"></div>
+  <div id="bookFrame" class="book-frame"></div>
+</main>
+<script>
+(async function(){
+  const params=new URLSearchParams(location.search);
+  const raw=params.get('href')||'';
+  const safe=/^index_split_\d{3}\.xhtml(?:#[A-Za-z0-9_.:-]+)?$/.test(raw);
+  const error=document.getElementById('readerError');
+  const viewer=document.getElementById('bookFrame');
+  if(!safe){
+    error.textContent='Некорректная ссылка на раздел учебника.';
+    error.classList.remove('hidden'); viewer.classList.add('hidden'); return;
+  }
+  try{
+    const idx=await fetch('data/book-index.json').then(r=>{if(!r.ok)throw new Error('index');return r.json()});
+    const item=idx.find(x=>(x.href||'').split('#')[0]===raw.split('#')[0]);
+    if(item){
+      document.getElementById('readerTitle').textContent=item.title;
+      document.getElementById('readerChapter').textContent=item.chapter||'';
+      document.title=item.title+' — Учебник';
+    }
+    if(typeof ePub!=='function') throw new Error('epubjs');
+    const book=ePub('assets/book/taintstva-i-obryady-pravoslavnoy-tserkvi.epub');
+    const rendition=book.renderTo('bookFrame',{width:'100%',height:'100%',spread:'none',flow:'scrolled-doc'});
+    await rendition.display(raw);
+  }catch(e){
+    console.error(e);
+    error.innerHTML='Не удалось открыть встроенный раздел учебника. <a href="assets/book/taintstva-i-obryady-pravoslavnoy-tserkvi.epub" download>Скачать EPUB</a>.';
+    error.classList.remove('hidden');
+  }
+})();
+</script>
+</body>
+</html>
