@@ -1,0 +1,64 @@
+name: Build study data
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/build-study-data.yml'
+      - 'source/**'
+      - 'scripts/fetch_book.py'
+      - 'scripts/extract_book_index.py'
+      - 'scripts/build_question_registry.py'
+      - 'scripts/build_answers.py'
+      - 'scripts/validate_data.py'
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    if: github.actor != 'github-actions[bot]'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install parser
+        run: python -m pip install beautifulsoup4
+
+      - name: Fetch textbook EPUB
+        run: python scripts/fetch_book.py
+
+      - name: Build textbook index
+        run: python scripts/extract_book_index.py
+
+      - name: Build normalized question registry
+        run: python scripts/build_question_registry.py
+
+      - name: Build concise answers
+        run: python scripts/build_answers.py
+
+      - name: Validate generated data
+        run: python scripts/validate_data.py
+
+      - name: Remove obsolete transport fragments
+        run: |
+          rm -f data/*.json.gz.b64 data/manifest.json
+          rm -rf assets/book/chunks
+
+      - name: Commit generated study data and textbook
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A assets/book data docs
+          if git diff --cached --quiet; then
+            echo "No generated changes"
+          else
+            git commit -m "Generate textbook index, normalized registry and answers"
+            git push
+          fi
