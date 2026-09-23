@@ -17,7 +17,6 @@
     </div>
     <div class="reader-title-wrap">
       <div id="readerChapter" class="reader-current-chapter">Загрузка учебника…</div>
-      <div id="readerTitle" class="reader-current-title"></div>
     </div>
   </div>
   <div class="reader-nav">
@@ -144,14 +143,7 @@
     var chapter=item&&item.chapter?item.chapter:'';
     var title=item&&item.title?item.title:'';
 
-    if(chapter&&title&&normText(chapter)===normText(title)){
-      document.getElementById('readerChapter').textContent='';
-      document.getElementById('readerTitle').textContent=title;
-    }else{
-      document.getElementById('readerChapter').textContent=chapter||'Учебник';
-      document.getElementById('readerTitle').textContent=title;
-    }
-
+    document.getElementById('readerChapter').textContent=chapter||'Учебник';
     document.title=(title||chapter||'Учебник')+' — Практическое руководство';
     sectionSelect.value=String(currentIndex);
     prevButton.disabled=currentIndex<=0;
