@@ -93,6 +93,17 @@ def overlap(query_terms, source_terms):
 def clean_title(value):
     return re.sub(r'^\s*\d+[.)]?\s*', '', str(value or '')).strip()
 
+def source_body(item):
+    text = str(item.get('text') or '')
+    title = str(item.get('title') or '')
+    nt = norm(title)
+    ntext = norm(text)
+    if nt and ntext == nt:
+        return ''
+    if title and text.startswith(title):
+        text = text[len(title):].strip()
+    return text
+
 def clip(value, limit=1050):
     value = ' '.join(str(value or '').split())
     if len(value) <= limit:
@@ -273,9 +284,9 @@ def relevance_score(question, title, text, confidence='high', unsupported=False)
     body_cov = overlap(qterms, xterms)
     exact = norm(clean_title(title)) == norm(question)
 
-    if exact or title_cov >= 0.75:
+    if exact or title_cov >= 0.75 or body_cov >= 0.90:
         rel = 5
-    elif title_cov >= 0.50 or body_cov >= 0.75:
+    elif title_cov >= 0.50 or body_cov >= 0.70:
         rel = 4
     elif title_cov >= 0.25 or body_cov >= 0.50:
         rel = 3
@@ -293,25 +304,42 @@ def candidate_score(question, item):
     qterms = terms(question)
     if not qterms:
         qterms = terms(question, keep_generic=True)
+    body = source_body(item)
     tterms = terms(item['title'])
-    xterms = terms(item['text'])
+    xterms = terms(body)
     title_cov = overlap(qterms, tterms)
     body_cov = overlap(qterms, xterms)
-    score = title_cov * 7 + body_cov * 3
+    score = title_cov * 7 + body_cov * 4
 
     q = norm(question)
     title = norm(item['title'])
     if q and (q in title or title in q):
         score += 2.5
+
+    # Заголовки Сильченкова часто функциональные; связываем тип вопроса
+    # с его собственными рубриками, не подменяя содержание.
     if any(x in q for x in ['схема', 'порядок', 'чинопослед']):
         if 'обрядовый порядок' in title or 'порядок' in title:
-            score += 1.2
+            score += 3.0
+    if any(x in q for x in ['завершен', 'окончан', 'заключительн']):
+        if 'заключительные действия' in title:
+            score += 4.0
+    if any(x in q for x in ['подготов', 'предварительн']):
+        if 'подготовительные действия' in title:
+            score += 3.0
+    if 'тайносоверш' in q and 'обрядовый порядок' in title:
+        score += 3.0
     if 'правил' in q and ('правил' in title or 'постановлен' in title):
-        score += 1.5
+        score += 2.0
     if 'время' in q and 'время' in title:
-        score += 1.5
+        score += 2.0
     if 'место' in q and 'место' in title:
-        score += 1.5
+        score += 2.0
+
+    # Пустые рубричные страницы не должны выигрывать у содержащих текст
+    # подразделов только за счёт совпадения названия.
+    if len(norm(body)) < 40:
+        score -= 5.0
     return score
 
 def best_silchenkov_item(question, index):
@@ -457,7 +485,7 @@ with zipfile.ZipFile(sil_epub) as zf:
             })
             continue
 
-        rel = relevance_score(question, item['title'], item['text'])
+        rel = relevance_score(question, item['title'], source_body(item))
         blocks = blocks_for(zf, item['href'], item['title'])
         answer, fragments = extractive_answer(question, blocks, rel)
         # Если из выбранного EPUB-раздела нельзя извлечь ни одного
