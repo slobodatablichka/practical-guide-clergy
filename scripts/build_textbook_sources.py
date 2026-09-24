@@ -154,6 +154,38 @@ def blocks_for(zf, href, title):
             blocks = [text]
     return blocks
 
+def silchenkov_context(order):
+    ranges = [
+        (2, 2, 'Общие постановления'),
+        (3, 8, 'Молитвы в первый день и наречение имени младенцу'),
+        (9, 12, 'Молитва жене, извергшей младенца'),
+        (13, 18, 'Молитва жене-родительнице в сороковой день'),
+        (19, 19, 'Крещение'),
+        (20, 21, 'Оглашение'),
+        (22, 33, 'Собственно крещение'),
+        (34, 39, 'Миропомазание'),
+        (40, 43, 'Омовение и пострижение власов'),
+        (44, 66, 'Исповедь'),
+        (67, 74, 'Причащение'),
+        (75, 78, 'Предварительные действия перед браком'),
+        (79, 91, 'Брак'),
+        (92, 105, 'Родство и препятствия к браку'),
+        (106, 112, 'Елеоосвящение'),
+        (113, 135, 'Погребение'),
+        (136, 142, 'Поминовение усопших. Панихида'),
+        (143, 148, 'Крестные ходы'),
+        (149, 154, 'Водоосвящение'),
+        (155, 169, 'Молебные пения'),
+        (170, 172, 'Благословение нового дома'),
+        (173, 175, 'Освящение икон и благословение предметов'),
+        (176, 178, 'Молитвенные чины на разные случаи'),
+        (179, 183, 'Присяга'),
+    ]
+    for start, end, title in ranges:
+        if start <= order <= end:
+            return title
+    return 'Практическое руководство'
+
 def silchenkov_chapter(order):
     ranges = [
         (2, 2, 'Общие постановления'),
@@ -197,10 +229,12 @@ def index_epub(epub_path, book_id):
                 text = ''
             pure_number = bool(re.fullmatch(r'\d+', title))
             chapter = silchenkov_chapter(order) if book_id == 'silchenkov' else None
+            context_title = silchenkov_context(order) if book_id == 'silchenkov' else None
             items.append({
                 'order': order,
                 'depth': depth,
                 'title': title,
+                'context_title': context_title,
                 'href': href,
                 'chapter': chapter,
                 'text': text,
@@ -284,7 +318,7 @@ def relevance_score(question, title, text, confidence='high', unsupported=False)
     body_cov = overlap(qterms, xterms)
     exact = norm(clean_title(title)) == norm(question)
 
-    if exact or title_cov >= 0.75 or body_cov >= 0.90:
+    if exact or title_cov >= 0.75 or (title_cov >= 0.25 and body_cov >= 0.90):
         rel = 5
     elif title_cov >= 0.50 or body_cov >= 0.70:
         rel = 4
@@ -305,7 +339,8 @@ def candidate_score(question, item):
     if not qterms:
         qterms = terms(question, keep_generic=True)
     body = source_body(item)
-    tterms = terms(item['title'])
+    context = ((item.get('context_title') or '') + ' ' + item['title']).strip()
+    tterms = terms(context)
     xterms = terms(body)
     title_cov = overlap(qterms, tterms)
     body_cov = overlap(qterms, xterms)
@@ -313,7 +348,9 @@ def candidate_score(question, item):
 
     q = norm(question)
     title = norm(item['title'])
-    if q and (q in title or title in q):
+    context_title = norm(item.get('context_title') or '')
+    combined_title = norm((item.get('context_title') or '') + ' ' + item['title'])
+    if q and (q in combined_title or combined_title in q):
         score += 2.5
 
     # Заголовки Сильченкова часто функциональные; связываем тип вопроса
@@ -485,7 +522,8 @@ with zipfile.ZipFile(sil_epub) as zf:
             })
             continue
 
-        rel = relevance_score(question, item['title'], source_body(item))
+        source_heading = ((item.get('context_title') or '') + ' ' + item['title']).strip()
+        rel = relevance_score(question, source_heading, source_body(item))
         blocks = blocks_for(zf, item['href'], item['title'])
         answer, fragments = extractive_answer(question, blocks, rel)
         # Если из выбранного EPUB-раздела нельзя извлечь ни одного
@@ -507,7 +545,11 @@ with zipfile.ZipFile(sil_epub) as zf:
             'mapping_score': round(score, 3),
             'book_order': item['order'],
             'chapter': item['chapter'],
-            'book_section_title': item['title'],
+            'book_section_title': (
+                item['title']
+                if norm(item.get('context_title')) == norm(item['title'])
+                else ((item.get('context_title') or '') + ' — ' + item['title']).strip(' —')
+            ),
             'epub_href': item['href'],
             'source_fragments': fragments,
             'answer_method': 'source-grounded extractive draft',
