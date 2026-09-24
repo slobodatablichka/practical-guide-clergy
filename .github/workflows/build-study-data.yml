@@ -7,9 +7,11 @@ on:
       - '.github/workflows/build-study-data.yml'
       - 'source/**'
       - 'assets/book/taintstva-i-obryady-pravoslavnoy-tserkvi.epub'
+      - 'assets/book/silchenkov-prakticheskoe-rukovodstvo-pri-sovershenii-prikhodskikh-treb.epub'
       - 'scripts/extract_book_index.py'
       - 'scripts/build_question_registry.py'
       - 'scripts/build_answers.py'
+      - 'scripts/build_textbook_sources.py'
       - 'scripts/validate_data.py'
 
 permissions:
@@ -31,17 +33,22 @@ jobs:
       - name: Install parser
         run: python -m pip install beautifulsoup4
 
-      - name: Verify canonical textbook EPUB exists
-        run: test -f assets/book/taintstva-i-obryady-pravoslavnoy-tserkvi.epub
+      - name: Verify canonical textbook EPUBs exist
+        run: |
+          test -f assets/book/taintstva-i-obryady-pravoslavnoy-tserkvi.epub
+          test -f assets/book/silchenkov-prakticheskoe-rukovodstvo-pri-sovershenii-prikhodskikh-treb.epub
 
-      - name: Build textbook index
+      - name: Build textbook 1 index
         run: python scripts/extract_book_index.py
 
       - name: Build normalized question registry
         run: python scripts/build_question_registry.py
 
-      - name: Build concise answers
+      - name: Build textbook 1 concise answers
         run: python scripts/build_answers.py
+
+      - name: Build multi-textbook sources
+        run: python scripts/build_textbook_sources.py
 
       - name: Validate generated data
         run: python scripts/validate_data.py
@@ -54,6 +61,6 @@ jobs:
           if git diff --cached --quiet; then
             echo "No generated changes"
           else
-            git commit -m "Generate textbook index, normalized registry and answers"
+            git commit -m "Generate two-textbook study data"
             git push
           fi
