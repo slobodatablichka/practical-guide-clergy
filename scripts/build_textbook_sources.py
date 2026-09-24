@@ -460,6 +460,12 @@ with zipfile.ZipFile(sil_epub) as zf:
         rel = relevance_score(question, item['title'], item['text'])
         blocks = blocks_for(zf, item['href'], item['title'])
         answer, fragments = extractive_answer(question, blocks, rel)
+        # Если из выбранного EPUB-раздела нельзя извлечь ни одного
+        # проверяемого фрагмента, не изображаем наличие источника.
+        if rel >= 2 and not fragments:
+            rel = 1
+            answer = 'В учебнике прямого материала для ответа на этот вопрос не найдено.'
+            fragments = []
         confidence = 'high' if rel >= 4 else ('medium' if rel == 3 else 'low')
         sil_answers.append({
             'book_id': 'silchenkov',
