@@ -65,6 +65,28 @@ function answerFor(bookId,topicId){
   return map?map.get(topicId):null;
 }
 
+function relevanceLabel(rel){
+  var labels={
+    5:'полный ответ',
+    4:'почти полный',
+    3:'частичный ответ',
+    2:'отдельные сведения',
+    1:'прямого ответа нет'
+  };
+  return labels[Number(rel)]||'оценка не определена';
+}
+
+function bookSurname(book){
+  var author=String(book&&book.author||'').trim().replace(/[.,]+$/,'');
+  if(!author)return book&&book.short_label?book.short_label:'Учебник';
+  var parts=author.split(/\s+/);
+  return parts[parts.length-1];
+}
+
+function bookTooltip(book,rel){
+  return book.author+', «'+book.title+'». Материал по вопросу: '+relevanceLabel(rel)+' (rel_'+rel+').';
+}
+
 function feedbackKey(topicId,bookId){
   return topicId+'|'+bookId;
 }
@@ -99,7 +121,7 @@ function feedbackInnerHtml(topicId,bookId){
   var buttons=[1,2,3,4,5].map(function(n){
     return '<button type="button" class="feedback-rating-button'+(selected===n?' active':'')+'" data-feedback-rating="'+n+'" aria-label="Оценка '+n+' из 5" aria-pressed="'+(selected===n?'true':'false')+'">'+n+'</button>';
   }).join('');
-  return '<div class="feedback-title">Оцените этот ответ</div>'+
+  return '<div class="feedback-title">Оценить ответ</div>'+
     '<div class="feedback-grid">'+
       '<div class="feedback-name-area">'+feedbackNameAreaHtml(name)+'</div>'+
       '<div class="feedback-field feedback-rating-field"><span>Оценка 1–5</span><div class="feedback-rating-buttons">'+buttons+'</div></div>'+
@@ -381,8 +403,10 @@ function sourceButtons(topicId,activeBookId,mode,questionId){
     var attr=mode==='ticket'
       ? ' data-ticket-source="'+esc(book.id)+'" data-question-id="'+esc(questionId)+'"'
       : ' data-search-source="'+esc(book.id)+'" data-topic-id="'+esc(topicId)+'"';
+    var label=bookSurname(book)+' · '+relevanceLabel(rel);
+    var tip=bookTooltip(book,rel);
     return '<button class="source-choice'+(active?' active':'')+'" type="button"'+attr+
-      ' title="'+esc(book.author+', «'+book.title+'»')+'">'+esc(book.short_label)+' · rel_'+rel+'</button>';
+      ' title="'+esc(tip)+'" aria-label="'+esc(label+'. '+tip)+'">'+esc(label)+'</button>';
   }).join('')+'</div>';
 }
 
@@ -392,11 +416,9 @@ function answerBlockForTicket(row,bookId){
   if(!ans||!book)return '';
   var differs=normalize(row.original_question)!==normalize(row.normalized_question);
   var html='<div class="answer-card">';
-  html+='<div class="answer-source-name">'+esc(book.short_label)+' · '+esc(book.author)+' · rel_'+ans.relevance+'</div>';
   if(differs)html+='<div class="normalized"><strong>Нормализованная тема:</strong> '+esc(row.normalized_question)+'</div>';
   html+='<p>'+esc(ans.short_answer)+'</p>';
   if(ans.epub_href){
-    html+='<div class="source-section">Источник: #'+String(ans.book_order).padStart(3,'0')+' '+esc(ans.book_section_title||'')+'</div>';
     html+=readerButton(ans,{view:'tickets',ticket:row.ticket,position:row.ticket_position,focus:row.id},bookId);
   }else{
     html+='<div class="source-section">Прямой раздел в этом учебнике не найден.</div>';
@@ -457,7 +479,7 @@ function renderTicket(){
     '</li>';
   }).join('');
   $('ticketPanel').innerHTML='<article class="panel">'+
-    '<div class="panel-head"><div><div class="eyebrow">Зачёт с оценкой</div><h3>Билет № '+selectedTicket+'</h3></div></div>'+
+    '<div class="panel-head"><div><h3>Билет № '+selectedTicket+'</h3></div></div>'+
     '<ol class="question-list">'+items+'</ol>'+
     '</article>';
 }
@@ -511,13 +533,12 @@ function renderBook(){
       var rel=a?a.relevance:1;
       var source='';
       if(a&&a.epub_href){
-        source='<div class="source-section">Источник: #'+String(a.book_order).padStart(3,'0')+' '+esc(a.book_section_title||'')+'</div>'+
-          readerButton(a,{view:'book',topic:t.topic_id},selectedBookView);
+        source=readerButton(a,{view:'book',topic:t.topic_id},selectedBookView);
       }else{
         source='<div class="source-section">Прямой раздел в этом учебнике не найден.</div>';
       }
       return '<details class="topic-card" id="topic-'+esc(selectedBookView)+'-'+esc(t.topic_id)+'" data-topic="'+esc(t.topic_id)+'">'+
-        '<summary><span class="topic-number">'+t.topic_order+'</span><span class="topic-summary-text">'+esc(t.normalized_question)+'</span><span class="rel-badge">rel_'+rel+'</span></summary>'+
+        '<summary><span class="topic-number">'+t.topic_order+'</span><span class="topic-summary-text">'+esc(t.normalized_question)+'</span><span class="rel-badge" title="'+esc('Внутренняя оценка: rel_'+rel)+'">'+esc(relevanceLabel(rel))+'</span></summary>'+
         '<div class="topic-body">'+
           '<p>'+esc(a?a.short_answer:'Ответ пока не найден.')+'</p>'+
           '<div class="ticket-refs"><strong>Билеты:</strong> '+esc(ticketRefs(t))+'</div>'+
@@ -581,10 +602,8 @@ function searchAnswerBlock(t,bookId,query){
   var book=textbookById.get(bookId);
   if(!a||!book)return '';
   var html='<div class="answer-card search-answer-card">';
-  html+='<div class="answer-source-name">'+esc(book.short_label)+' · '+esc(book.author)+' · rel_'+a.relevance+'</div>';
   html+='<p>'+esc(a.short_answer)+'</p>';
   if(a.epub_href){
-    html+='<div class="source-section">Источник: #'+String(a.book_order).padStart(3,'0')+' '+esc(a.book_section_title||'')+'</div>';
     html+=readerButton(a,{view:'search',query:query,topic:t.topic_id},bookId);
   }else{
     html+='<div class="source-section">Прямой раздел в этом учебнике не найден.</div>';
