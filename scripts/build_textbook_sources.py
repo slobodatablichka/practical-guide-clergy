@@ -100,8 +100,12 @@ def source_body(item):
     ntext = norm(text)
     if nt and ntext == nt:
         return ''
-    if title and text.startswith(title):
-        text = text[len(title):].strip()
+    # XHTML нередко начинает текст с названия всей книги, а затем повторяет
+    # заголовок текущего раздела. Отсекаем этот префикс, чтобы пустая
+    # рубричная страница не считалась содержательным источником.
+    pos = text.find(title) if title else -1
+    if 0 <= pos < 300:
+        text = text[pos + len(title):].strip()
     return text
 
 def clip(value, limit=1050):
@@ -358,6 +362,17 @@ def candidate_score(question, item):
     if any(x in q for x in ['схема', 'порядок', 'чинопослед']):
         if 'обрядовый порядок' in title or 'порядок' in title:
             score += 3.0
+    if ('40' in q or 'сорок' in q):
+        if 'сорок' in context_title:
+            score += 6.0
+        elif 'первый день' in context_title:
+            score -= 4.0
+    if 'изверг' in q and 'изверг' in context_title:
+        score += 4.0
+    if 'молитв' in q and 'обрядовый порядок' in title:
+        score += 2.0
+    if 'помин' in q and 'новопрестав' in q and 'время' in title:
+        score += 4.0
     if any(x in q for x in ['завершен', 'окончан', 'заключительн']):
         if 'заключительные действия' in title:
             score += 4.0
