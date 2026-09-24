@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="description" content="Практическое руководство для священнослужителя: 30 экзаменационных билетов, краткие ответы и учебник.">
+<meta name="description" content="Практическое руководство для священнослужителя: 30 экзаменационных билетов и ответы по двум учебникам.">
 <title>Практическое руководство для священнослужителя</title>
 <link rel="stylesheet" href="assets/styles.css">
 </head>
@@ -12,8 +12,11 @@
   <div class="shell">
     <div class="eyebrow">Учебный справочник</div>
     <h1>Практическое руководство для священнослужителя</h1>
-    <p class="lead">30 билетов · 180 экзаменационных позиций · краткие ответы по учебнику</p>
-    <p class="book-source">Учебник: протоиерей Геннадий Нефёдов. <cite>«Таинства и обряды Православной Церкви»</cite>. <a href="assets/book/taintstva-i-obryady-pravoslavnoy-tserkvi.epub" download>Скачать EPUB</a></p>
+    <p class="lead">30 билетов · 180 экзаменационных позиций · ответы по двум учебникам</p>
+    <div class="book-sources" aria-label="Учебники">
+      <p class="book-source"><strong>Учебник 1:</strong> протоиерей Геннадий Нефёдов. <cite>«Таинства и обряды Православной Церкви»</cite>. <a href="assets/book/taintstva-i-obryady-pravoslavnoy-tserkvi.epub" download>Скачать EPUB</a></p>
+      <p class="book-source"><strong>Учебник 2:</strong> протоиерей Николай Сильченков. <cite>«Практическое руководство при совершении приходских треб»</cite>. <a href="assets/book/silchenkov-prakticheskoe-rukovodstvo-pri-sovershenii-prikhodskikh-treb.epub" download>Скачать EPUB</a></p>
+    </div>
     <nav class="tabs" aria-label="Главное меню">
       <button class="tab active" data-view="tickets">Билеты</button>
       <button class="tab" data-view="book">По учебнику</button>
@@ -29,7 +32,7 @@
     <div class="section-head">
       <div>
         <h2 id="ticketsHeading">Билеты</h2>
-        <p>Сначала показываются только исходные формулировки шести вопросов. После проверки билета нажмите «Показать ответы».</p>
+        <p>У каждого вопроса выберите источник ответа: Уч.1 или Уч.2. Одновременно открыт только один ответ.</p>
       </div>
     </div>
     <div id="ticketGrid" class="ticket-grid"></div>
@@ -40,9 +43,10 @@
     <div class="section-head">
       <div>
         <h2 id="bookHeading">Вопросы по порядку учебника</h2>
-        <p>Нормализованные темы расположены последовательно по структуре учебника. Повторяющиеся вопросы разных билетов объединены в одну тему.</p>
+        <p>Выберите учебник. Темы располагаются по структуре выбранной книги; вопросы без прямого материала вынесены в конец.</p>
       </div>
     </div>
+    <div id="bookSourceTabs" class="source-tabs" aria-label="Выбор учебника"></div>
     <div id="bookTopics"></div>
   </section>
 
@@ -50,7 +54,7 @@
     <div class="section-head">
       <div>
         <h2 id="searchHeading">Поиск</h2>
-        <p>Поиск работает по формулировкам вопросов, ответам, разделам учебника и номерам билетов. Допускаются словоформы и небольшие опечатки.</p>
+        <p>Поиск работает по формулировкам вопросов, ответам обоих учебников, разделам и номерам билетов.</p>
       </div>
     </div>
     <label class="search-box">
@@ -63,7 +67,7 @@
 </main>
 
 <footer class="site-footer">
-  <div class="shell">Исходные формулировки билетов сохраняются отдельно от нормализованных тем. Краткие ответы составлены по загруженному учебнику.</div>
+  <div class="shell">Исходные формулировки билетов сохраняются отдельно от нормализованных тем. Ответы каждого учебника и их релевантность учитываются независимо.</div>
 </footer>
 
 <script src="assets/app.js" defer></script>

@@ -2,11 +2,15 @@
 
 var tickets=[];
 var topics=[];
-var answers=[];
-var answersByTopic=new Map();
+var textbooks=[];
+var textbookById=new Map();
 var topicsById=new Map();
+var answersByBook=new Map();
+
 var selectedTicket=null;
-var ticketAnswersVisible=false;
+var openTicketAnswer=null;
+var selectedBookView='nefedov';
+var openSearchAnswer=null;
 
 var $=function(id){return document.getElementById(id);};
 var esc=function(s){return String(s==null?'':s).replace(/[&<>"']/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#039;'}[c];});};
@@ -16,7 +20,7 @@ function normalize(s){
 }
 
 function tokenStem(w){
-  var suffixes=['иями','ями','ами','ение','ения','ений','ание','ания','аний','ского','скому','скими','ская','ское','ские','остью','ости','ов','ев','ами','ями','ого','ему','ами','ах','ях','ый','ий','ая','ое','ые','ую','юю','ом','ем','ам','ям','а','я','ы','и','у','ю','е'];
+  var suffixes=['иями','ями','ами','ение','ения','ений','ание','ания','аний','ского','скому','скими','ская','ское','ские','остью','ости','ов','ев','ого','ему','ому','ах','ях','ый','ий','ая','ое','ые','ую','юю','ом','ем','ам','ям','а','я','ы','и','у','ю','е'];
   if(w.length<5)return w;
   for(var i=0;i<suffixes.length;i++){
     var s=suffixes[i];
@@ -46,6 +50,15 @@ function replaceUrl(params){
   history.replaceState(null,'',q?'?'+q:location.pathname.split('/').pop());
 }
 
+function validBook(id){
+  return textbookById.has(id);
+}
+
+function answerFor(bookId,topicId){
+  var map=answersByBook.get(bookId);
+  return map?map.get(topicId):null;
+}
+
 function showView(name,updateUrl){
   if(updateUrl===undefined)updateUrl=true;
   document.querySelectorAll('.view').forEach(function(x){x.classList.add('hidden');});
@@ -54,6 +67,7 @@ function showView(name,updateUrl){
   if(updateUrl){
     var p=new URLSearchParams();
     p.set('view',name);
+    if(name==='book')p.set('book',selectedBookView);
     replaceUrl(p);
   }
   if(name==='search')setTimeout(function(){$('searchInput').focus();},0);
@@ -69,45 +83,67 @@ function contextToken(ctx){
   return 'book';
 }
 
-function returnTarget(ctx){
+function returnTarget(ctx,bookId){
   var p=new URLSearchParams();
   p.set('view',ctx.view||'tickets');
   if(ctx.view==='tickets'){
     p.set('ticket',String(ctx.ticket));
-    p.set('answers','1');
     p.set('focus',ctx.focus||'');
+    p.set('source',bookId);
   }else if(ctx.view==='book'){
+    p.set('book',bookId);
     p.set('topic',ctx.topic||'');
   }else if(ctx.view==='search'){
     p.set('q',ctx.query||'');
     p.set('topic',ctx.topic||'');
+    p.set('source',bookId);
   }
   return 'index.html?'+p.toString();
 }
 
-function readerHref(obj,ctx){
+function readerHref(answer,ctx,bookId){
   var p=new URLSearchParams();
-  p.set('href',obj.epub_href);
-  p.set('topic',obj.topic_id);
-  p.set('return',returnTarget(ctx));
+  p.set('book',bookId);
+  p.set('href',answer.epub_href);
+  p.set('topic',answer.topic_id);
+  p.set('return',returnTarget(ctx,bookId));
   p.set('ctx',contextToken(ctx));
   return 'reader.html?'+p.toString();
 }
 
-function readerButton(obj,ctx){
-  return '<div class="reader-links"><a class="reader-link" href="'+esc(readerHref(obj,ctx))+'">Подробнее в учебнике</a></div>';
+function readerButton(answer,ctx,bookId){
+  if(!answer||!answer.epub_href)return '';
+  return '<div class="reader-links"><a class="reader-link" href="'+esc(readerHref(answer,ctx,bookId))+'">Подробнее в учебнике</a></div>';
 }
 
-function answerBlock(row){
-  var ans=answersByTopic.get(row.topic_id);
-  var topic=topicsById.get(row.topic_id)||row;
-  if(!ans)return '<div class="answer-card">Ответ пока не найден.</div>';
+function sourceButtons(topicId,activeBookId,mode,questionId){
+  return '<div class="source-choice-row">'+textbooks.map(function(book){
+    var ans=answerFor(book.id,topicId);
+    var rel=ans?ans.relevance:1;
+    var active=activeBookId===book.id;
+    var attr=mode==='ticket'
+      ? ' data-ticket-source="'+esc(book.id)+'" data-question-id="'+esc(questionId)+'"'
+      : ' data-search-source="'+esc(book.id)+'" data-topic-id="'+esc(topicId)+'"';
+    return '<button class="source-choice'+(active?' active':'')+'" type="button"'+attr+
+      ' title="'+esc(book.author+', «'+book.title+'»')+'">'+esc(book.short_label)+' · rel_'+rel+'</button>';
+  }).join('')+'</div>';
+}
+
+function answerBlockForTicket(row,bookId){
+  var ans=answerFor(bookId,row.topic_id);
+  var book=textbookById.get(bookId);
+  if(!ans||!book)return '';
   var differs=normalize(row.original_question)!==normalize(row.normalized_question);
   var html='<div class="answer-card">';
+  html+='<div class="answer-source-name">'+esc(book.short_label)+' · '+esc(book.author)+' · rel_'+ans.relevance+'</div>';
   if(differs)html+='<div class="normalized"><strong>Нормализованная тема:</strong> '+esc(row.normalized_question)+'</div>';
   html+='<p>'+esc(ans.short_answer)+'</p>';
-  html+='<div class="source-section">Учебник: #'+String(row.book_order).padStart(3,'0')+' '+esc(row.book_section_title)+'</div>';
-  html+=readerButton(topic,{view:'tickets',ticket:row.ticket,position:row.ticket_position,focus:row.id});
+  if(ans.epub_href){
+    html+='<div class="source-section">Источник: #'+String(ans.book_order).padStart(3,'0')+' '+esc(ans.book_section_title||'')+'</div>';
+    html+=readerButton(ans,{view:'tickets',ticket:row.ticket,position:row.ticket_position,focus:row.id},bookId);
+  }else{
+    html+='<div class="source-section">Прямой раздел в этом учебнике не найден.</div>';
+  }
   html+='</div>';
   return html;
 }
@@ -119,7 +155,7 @@ function renderTicketGrid(){
   $('ticketGrid').addEventListener('click',function(e){
     var b=e.target.closest('[data-ticket]');
     if(!b)return;
-    openTicket(Number(b.dataset.ticket),{update:true,answers:false});
+    openTicket(Number(b.dataset.ticket),{update:true});
   });
 }
 
@@ -127,14 +163,21 @@ function updateTicketUrl(){
   var p=new URLSearchParams();
   p.set('view','tickets');
   if(selectedTicket)p.set('ticket',String(selectedTicket));
-  if(ticketAnswersVisible)p.set('answers','1');
+  if(openTicketAnswer){
+    p.set('focus',openTicketAnswer.questionId);
+    p.set('source',openTicketAnswer.bookId);
+  }
   replaceUrl(p);
 }
 
 function openTicket(n,opts){
   opts=opts||{};
   selectedTicket=n;
-  ticketAnswersVisible=!!opts.answers;
+  openTicketAnswer=null;
+  if(opts.focus&&opts.source&&validBook(opts.source)){
+    var exists=tickets.some(function(x){return x.ticket===n&&x.id===opts.focus;});
+    if(exists)openTicketAnswer={questionId:opts.focus,bookId:opts.source};
+  }
   document.querySelectorAll('.ticket-button').forEach(function(b){b.classList.toggle('active',Number(b.dataset.ticket)===n);});
   renderTicket();
   if(opts.update!==false)updateTicketUrl();
@@ -148,51 +191,94 @@ function openTicket(n,opts){
 function renderTicket(){
   var rows=tickets.filter(function(x){return x.ticket===selectedTicket;}).sort(function(a,b){return a.ticket_position-b.ticket_position;});
   var items=rows.map(function(r){
-    return '<li id="question-'+esc(r.id)+'"><span class="question-text">'+esc(r.original_question)+'</span>'+(ticketAnswersVisible?answerBlock(r):'')+'</li>';
+    var active=openTicketAnswer&&openTicketAnswer.questionId===r.id?openTicketAnswer.bookId:null;
+    return '<li id="question-'+esc(r.id)+'">'+
+      '<span class="question-text">'+esc(r.original_question)+'</span>'+
+      sourceButtons(r.topic_id,active,'ticket',r.id)+
+      (active?answerBlockForTicket(r,active):'')+
+    '</li>';
   }).join('');
   $('ticketPanel').innerHTML='<article class="panel">'+
     '<div class="panel-head"><div><div class="eyebrow">Зачёт с оценкой</div><h3>Билет № '+selectedTicket+'</h3></div></div>'+
     '<ol class="question-list">'+items+'</ol>'+
-    '<div class="controls"><button id="toggleTicketAnswers" class="action">'+(ticketAnswersVisible?'Скрыть ответы':'Показать ответы')+'</button></div>'+
     '</article>';
-  $('toggleTicketAnswers').addEventListener('click',function(){
-    ticketAnswersVisible=!ticketAnswersVisible;
-    renderTicket();
-    updateTicketUrl();
-  });
+}
+
+function renderBookSourceTabs(){
+  $('bookSourceTabs').innerHTML=textbooks.map(function(book){
+    return '<button type="button" class="source-tab'+(book.id===selectedBookView?' active':'')+'" data-book-view="'+esc(book.id)+'">'+
+      esc(book.short_label)+' · '+esc(book.author.replace(/^протоиерей\s+/i,''))+
+    '</button>';
+  }).join('');
+}
+
+function updateBookUrl(topicId){
+  var p=new URLSearchParams();
+  p.set('view','book');
+  p.set('book',selectedBookView);
+  if(topicId)p.set('topic',topicId);
+  replaceUrl(p);
+}
+
+function setBookView(bookId,updateUrl){
+  if(!validBook(bookId))bookId=textbooks[0].id;
+  selectedBookView=bookId;
+  renderBookSourceTabs();
+  renderBook();
+  if(updateUrl!==false)updateBookUrl('');
 }
 
 function renderBook(){
+  var rows=topics.map(function(t){
+    return {topic:t,answer:answerFor(selectedBookView,t.topic_id)};
+  }).sort(function(a,b){
+    var ao=a.answer&&a.answer.book_order!=null?a.answer.book_order:Number.MAX_SAFE_INTEGER;
+    var bo=b.answer&&b.answer.book_order!=null?b.answer.book_order:Number.MAX_SAFE_INTEGER;
+    return ao-bo||a.topic.topic_order-b.topic.topic_order;
+  });
+
   var grouped=[],current=null;
-  topics.slice().sort(function(a,b){return a.topic_order-b.topic_order;}).forEach(function(t){
-    if(!current||current.chapter!==t.chapter){
-      current={chapter:t.chapter,items:[]};
+  rows.forEach(function(row){
+    var chapter=(row.answer&&row.answer.chapter)||'Прямого материала в учебнике не найдено';
+    if(!current||current.chapter!==chapter){
+      current={chapter:chapter,items:[]};
       grouped.push(current);
     }
-    current.items.push(t);
+    current.items.push(row);
   });
+
   $('bookTopics').innerHTML=grouped.map(function(g){
-    var cards=g.items.map(function(t){
-      var a=answersByTopic.get(t.topic_id);
-      return '<details class="topic-card" id="topic-'+esc(t.topic_id)+'" data-topic="'+esc(t.topic_id)+'">'+
-        '<summary><span class="topic-number">'+t.topic_order+'</span><span class="topic-summary-text">'+esc(t.normalized_question)+'</span></summary>'+
+    var cards=g.items.map(function(row){
+      var t=row.topic,a=row.answer;
+      var rel=a?a.relevance:1;
+      var source='';
+      if(a&&a.epub_href){
+        source='<div class="source-section">Источник: #'+String(a.book_order).padStart(3,'0')+' '+esc(a.book_section_title||'')+'</div>'+
+          readerButton(a,{view:'book',topic:t.topic_id},selectedBookView);
+      }else{
+        source='<div class="source-section">Прямой раздел в этом учебнике не найден.</div>';
+      }
+      return '<details class="topic-card" id="topic-'+esc(selectedBookView)+'-'+esc(t.topic_id)+'" data-topic="'+esc(t.topic_id)+'">'+
+        '<summary><span class="topic-number">'+t.topic_order+'</span><span class="topic-summary-text">'+esc(t.normalized_question)+'</span><span class="rel-badge">rel_'+rel+'</span></summary>'+
         '<div class="topic-body">'+
           '<p>'+esc(a?a.short_answer:'Ответ пока не найден.')+'</p>'+
           '<div class="ticket-refs"><strong>Билеты:</strong> '+esc(ticketRefs(t))+'</div>'+
-          '<div class="source-section">Учебник: #'+String(t.book_order).padStart(3,'0')+' '+esc(t.book_section_title)+'</div>'+
-          readerButton(t,{view:'book',topic:t.topic_id})+
+          source+
         '</div>'+
       '</details>';
     }).join('');
-    return '<section class="chapter-block"><h3 class="chapter-title">'+esc(g.chapter||'Раздел учебника')+'</h3>'+cards+'</section>';
+    return '<section class="chapter-block"><h3 class="chapter-title">'+esc(g.chapter)+'</h3>'+cards+'</section>';
   }).join('');
 }
 
 function topicSearchDocument(t){
-  var a=answersByTopic.get(t.topic_id);
   var originals=(t.ticket_refs||[]).map(function(r){return r.original_question;}).join(' ');
   var refs=(t.ticket_refs||[]).map(function(r){return 'билет '+r.ticket+' вопрос '+r.position+' '+r.ticket+'.'+r.position;}).join(' ');
-  return normalize([t.normalized_question,t.book_section_title,t.chapter,originals,refs,a?a.short_answer:''].join(' '));
+  var sources=textbooks.map(function(book){
+    var a=answerFor(book.id,t.topic_id);
+    return a?[a.short_answer,a.book_section_title,a.chapter].join(' '):'';
+  }).join(' ');
+  return normalize([t.normalized_question,originals,refs,sources].join(' '));
 }
 
 function scoreTopic(t,query){
@@ -224,7 +310,28 @@ function updateSearchUrl(){
   p.set('view','search');
   var raw=$('searchInput').value.trim();
   if(raw)p.set('q',raw);
+  if(openSearchAnswer){
+    p.set('topic',openSearchAnswer.topicId);
+    p.set('source',openSearchAnswer.bookId);
+  }
   replaceUrl(p);
+}
+
+function searchAnswerBlock(t,bookId,query){
+  var a=answerFor(bookId,t.topic_id);
+  var book=textbookById.get(bookId);
+  if(!a||!book)return '';
+  var html='<div class="answer-card search-answer-card">';
+  html+='<div class="answer-source-name">'+esc(book.short_label)+' · '+esc(book.author)+' · rel_'+a.relevance+'</div>';
+  html+='<p>'+esc(a.short_answer)+'</p>';
+  if(a.epub_href){
+    html+='<div class="source-section">Источник: #'+String(a.book_order).padStart(3,'0')+' '+esc(a.book_section_title||'')+'</div>';
+    html+=readerButton(a,{view:'search',query:query,topic:t.topic_id},bookId);
+  }else{
+    html+='<div class="source-section">Прямой раздел в этом учебнике не найден.</div>';
+  }
+  html+='</div>';
+  return html;
 }
 
 function renderSearch(updateUrl){
@@ -240,15 +347,16 @@ function renderSearch(updateUrl){
     .filter(function(x){return x.score>0;})
     .sort(function(a,b){return b.score-a.score||a.t.topic_order-b.t.topic_order;})
     .slice(0,50);
+
   $('searchMeta').textContent=found.length?'Найдено: '+found.length+(found.length===50?' (показаны первые 50)':''):'Совпадений не найдено.';
   $('searchResults').innerHTML=found.map(function(item){
-    var t=item.t,a=answersByTopic.get(t.topic_id);
+    var t=item.t;
+    var active=openSearchAnswer&&openSearchAnswer.topicId===t.topic_id?openSearchAnswer.bookId:null;
     return '<article class="search-result" id="search-'+esc(t.topic_id)+'">'+
-      '<div class="eyebrow">По учебнику № '+t.topic_order+' · билеты '+esc(ticketRefs(t))+'</div>'+
+      '<div class="eyebrow">Билеты '+esc(ticketRefs(t))+'</div>'+
       '<h3>'+esc(t.normalized_question)+'</h3>'+
-      '<p>'+esc(a?a.short_answer:'')+'</p>'+
-      '<div class="source-section">Учебник: #'+String(t.book_order).padStart(3,'0')+' '+esc(t.book_section_title)+'</div>'+
-      readerButton(t,{view:'search',query:raw,topic:t.topic_id})+
+      sourceButtons(t.topic_id,active,'search','')+
+      (active?searchAnswerBlock(t,active,raw):'')+
     '</article>';
   }).join('');
 }
@@ -266,6 +374,14 @@ function restoreInitialState(){
   var p=new URLSearchParams(location.search);
   var view=p.get('view');
   if(['tickets','book','search'].indexOf(view)<0)view='tickets';
+
+  if(view==='book'){
+    var requestedBook=p.get('book');
+    if(validBook(requestedBook))selectedBookView=requestedBook;
+    renderBookSourceTabs();
+    renderBook();
+  }
+
   showView(view,false);
 
   if(view==='tickets'){
@@ -273,41 +389,95 @@ function restoreInitialState(){
     if(n>=1&&n<=30){
       openTicket(n,{
         update:false,
-        answers:p.get('answers')==='1',
+        source:p.get('source')||'',
         focus:p.get('focus')||'',
         scroll:!p.get('focus')
       });
     }
   }else if(view==='book'){
     var topic=p.get('topic');
-    if(topic)setTimeout(function(){focusReturnedElement('topic-'+topic);},40);
+    if(topic)setTimeout(function(){focusReturnedElement('topic-'+selectedBookView+'-'+topic);},40);
   }else if(view==='search'){
     var q=p.get('q')||'';
+    var searchTopic=p.get('topic')||'';
+    var source=p.get('source')||'';
+    if(searchTopic&&validBook(source))openSearchAnswer={topicId:searchTopic,bookId:source};
     $('searchInput').value=q;
     renderSearch(false);
-    var searchTopic=p.get('topic');
     if(searchTopic)setTimeout(function(){focusReturnedElement('search-'+searchTopic);},40);
   }
 }
 
 async function init(){
   try{
-    var loaded=await Promise.all([
+    var base=await Promise.all([
       fetch('data/ticket-questions.json').then(function(r){if(!r.ok)throw new Error('tickets');return r.json();}),
       fetch('data/topics.json').then(function(r){if(!r.ok)throw new Error('topics');return r.json();}),
-      fetch('data/answers.json').then(function(r){if(!r.ok)throw new Error('answers');return r.json();})
+      fetch('data/textbooks.json').then(function(r){if(!r.ok)throw new Error('textbooks');return r.json();})
     ]);
-    tickets=loaded[0];topics=loaded[1];answers=loaded[2];
-    if(tickets.length!==180||topics.length!==171||answers.length!==171)throw new Error('Неполный набор данных');
-    answersByTopic=new Map(answers.map(function(x){return [x.topic_id,x];}));
+    tickets=base[0];topics=base[1];textbooks=base[2];
+    if(tickets.length!==180||topics.length!==171||textbooks.length<2)throw new Error('Неполный набор данных');
+
+    textbookById=new Map(textbooks.map(function(x){return [x.id,x];}));
+    if(!validBook(selectedBookView))selectedBookView=textbooks[0].id;
+
+    var answerSets=await Promise.all(textbooks.map(function(book){
+      return fetch(book.answers_path).then(function(r){if(!r.ok)throw new Error(book.id);return r.json();});
+    }));
+    textbooks.forEach(function(book,i){
+      var rows=answerSets[i];
+      if(rows.length!==171)throw new Error('Неполный набор ответов '+book.id);
+      answersByBook.set(book.id,new Map(rows.map(function(x){return [x.topic_id,x];})));
+    });
     topicsById=new Map(topics.map(function(x){return [x.topic_id,x];}));
+
     renderTicketGrid();
+    renderBookSourceTabs();
     renderBook();
+
+    $('ticketPanel').addEventListener('click',function(e){
+      var b=e.target.closest('[data-ticket-source]');
+      if(!b)return;
+      var questionId=b.dataset.questionId;
+      var bookId=b.dataset.ticketSource;
+      if(openTicketAnswer&&openTicketAnswer.questionId===questionId&&openTicketAnswer.bookId===bookId){
+        openTicketAnswer=null;
+      }else{
+        openTicketAnswer={questionId:questionId,bookId:bookId};
+      }
+      renderTicket();
+      updateTicketUrl();
+      setTimeout(function(){var el=$('question-'+questionId);if(el)el.scrollIntoView({block:'nearest'});},0);
+    });
+
+    $('bookSourceTabs').addEventListener('click',function(e){
+      var b=e.target.closest('[data-book-view]');
+      if(!b)return;
+      setBookView(b.dataset.bookView,true);
+    });
+
+    $('searchResults').addEventListener('click',function(e){
+      var b=e.target.closest('[data-search-source]');
+      if(!b)return;
+      var topicId=b.dataset.topicId;
+      var bookId=b.dataset.searchSource;
+      if(openSearchAnswer&&openSearchAnswer.topicId===topicId&&openSearchAnswer.bookId===bookId){
+        openSearchAnswer=null;
+      }else{
+        openSearchAnswer={topicId:topicId,bookId:bookId};
+      }
+      renderSearch(true);
+      setTimeout(function(){var el=$('search-'+topicId);if(el)el.scrollIntoView({block:'nearest'});},0);
+    });
+
     $('loading').classList.add('hidden');
     document.querySelectorAll('.tab').forEach(function(b){
       b.addEventListener('click',function(){showView(b.dataset.view,true);});
     });
-    $('searchInput').addEventListener('input',function(){renderSearch(true);});
+    $('searchInput').addEventListener('input',function(){
+      openSearchAnswer=null;
+      renderSearch(true);
+    });
     restoreInitialState();
   }catch(err){
     $('loading').textContent='Не удалось загрузить данные сайта. Откройте страницу через веб-сервер или GitHub Pages.';

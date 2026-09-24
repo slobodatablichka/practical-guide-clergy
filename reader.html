@@ -37,6 +37,7 @@
 <script>
 (async function(){
   var params=new URLSearchParams(location.search);
+  var bookId=params.get('book')||'nefedov';
   var raw=params.get('href')||'';
   var topicId=params.get('topic')||'';
   var returnRaw=params.get('return')||'index.html';
@@ -54,6 +55,7 @@
   var currentIndex=-1;
   var indexData=[];
   var rendition=null;
+  var bookConfig=null;
 
   function safeReturn(value){
     try{
@@ -110,13 +112,12 @@
       });
       return !nested&&normText(el.textContent).length>=25;
     });
-    if(!candidates.length)candidates=Array.from(doc.querySelectorAll('p,li,blockquote'));
+    if(!candidates.length)candidates=Array.from(doc.querySelectorAll('p,li,blockquote,div'));
 
     var highlighted=[];
     sourceFragments.forEach(function(fragment){
       var nf=normText(fragment);
       var best=null,bestScore=0;
-
       candidates.forEach(function(el){
         var nt=normText(el.textContent);
         var score=0;
@@ -125,7 +126,6 @@
         else score=overlapScore(fragment,el.textContent);
         if(score>bestScore){bestScore=score;best=el;}
       });
-
       if(best&&bestScore>=0.55&&!highlighted.includes(best)){
         best.classList.add('answer-source-highlight');
         highlighted.push(best);
@@ -133,17 +133,22 @@
     });
 
     if(highlighted.length){
-      setTimeout(function(){
-        highlighted[0].scrollIntoView({behavior:'smooth',block:'center'});
-      },180);
+      setTimeout(function(){highlighted[0].scrollIntoView({behavior:'smooth',block:'center'});},180);
     }
+  }
+
+  function sectionLabel(item){
+    var context=item&&item.context_title?item.context_title:'';
+    var title=item&&item.title?item.title:'';
+    if(context&&normText(context)!==normText(title))return context+' — '+title;
+    return title;
   }
 
   function updateHeader(item){
     var chapter=item&&item.chapter?item.chapter:'';
     var title=item&&item.title?item.title:'';
-
-    document.getElementById('readerChapter').textContent=chapter||'Учебник';
+    var prefix=bookConfig?bookConfig.short_label+' · ':'';
+    document.getElementById('readerChapter').textContent=prefix+(chapter||'Учебник');
     document.title=(title||chapter||'Учебник')+' — Практическое руководство';
     sectionSelect.value=String(currentIndex);
     prevButton.disabled=currentIndex<=0;
@@ -167,12 +172,16 @@
   returnLink.href=safeReturn(returnRaw);
 
   try{
+    var registry=await fetch('data/textbooks.json').then(function(r){if(!r.ok)throw new Error('textbooks');return r.json();});
+    bookConfig=registry.find(function(x){return x.id===bookId;});
+    if(!bookConfig)throw new Error('book');
+
     var loaded=await Promise.all([
-      fetch('data/book-index.json').then(function(r){if(!r.ok)throw new Error('index');return r.json();}),
-      fetch('data/answers.json').then(function(r){if(!r.ok)throw new Error('answers');return r.json();})
+      fetch(bookConfig.index_path).then(function(r){if(!r.ok)throw new Error('index');return r.json();}),
+      fetch(bookConfig.answers_path).then(function(r){if(!r.ok)throw new Error('answers');return r.json();})
     ]);
 
-    indexData=loaded[0];
+    indexData=loaded[0].filter(function(item){return item.usable!==false;});
     var answer=loaded[1].find(function(x){return x.topic_id===topicId;});
     sourceFragments=answer&&Array.isArray(answer.source_fragments)?answer.source_fragments:[];
 
@@ -188,7 +197,7 @@
       }
       var opt=document.createElement('option');
       opt.value=String(i);
-      opt.textContent=(item.title===item.chapter)?'Начало главы':item.title;
+      opt.textContent=sectionLabel(item);
       group.appendChild(opt);
     });
 
@@ -196,13 +205,8 @@
     if(currentIndex<0)throw new Error('section');
 
     if(typeof ePub!=='function')throw new Error('epubjs');
-    var book=ePub('assets/book/taintstva-i-obryady-pravoslavnoy-tserkvi.epub');
-    rendition=book.renderTo('bookFrame',{
-      width:'100%',
-      height:'100%',
-      spread:'none',
-      flow:'scrolled-doc'
-    });
+    var book=ePub(bookConfig.epub_path);
+    rendition=book.renderTo('bookFrame',{width:'100%',height:'100%',spread:'none',flow:'scrolled-doc'});
 
     rendition.hooks.content.register(function(contents){
       setTimeout(function(){applyHighlights(contents);},30);
@@ -210,9 +214,7 @@
 
     rendition.on('rendered',function(){
       var contents=rendition.getContents();
-      if(contents&&contents.length){
-        setTimeout(function(){applyHighlights(contents[0]);},40);
-      }
+      if(contents&&contents.length)setTimeout(function(){applyHighlights(contents[0]);},40);
     });
 
     rendition.on('relocated',function(location){
@@ -224,15 +226,9 @@
       }
     });
 
-    sectionSelect.addEventListener('change',function(){
-      navigateTo(Number(sectionSelect.value),false);
-    });
-    prevButton.addEventListener('click',function(){
-      navigateTo(currentIndex-1,false);
-    });
-    nextButton.addEventListener('click',function(){
-      navigateTo(currentIndex+1,false);
-    });
+    sectionSelect.addEventListener('change',function(){navigateTo(Number(sectionSelect.value),false);});
+    prevButton.addEventListener('click',function(){navigateTo(currentIndex-1,false);});
+    nextButton.addEventListener('click',function(){navigateTo(currentIndex+1,false);});
 
     await navigateTo(currentIndex,true);
   }catch(e){
