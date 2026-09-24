@@ -12,6 +12,12 @@ var openTicketAnswer=null;
 var selectedBookView='nefedov';
 var openSearchAnswer=null;
 
+var feedbackClient=null;
+var feedbackByKey=new Map();
+var FEEDBACK_NAME_KEY='practical-guide-clergy:feedback-name';
+var SUPABASE_URL='https://chlffvzahnntudukloer.supabase.co';
+var SUPABASE_PUBLISHABLE_KEY='sb_publishable_KYJLtO7PeBh94w3gCVnV4Q_KSwM1sqS';
+
 var $=function(id){return document.getElementById(id);};
 var esc=function(s){return String(s==null?'':s).replace(/[&<>"']/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#039;'}[c];});};
 
@@ -58,6 +64,257 @@ function answerFor(bookId,topicId){
   var map=answersByBook.get(bookId);
   return map?map.get(topicId):null;
 }
+
+function feedbackKey(topicId,bookId){
+  return topicId+'|'+bookId;
+}
+
+function getFeedbackName(){
+  try{return (localStorage.getItem(FEEDBACK_NAME_KEY)||'').trim();}catch(e){return '';}
+}
+
+function storeFeedbackName(name){
+  name=String(name||'').trim().slice(0,100);
+  if(!name)return '';
+  try{localStorage.setItem(FEEDBACK_NAME_KEY,name);}catch(e){}
+  return name;
+}
+
+function clearFeedbackName(){
+  try{localStorage.removeItem(FEEDBACK_NAME_KEY);}catch(e){}
+}
+
+function feedbackNameAreaHtml(name){
+  if(name){
+    return '<div class="feedback-name-saved">Имя: <strong>'+esc(name)+'</strong> <button type="button" class="feedback-link" data-feedback-change-name>Сменить</button></div>';
+  }
+  return '<label class="feedback-field feedback-name-field"><span>Ваше имя</span><input type="text" maxlength="100" autocomplete="name" placeholder="Имя или псевдоним" data-feedback-name></label>';
+}
+
+function feedbackInnerHtml(topicId,bookId){
+  var existing=feedbackByKey.get(feedbackKey(topicId,bookId))||null;
+  var selected=existing?Number(existing.rating):0;
+  var comment=existing&&existing.comment?existing.comment:'';
+  var name=getFeedbackName();
+  var buttons=[1,2,3,4,5].map(function(n){
+    return '<button type="button" class="feedback-rating-button'+(selected===n?' active':'')+'" data-feedback-rating="'+n+'" aria-label="Оценка '+n+' из 5" aria-pressed="'+(selected===n?'true':'false')+'">'+n+'</button>';
+  }).join('');
+  return '<div class="feedback-title">Оцените этот ответ</div>'+
+    '<div class="feedback-grid">'+
+      '<div class="feedback-name-area">'+feedbackNameAreaHtml(name)+'</div>'+
+      '<div class="feedback-field feedback-rating-field"><span>Оценка 1–5</span><div class="feedback-rating-buttons">'+buttons+'</div></div>'+
+      '<label class="feedback-field feedback-comment-field"><span>Комментарий <small>необязательно</small></span><textarea rows="2" maxlength="2000" placeholder="Замечание к ответу" data-feedback-comment>'+esc(comment)+'</textarea></label>'+
+    '</div>'+
+    '<div class="feedback-status'+(existing?' saved':'')+'" aria-live="polite">'+(existing?'Сохранено':'')+'</div>';
+}
+
+function feedbackBlock(topicId,bookId,ctx){
+  ctx=ctx||{};
+  return '<div class="feedback-box" data-feedback-topic="'+esc(topicId)+'" data-feedback-book="'+esc(bookId)+'" data-feedback-view="'+esc(ctx.view||'book')+'"'+
+    (ctx.questionId?' data-feedback-question-id="'+esc(ctx.questionId)+'"':'')+
+    (ctx.ticket?' data-feedback-ticket="'+esc(ctx.ticket)+'"':'')+
+    (ctx.position?' data-feedback-position="'+esc(ctx.position)+'"':'')+
+    '>'+feedbackInnerHtml(topicId,bookId)+'</div>';
+}
+
+function syncFeedbackNameAreas(name){
+  document.querySelectorAll('.feedback-name-area').forEach(function(area){
+    area.innerHTML=feedbackNameAreaHtml(name);
+  });
+}
+
+function setFeedbackStatus(block,message,kind){
+  var el=block&&block.querySelector('.feedback-status');
+  if(!el)return;
+  el.textContent=message||'';
+  el.classList.toggle('error',kind==='error');
+  el.classList.toggle('saved',kind==='saved');
+}
+
+function refreshFeedbackBlock(block){
+  if(!block)return;
+  var topicId=block.dataset.feedbackTopic;
+  var bookId=block.dataset.feedbackBook;
+  block.innerHTML=feedbackInnerHtml(topicId,bookId);
+}
+
+function refreshFeedbackBlocks(){
+  document.querySelectorAll('.feedback-box').forEach(function(block){
+    if(block.contains(document.activeElement))return;
+    refreshFeedbackBlock(block);
+  });
+}
+
+async function answerRevision(answer){
+  var text=[answer&&answer.short_answer||'',answer&&answer.book_section_title||'',answer&&answer.relevance||''].join('\n');
+  try{
+    if(window.crypto&&window.crypto.subtle&&window.TextEncoder){
+      var digest=await window.crypto.subtle.digest('SHA-256',new TextEncoder().encode(text));
+      return Array.from(new Uint8Array(digest)).map(function(b){return b.toString(16).padStart(2,'0');}).join('');
+    }
+  }catch(e){}
+  var h=2166136261;
+  for(var i=0;i<text.length;i++){h^=text.charCodeAt(i);h=Math.imul(h,16777619);}
+  return 'fnv1a-'+(h>>>0).toString(16).padStart(8,'0');
+}
+
+function feedbackContext(block){
+  var topicId=block.dataset.feedbackTopic;
+  var bookId=block.dataset.feedbackBook;
+  var view=block.dataset.feedbackView||'book';
+  var topic=topicsById.get(topicId);
+  var answer=answerFor(bookId,topicId);
+  var question=topic?topic.normalized_question:'';
+  var ticket=null,position=null;
+  if(view==='tickets'){
+    var qid=block.dataset.feedbackQuestionId||'';
+    var row=tickets.find(function(x){return x.id===qid;});
+    if(row){
+      question=row.original_question;
+      ticket=row.ticket;
+      position=row.ticket_position;
+    }
+  }
+  return {topicId:topicId,bookId:bookId,view:view,topic:topic,answer:answer,question:question,ticket:ticket,position:position};
+}
+
+function initFeedbackClient(){
+  try{
+    if(window.supabase&&typeof window.supabase.createClient==='function'){
+      feedbackClient=window.supabase.createClient(SUPABASE_URL,SUPABASE_PUBLISHABLE_KEY,{
+        auth:{persistSession:true,autoRefreshToken:true,detectSessionInUrl:false}
+      });
+    }
+  }catch(err){
+    console.error('Feedback client initialization failed',err);
+    feedbackClient=null;
+  }
+}
+
+async function loadOwnFeedback(){
+  if(!feedbackClient)return;
+  var sessionResult=await feedbackClient.auth.getSession();
+  var session=sessionResult&&sessionResult.data?sessionResult.data.session:null;
+  if(!session)return;
+  var result=await feedbackClient.from('answer_feedback')
+    .select('topic_id,book_id,display_name,rating,comment,answer_revision,updated_at');
+  if(result.error)throw result.error;
+  (result.data||[]).forEach(function(row){
+    feedbackByKey.set(feedbackKey(row.topic_id,row.book_id),row);
+  });
+  if(!getFeedbackName()&&result.data&&result.data.length){
+    storeFeedbackName(result.data[0].display_name);
+  }
+}
+
+async function ensureFeedbackSession(){
+  if(!feedbackClient)throw new Error('feedback-client-unavailable');
+  var current=await feedbackClient.auth.getSession();
+  if(current.data&&current.data.session)return current.data.session;
+  var created=await feedbackClient.auth.signInAnonymously();
+  if(created.error)throw created.error;
+  return created.data.session;
+}
+
+async function saveFeedback(block,ratingOverride){
+  if(!block)return;
+  var active=block.querySelector('.feedback-rating-button.active');
+  var rating=Number(ratingOverride||(active&&active.dataset.feedbackRating)||0);
+  if(!rating){
+    setFeedbackStatus(block,'Сначала выберите оценку.','error');
+    return;
+  }
+
+  var name=getFeedbackName();
+  var nameInput=block.querySelector('[data-feedback-name]');
+  if(!name&&nameInput)name=String(nameInput.value||'').trim();
+  if(!name){
+    setFeedbackStatus(block,'Сначала укажите имя.','error');
+    if(nameInput)nameInput.focus();
+    return;
+  }
+  name=storeFeedbackName(name);
+  syncFeedbackNameAreas(name);
+
+  var ctx=feedbackContext(block);
+  if(!ctx.answer||!ctx.topic){
+    setFeedbackStatus(block,'Не удалось определить оцениваемый ответ.','error');
+    return;
+  }
+  var commentInput=block.querySelector('[data-feedback-comment]');
+  var comment=commentInput?String(commentInput.value||'').trim():'';
+
+  setFeedbackStatus(block,'Сохраняю…','');
+  try{
+    var session=await ensureFeedbackSession();
+    var revision=await answerRevision(ctx.answer);
+    var payload={
+      user_id:session.user.id,
+      display_name:name,
+      topic_id:ctx.topicId,
+      book_id:ctx.bookId,
+      question:ctx.question,
+      source_rel:Number(ctx.answer.relevance)||1,
+      rating:rating,
+      comment:comment||null,
+      answer_revision:revision,
+      view:ctx.view,
+      ticket:ctx.ticket,
+      position:ctx.position
+    };
+    var result=await feedbackClient.from('answer_feedback')
+      .upsert(payload,{onConflict:'user_id,topic_id,book_id'})
+      .select('topic_id,book_id,display_name,rating,comment,answer_revision,updated_at')
+      .single();
+    if(result.error)throw result.error;
+    feedbackByKey.set(feedbackKey(ctx.topicId,ctx.bookId),result.data);
+    refreshFeedbackBlock(block);
+    setFeedbackStatus(block,'Сохранено','saved');
+  }catch(err){
+    console.error('Feedback save failed',err);
+    setFeedbackStatus(block,'Не удалось сохранить. Попробуйте ещё раз.','error');
+  }
+}
+
+function bindFeedbackEvents(){
+  document.addEventListener('click',function(e){
+    var change=e.target.closest('[data-feedback-change-name]');
+    if(change){
+      var changeBlock=change.closest('.feedback-box');
+      clearFeedbackName();
+      syncFeedbackNameAreas('');
+      var input=changeBlock&&changeBlock.querySelector('[data-feedback-name]');
+      if(input)input.focus();
+      return;
+    }
+
+    var ratingButton=e.target.closest('[data-feedback-rating]');
+    if(!ratingButton)return;
+    var block=ratingButton.closest('.feedback-box');
+    if(!block)return;
+    block.querySelectorAll('[data-feedback-rating]').forEach(function(btn){
+      var active=btn===ratingButton;
+      btn.classList.toggle('active',active);
+      btn.setAttribute('aria-pressed',active?'true':'false');
+    });
+    saveFeedback(block,Number(ratingButton.dataset.feedbackRating));
+  });
+
+  document.addEventListener('change',function(e){
+    if(e.target.matches('[data-feedback-name]')){
+      var name=storeFeedbackName(e.target.value);
+      if(name)syncFeedbackNameAreas(name);
+      return;
+    }
+    if(e.target.matches('[data-feedback-comment]')){
+      var block=e.target.closest('.feedback-box');
+      var active=block&&block.querySelector('.feedback-rating-button.active');
+      if(active)saveFeedback(block,Number(active.dataset.feedbackRating));
+      else if(block)setFeedbackStatus(block,'Комментарий сохранится после выбора оценки.','');
+    }
+  });
+}
+
 
 function showView(name,updateUrl){
   if(updateUrl===undefined)updateUrl=true;
@@ -144,6 +401,7 @@ function answerBlockForTicket(row,bookId){
   }else{
     html+='<div class="source-section">Прямой раздел в этом учебнике не найден.</div>';
   }
+  html+=feedbackBlock(row.topic_id,bookId,{view:'tickets',questionId:row.id,ticket:row.ticket,position:row.ticket_position});
   html+='</div>';
   return html;
 }
@@ -264,6 +522,7 @@ function renderBook(){
           '<p>'+esc(a?a.short_answer:'Ответ пока не найден.')+'</p>'+
           '<div class="ticket-refs"><strong>Билеты:</strong> '+esc(ticketRefs(t))+'</div>'+
           source+
+          feedbackBlock(t.topic_id,selectedBookView,{view:'book'})+
         '</div>'+
       '</details>';
     }).join('');
@@ -330,6 +589,7 @@ function searchAnswerBlock(t,bookId,query){
   }else{
     html+='<div class="source-section">Прямой раздел в этом учебнике не найден.</div>';
   }
+  html+=feedbackBlock(t.topic_id,bookId,{view:'search'});
   html+='</div>';
   return html;
 }
@@ -410,6 +670,8 @@ function restoreInitialState(){
 
 async function init(){
   try{
+    initFeedbackClient();
+    bindFeedbackEvents();
     var base=await Promise.all([
       fetch('data/ticket-questions.json').then(function(r){if(!r.ok)throw new Error('tickets');return r.json();}),
       fetch('data/topics.json').then(function(r){if(!r.ok)throw new Error('topics');return r.json();}),
@@ -479,6 +741,9 @@ async function init(){
       renderSearch(true);
     });
     restoreInitialState();
+    loadOwnFeedback().then(function(){refreshFeedbackBlocks();}).catch(function(err){
+      console.error('Feedback load failed',err);
+    });
   }catch(err){
     $('loading').textContent='Не удалось загрузить данные сайта. Откройте страницу через веб-сервер или GitHub Pages.';
     console.error(err);
