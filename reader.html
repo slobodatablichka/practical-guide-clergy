@@ -13,20 +13,19 @@
   <div class="reader-toolbar-inner">
     <div class="reader-actions">
       <a id="returnLink" class="button-link" href="index.html">← К вопросу</a>
-      <a class="button-link secondary" href="index.html">На главную</a>
+      <a id="mainMenuLink" class="button-link secondary" href="index.html">На главную</a>
     </div>
     <div class="reader-title-wrap">
       <div id="readerBookTitle" class="reader-book-title">Загрузка учебника…</div>
-      <div id="readerChapter" class="reader-current-chapter"></div>
+      <div class="reader-section-control" aria-label="Навигация по учебнику">
+        <button id="prevSection" class="reader-section-arrow" type="button" title="Предыдущий раздел" aria-label="Предыдущий раздел">‹</button>
+        <label class="reader-heading-select-wrap">
+          <span class="sr-only">Оглавление учебника</span>
+          <select id="sectionSelect" class="reader-heading-select" aria-label="Оглавление учебника"></select>
+        </label>
+        <button id="nextSection" class="reader-section-arrow" type="button" title="Следующий раздел" aria-label="Следующий раздел">›</button>
+      </div>
     </div>
-  </div>
-  <div class="reader-nav">
-    <button id="prevSection" class="reader-nav-button" type="button"><span class="desktop-label">← Предыдущий раздел</span><span class="mobile-label">← Предыдущий</span></button>
-    <label class="reader-select-wrap">
-      <span>Оглавление</span>
-      <select id="sectionSelect" aria-label="Оглавление учебника"></select>
-    </label>
-    <button id="nextSection" class="reader-nav-button" type="button"><span class="desktop-label">Следующий раздел →</span><span class="mobile-label">Следующий →</span></button>
   </div>
 </header>
 
@@ -39,20 +38,22 @@
 (async function(){
   var params=new URLSearchParams(location.search);
   var bookId=params.get('book')||'nefedov';
+  var mode=params.get('mode')==='read'?'read':'source';
   var raw=params.get('href')||'';
   var topicId=params.get('topic')||'';
   var returnRaw=params.get('return')||'index.html';
-  var safe=/^index_split_\d{3}\.xhtml(?:#[A-Za-z0-9_.:-]+)?$/.test(raw);
+  var safeSource=/^index_split_\d{3}\.xhtml(?:#[A-Za-z0-9_.:-]+)?$/.test(raw);
 
   var error=document.getElementById('readerError');
   var viewer=document.getElementById('bookFrame');
   var returnLink=document.getElementById('returnLink');
+  var mainMenuLink=document.getElementById('mainMenuLink');
   var sectionSelect=document.getElementById('sectionSelect');
   var prevButton=document.getElementById('prevSection');
   var nextButton=document.getElementById('nextSection');
 
   var sourceFragments=[];
-  var sourceBase=hrefKey(raw);
+  var sourceBase=mode==='source'?hrefKey(raw):'';
   var currentIndex=-1;
   var indexData=[];
   var rendition=null;
@@ -64,6 +65,47 @@
       if(u.origin===location.origin&&/\/index\.html$/.test(u.pathname))return value;
     }catch(e){}
     return 'index.html';
+  }
+
+  function readingPositionKey(){
+    return 'practical-guide-clergy:reader-position:'+bookId;
+  }
+
+  function loadReadingPosition(){
+    try{
+      var rawValue=localStorage.getItem(readingPositionKey());
+      if(!rawValue)return null;
+      var parsed=JSON.parse(rawValue);
+      return parsed&&typeof parsed==='object'?parsed:null;
+    }catch(e){
+      return null;
+    }
+  }
+
+  function storeReadingPosition(location){
+    if(mode!=='read'||!location||!location.start)return;
+    var cfi=location.start.cfi||'';
+    var href=location.start.href||'';
+    if(!cfi&&!href)return;
+    try{
+      localStorage.setItem(readingPositionKey(),JSON.stringify({
+        cfi:cfi,
+        href:href,
+        saved_at:new Date().toISOString()
+      }));
+    }catch(e){}
+  }
+
+  function saveCurrentReadingPosition(){
+    if(mode!=='read'||!rendition)return;
+    try{
+      var location=rendition.currentLocation();
+      if(location&&typeof location.then==='function'){
+        location.then(storeReadingPosition).catch(function(){});
+      }else{
+        storeReadingPosition(location);
+      }
+    }catch(e){}
   }
 
   function hrefKey(value){
@@ -88,7 +130,7 @@
   }
 
   function applyHighlights(contents){
-    if(!sourceFragments.length||currentIndex<0)return;
+    if(mode!=='source'||!sourceFragments.length||currentIndex<0)return;
     var currentBase=hrefKey(indexData[currentIndex].href);
     if(currentBase!==sourceBase)return;
 
@@ -169,7 +211,6 @@
     document.getElementById('readerBookTitle').textContent=bookConfig
       ? bookSurname(bookConfig)+' — '+shortBookTitle(bookConfig)
       : 'Учебник';
-    document.getElementById('readerChapter').textContent=sectionLabel(item)||(chapter||'');
     document.title=(title||chapter||'Учебник')+' — Практическое руководство';
     sectionSelect.value=String(currentIndex);
     prevButton.disabled=currentIndex<=0;
@@ -183,28 +224,33 @@
     await rendition.display(useRaw?raw:indexData[i].href);
   }
 
-  if(!safe){
+  if(mode==='source'&&!safeSource){
     error.textContent='Некорректная ссылка на раздел учебника.';
     error.classList.remove('hidden');
     viewer.classList.add('hidden');
     return;
   }
 
-  returnLink.href=safeReturn(returnRaw);
+  if(mode==='read'){
+    returnLink.href='index.html';
+    returnLink.textContent='← На главную';
+    mainMenuLink.classList.add('hidden');
+  }else{
+    returnLink.href=safeReturn(returnRaw);
+  }
 
   try{
     var registry=await fetch('data/textbooks.json').then(function(r){if(!r.ok)throw new Error('textbooks');return r.json();});
     bookConfig=registry.find(function(x){return x.id===bookId;});
     if(!bookConfig)throw new Error('book');
 
-    var loaded=await Promise.all([
-      fetch(bookConfig.index_path).then(function(r){if(!r.ok)throw new Error('index');return r.json();}),
-      fetch(bookConfig.answers_path).then(function(r){if(!r.ok)throw new Error('answers');return r.json();})
-    ]);
-
-    indexData=loaded[0].filter(function(item){return item.usable!==false;});
-    var answer=loaded[1].find(function(x){return x.topic_id===topicId;});
-    sourceFragments=answer&&Array.isArray(answer.source_fragments)?answer.source_fragments:[];
+    var indexRows=await fetch(bookConfig.index_path).then(function(r){if(!r.ok)throw new Error('index');return r.json();});
+    indexData=indexRows.filter(function(item){return item.usable!==false;});
+    if(mode==='source'){
+      var answerRows=await fetch(bookConfig.answers_path).then(function(r){if(!r.ok)throw new Error('answers');return r.json();});
+      var answer=answerRows.find(function(x){return x.topic_id===topicId;});
+      sourceFragments=answer&&Array.isArray(answer.source_fragments)?answer.source_fragments:[];
+    }
 
     var groups=new Map();
     indexData.forEach(function(item,i){
@@ -222,7 +268,8 @@
       group.appendChild(opt);
     });
 
-    currentIndex=findIndexByHref(raw);
+    if(!indexData.length)throw new Error('section');
+    currentIndex=mode==='source'?findIndexByHref(raw):0;
     if(currentIndex<0)throw new Error('section');
 
     if(typeof ePub!=='function')throw new Error('epubjs');
@@ -245,13 +292,39 @@
         currentIndex=i;
         updateHeader(indexData[i]);
       }
+      storeReadingPosition(location);
     });
 
     sectionSelect.addEventListener('change',function(){navigateTo(Number(sectionSelect.value),false);});
     prevButton.addEventListener('click',function(){navigateTo(currentIndex-1,false);});
     nextButton.addEventListener('click',function(){navigateTo(currentIndex+1,false);});
 
-    await navigateTo(currentIndex,true);
+    window.addEventListener('pagehide',saveCurrentReadingPosition);
+    document.addEventListener('visibilitychange',function(){
+      if(document.visibilityState==='hidden')saveCurrentReadingPosition();
+    });
+
+    if(mode==='source'){
+      await navigateTo(currentIndex,true);
+    }else{
+      var saved=loadReadingPosition();
+      if(saved&&saved.href){
+        var savedIndex=findIndexByHref(saved.href);
+        if(savedIndex>=0){
+          currentIndex=savedIndex;
+          updateHeader(indexData[currentIndex]);
+        }
+      }
+      if(saved&&saved.cfi){
+        try{
+          await rendition.display(saved.cfi);
+        }catch(e){
+          await navigateTo(currentIndex,false);
+        }
+      }else{
+        await navigateTo(currentIndex,false);
+      }
+    }
   }catch(e){
     console.error(e);
     error.textContent='Не удалось открыть встроенный раздел учебника. Вернитесь в главное меню и попробуйте ещё раз.';
