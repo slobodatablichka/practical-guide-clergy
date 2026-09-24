@@ -1,0 +1,22 @@
+[
+  {
+    "id": "nefedov",
+    "number": 1,
+    "short_label": "Уч.1",
+    "author": "протоиерей Геннадий Нефёдов",
+    "title": "Таинства и обряды Православной Церкви",
+    "epub_path": "assets/book/taintstva-i-obryady-pravoslavnoy-tserkvi.epub",
+    "index_path": "data/textbooks/nefedov/book-index.json",
+    "answers_path": "data/textbooks/nefedov/answers.json"
+  },
+  {
+    "id": "silchenkov",
+    "number": 2,
+    "short_label": "Уч.2",
+    "author": "протоиерей Николай Сильченков",
+    "title": "Практическое руководство при совершении приходских треб",
+    "epub_path": "assets/book/silchenkov-prakticheskoe-rukovodstvo-pri-sovershenii-prikhodskikh-treb.epub",
+    "index_path": "data/textbooks/silchenkov/book-index.json",
+    "answers_path": "data/textbooks/silchenkov/answers.json"
+  }
+]
