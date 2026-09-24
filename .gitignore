@@ -1,0 +1,3 @@
+# Local visitor feedback contains names/pseudonyms and comments.
+feedback/*.csv
+feedback/*.html

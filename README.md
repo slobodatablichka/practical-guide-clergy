@@ -40,3 +40,10 @@
 - `assets/styles.css` — оформление.
 
 Проект публикуется через GitHub Pages из ветки `main`.
+
+
+## Отчёты по отзывам
+
+- `scripts/build_feedback_report.py` — локальный генератор красивого автономного HTML-отчёта из CSV Supabase;
+- `docs/FEEDBACK-REPORT.md` — инструкция;
+- локальные CSV и HTML хранятся в `feedback/` и не публикуются в Git.
