@@ -65,7 +65,7 @@ function answerFor(bookId,topicId){
   return map?map.get(topicId):null;
 }
 
-function relevanceLabel(rel){
+function fullnessLabel(rel){
   var labels={
     5:'полный ответ',
     4:'почти полный',
@@ -73,7 +73,14 @@ function relevanceLabel(rel){
     2:'отдельные сведения',
     1:'прямого ответа нет'
   };
-  return labels[Number(rel)]||'оценка не определена';
+  return labels[Number(rel)]||'полнота не определена';
+}
+
+function fullnessScale(rel){
+  var n=Math.max(1,Math.min(5,Number(rel)||1));
+  return '<span class="fullness-scale" aria-hidden="true"><span class="fullness-filled">'+
+    '■'.repeat(n)+'</span><span class="fullness-empty">'+'□'.repeat(5-n)+'</span></span>'+
+    '<span class="sr-only">Полнота: '+esc(fullnessLabel(n))+'</span>';
 }
 
 function bookSurname(book){
@@ -84,7 +91,7 @@ function bookSurname(book){
 }
 
 function bookTooltip(book,rel){
-  return book.author+', «'+book.title+'». Материал по вопросу: '+relevanceLabel(rel)+' (rel_'+rel+').';
+  return book.author+', «'+book.title+'». Полнота материала по вопросу: '+fullnessLabel(rel)+'.';
 }
 
 function feedbackKey(topicId,bookId){
@@ -403,10 +410,11 @@ function sourceButtons(topicId,activeBookId,mode,questionId){
     var attr=mode==='ticket'
       ? ' data-ticket-source="'+esc(book.id)+'" data-question-id="'+esc(questionId)+'"'
       : ' data-search-source="'+esc(book.id)+'" data-topic-id="'+esc(topicId)+'"';
-    var label=bookSurname(book)+' · '+relevanceLabel(rel);
+    var surname=bookSurname(book);
     var tip=bookTooltip(book,rel);
     return '<button class="source-choice'+(active?' active':'')+'" type="button"'+attr+
-      ' title="'+esc(tip)+'" aria-label="'+esc(label+'. '+tip)+'">'+esc(label)+'</button>';
+      ' title="'+esc(tip)+'" aria-label="'+esc(surname+'. Полнота: '+fullnessLabel(rel)+'. '+tip)+'">'+
+      '<span class="source-surname">'+esc(surname)+'</span> '+fullnessScale(rel)+'</button>';
   }).join('')+'</div>';
 }
 
@@ -486,9 +494,8 @@ function renderTicket(){
 
 function renderBookSourceTabs(){
   $('bookSourceTabs').innerHTML=textbooks.map(function(book){
-    return '<button type="button" class="source-tab'+(book.id===selectedBookView?' active':'')+'" data-book-view="'+esc(book.id)+'">'+
-      esc(book.short_label)+' · '+esc(book.author.replace(/^протоиерей\s+/i,''))+
-    '</button>';
+    return '<button type="button" class="source-tab'+(book.id===selectedBookView?' active':'')+'" data-book-view="'+esc(book.id)+'" '+
+      'title="'+esc(book.author+', «'+book.title+'»')+'">'+esc(bookSurname(book))+'</button>';
   }).join('');
 }
 
@@ -538,7 +545,7 @@ function renderBook(){
         source='<div class="source-section">Прямой раздел в этом учебнике не найден.</div>';
       }
       return '<details class="topic-card" id="topic-'+esc(selectedBookView)+'-'+esc(t.topic_id)+'" data-topic="'+esc(t.topic_id)+'">'+
-        '<summary><span class="topic-number">'+t.topic_order+'</span><span class="topic-summary-text">'+esc(t.normalized_question)+'</span><span class="rel-badge" title="'+esc('Внутренняя оценка: rel_'+rel)+'">'+esc(relevanceLabel(rel))+'</span></summary>'+
+        '<summary><span class="topic-number">'+t.topic_order+'</span><span class="topic-summary-text">'+esc(t.normalized_question)+'</span><span class="rel-badge" title="'+esc('Полнота материала: '+fullnessLabel(rel))+'">'+fullnessScale(rel)+'</span></summary>'+
         '<div class="topic-body">'+
           '<p>'+esc(a?a.short_answer:'Ответ пока не найден.')+'</p>'+
           '<div class="ticket-refs"><strong>Билеты:</strong> '+esc(ticketRefs(t))+'</div>'+

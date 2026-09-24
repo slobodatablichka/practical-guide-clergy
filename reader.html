@@ -12,18 +12,19 @@
 <header class="reader-toolbar">
   <div class="reader-toolbar-inner">
     <div class="reader-actions">
-      <a id="returnLink" class="button-link" href="index.html">← Вернуться к вопросу</a>
-      <a class="button-link secondary" href="index.html">Главное меню</a>
+      <a id="returnLink" class="button-link" href="index.html">← К вопросу</a>
+      <a class="button-link secondary" href="index.html">На главную</a>
     </div>
     <div class="reader-title-wrap">
-      <div id="readerChapter" class="reader-current-chapter">Загрузка учебника…</div>
+      <div id="readerBookTitle" class="reader-book-title">Загрузка учебника…</div>
+      <div id="readerChapter" class="reader-current-chapter"></div>
     </div>
   </div>
   <div class="reader-nav">
     <button id="prevSection" class="reader-nav-button" type="button"><span class="desktop-label">← Предыдущий раздел</span><span class="mobile-label">← Предыдущий</span></button>
     <label class="reader-select-wrap">
-      <span>Раздел учебника</span>
-      <select id="sectionSelect" aria-label="Раздел учебника"></select>
+      <span>Оглавление</span>
+      <select id="sectionSelect" aria-label="Оглавление учебника"></select>
     </label>
     <button id="nextSection" class="reader-nav-button" type="button"><span class="desktop-label">Следующий раздел →</span><span class="mobile-label">Следующий →</span></button>
   </div>
@@ -140,15 +141,35 @@
   function sectionLabel(item){
     var context=item&&item.context_title?item.context_title:'';
     var title=item&&item.title?item.title:'';
-    if(context&&normText(context)!==normText(title))return context+' — '+title;
-    return title;
+    var nc=normText(context),nt=normText(title);
+    if(!context)return title;
+    if(!title)return context;
+    if(nc===nt)return title;
+    if(nt.includes(nc))return title;
+    if(nc.includes(nt))return context;
+    return context+' — '+title;
+  }
+
+  function bookSurname(book){
+    var author=String(book&&book.author||'').trim().replace(/[.,]+$/,'');
+    var parts=author.split(/\s+/);
+    return parts[parts.length-1]||'Учебник';
+  }
+
+  function shortBookTitle(book){
+    if(!book)return 'Учебник';
+    if(book.id==='nefedov')return 'Таинства и обряды';
+    if(book.id==='silchenkov')return 'Практическое руководство';
+    return book.title||'Учебник';
   }
 
   function updateHeader(item){
     var chapter=item&&item.chapter?item.chapter:'';
     var title=item&&item.title?item.title:'';
-    var prefix=bookConfig?bookConfig.short_label+' · ':'';
-    document.getElementById('readerChapter').textContent=prefix+(chapter||'Учебник');
+    document.getElementById('readerBookTitle').textContent=bookConfig
+      ? bookSurname(bookConfig)+' — '+shortBookTitle(bookConfig)
+      : 'Учебник';
+    document.getElementById('readerChapter').textContent=sectionLabel(item)||(chapter||'');
     document.title=(title||chapter||'Учебник')+' — Практическое руководство';
     sectionSelect.value=String(currentIndex);
     prevButton.disabled=currentIndex<=0;
